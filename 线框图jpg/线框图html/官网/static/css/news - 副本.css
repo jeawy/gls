@@ -1,0 +1,116 @@
+ 
+/* 菜单设置开始*/
+.menu{
+    min-height: 60px;
+    line-height: 60px;
+    padding-right: 20px;
+    width: 100%;
+}
+ 
+.menu a{
+    font-size: 16px;
+    color: white;
+}
+
+.menu td{
+    padding: 0 20px;
+    line-height: 40px;
+}
+
+.menu td.small-padding{
+    padding: 0 10px;
+    line-height: 40px;
+}
+.col-content h1
+{
+    text-align: left;
+    color:#CF524E;
+}
+
+.col-content 
+{
+    text-align: left; 
+
+}
+
+.col-content p, .col-content h1
+{
+    padding-left: 5px;
+}
+.menu .td_mall
+{
+    width: 60px;
+    height: 60px;
+    padding:0;
+    border-radius: 30px;
+    background-color: #CF524E;
+}
+.menu  .td_mall a{
+    margin-left: 13px;
+}
+
+.menu .line{
+    position: relative;
+    top: -31px;
+    left: 40px;
+    overflow: hidden;
+    border-top: 1px solid #D6D6D6;
+    z-index: -1;
+}
+
+.menu .active *{
+    color: #CF524E;
+    
+}
+.menu .active .point{
+    background-color: #CF524E;
+}
+/* 菜单设置结束*/
+
+footer{
+    min-height: 60px;
+    line-height: 60px;
+    padding-right: 20px;
+    background-color:#D6D6D6;
+}
+
+
+ .menu
+ {
+     background-color: #20292E;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+ }
+ 
+ 
+.big-img-holder
+{
+    line-height: 240px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    background-color: gray;
+    width: 99%;
+    height: 240px;
+}
+
+.first_pics  {
+
+    text-align: center;
+}
+.first_pics table{ 
+    margin: 0 auto;
+}
+.markets{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.table_code h3 
+{
+    color: #CF524E;
+}
+.img_code
+{
+    margin-left: 20px;
+}

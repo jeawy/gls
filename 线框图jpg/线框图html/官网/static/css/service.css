@@ -1,0 +1,82 @@
+.menu{
+    position:absolute;
+}
+.content
+{ 
+    width: 100%;
+    background-color: #3C3D3F;
+}
+
+.swiper-slide
+{
+     line-height: 350px;
+     text-align: center;
+}
+
+.row-select
+{
+    text-align: center;
+}
+
+.sel-city
+{
+    line-height: 80px;
+    height: 40px;
+    width: 120px;
+}
+
+.container-detail
+{
+    background-color: #d6d6d6; 
+    padding-top: 40px;
+}
+.map, .rightimg
+{
+    width: 100%;
+}
+
+.online
+{
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.online p{
+    color: white;
+} 
+
+.container-title
+{
+    height: 40px;
+    line-height: 40px; 
+    width: 100%;
+    background-color: #d6d6d6;
+}
+
+.container-title a, .circle a{
+    color: gray;
+}
+
+.circle
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: #d6d6d6;
+    line-height: 120px;
+}
+
+.btn-success
+{
+    margin-top: 40px;
+}
+.service_items a{
+    color: gray;
+}
+.service_active a
+{
+    font-weight: bold;
+    color:#CF524E;
+}

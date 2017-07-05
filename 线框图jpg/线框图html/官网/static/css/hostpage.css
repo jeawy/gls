@@ -1,0 +1,56 @@
+.content
+{ 
+    width: 100%;
+    background-color: #3C3D3F;
+}
+
+.swiper-container
+{ 
+    z-index: -1;
+}
+
+.swiper-slide
+{
+     line-height: 650px;
+     text-align: center;
+}
+
+.right-sider-bar
+{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    right: 20px;
+}
+.fa{
+    color:white;
+}
+.bar-point
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: gray;
+    margin:0 auto;
+}
+
+.bar-table td{
+    text-align: center;
+    margin:0 auto;
+}
+
+
+.bar-table td a, .swiper-slide a{
+    color: white;
+ }
+
+.right-sider-bar
+{
+    z-index: 2;
+}
+.wechat_div
+{
+    position: fixed;
+    bottom: 80px;
+    right: 90px;
+}

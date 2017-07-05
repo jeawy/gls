@@ -1,0 +1,122 @@
+.content
+{ 
+    width: 100%;
+    background-color: #3C3D3F;
+    height: 600px;
+}
+
+h1
+{
+    color: white;
+    line-height: 480px;
+}
+.swiper-slide
+{ 
+     text-align: center;
+}
+
+.row-select
+{
+    text-align: center;
+}
+
+.sel-city
+{
+    line-height: 80px;
+    height: 40px;
+    width: 120px;
+}
+
+.container-detail
+{
+    background-color: #d6d6d6; 
+    padding-top: 40px;
+}
+.map, .rightimg
+{
+    width: 100%;
+}
+
+.online
+{
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.online p{
+    color: white;
+} 
+
+.container-title
+{
+    height: 60px; 
+    width: 100%;
+    background-color: #d6d6d6;
+}
+
+.container-title a, .circle a{
+    color: gray;
+}
+
+.circle
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: #d6d6d6;
+    line-height: 120px;
+}
+
+.btn-success
+{
+    margin-top: 40px;
+}
+.service_items a{
+    color: gray;
+}
+.service_active a
+{
+    font-weight: bold;
+    color:#CF524E;
+}
+
+.title
+{
+    color:#CF524E;
+    font-size: 25px;
+}
+
+.number
+{ 
+    font-size: 30px;
+    color: #d6d6d6;
+}
+.active-tip
+{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.td_line
+{
+    width: 90%; 
+}
+
+.td_fa
+{
+    padding-top: 5px;
+}
+
+.img-holder
+{
+    background-color: gray;
+    width: 90%;
+    height: 140px;
+}
+
+.col-active-list table
+{
+    width: 100%;
+}

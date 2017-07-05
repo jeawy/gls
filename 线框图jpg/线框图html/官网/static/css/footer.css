@@ -1,0 +1,22 @@
+.linkitems table
+{
+    width: 100%;
+}
+
+table .first{
+    font-weight: bold;
+    color:#d6d6d6;
+}
+
+.linkitems a
+{
+    color: gray;
+}
+
+.linkitems tr{
+    line-height:30px;
+}
+.linkitems
+{
+    margin-top: 40px;
+} 

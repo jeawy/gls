@@ -1,0 +1,107 @@
+ .menu
+ {
+     background-color: white;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+ }
+.content
+{ 
+    width: 100%;
+    background-color: #3C3D3F;
+}
+
+.swiper-container
+{ 
+    z-index: -1;
+}
+
+.swiper-slide
+{
+     line-height: 650px;
+     text-align: center;
+}
+ 
+ 
+
+.container-detail
+{
+    background-color: #d6d6d6; 
+    padding-top: 40px;
+}
+ 
+
+.online
+{
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.online p{
+    color: white;
+} 
+
+.container-title
+{
+    margin-top: 100px;
+    height: 60px; 
+    width: 100%;
+    background-color: #d6d6d6;
+}
+
+.container-title a, .circle a{
+    color: gray;
+}
+
+ 
+.items a{
+    color: gray;
+}
+.service_active a, .active a
+{
+    font-weight: bold;
+    color:#CF524E;
+}
+
+.title
+{
+    color:#CF524E;
+    font-size: 25px;
+}
+
+ 
+
+.col-active-list table
+{
+    width: 100%;
+}
+ 
+.col-product, .col-logo
+{
+    
+    line-height: 320px;
+    text-align: center;
+}
+
+.col-product
+{
+    background-color: #d6d6d6;
+}
+.col-logo
+{
+    background-color: gray;
+}
+
+.item-active, .item-view
+{
+   line-height: 160px;
+}
+
+.item-active{
+    background-color: #d6d6d6;
+}
+
+.item-view{
+    background-color: #8B92A0;
+}

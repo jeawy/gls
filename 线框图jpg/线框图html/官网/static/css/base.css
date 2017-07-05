@@ -1,0 +1,94 @@
+
+/* 菜单设置开始*/
+.menu{
+    min-height: 60px;
+    line-height: 60px;
+    padding-right: 20px;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.menu table
+{
+     min-height: 60px;
+    line-height: 60px;
+    margin: 20px auto;
+    
+}
+.menu a{
+    font-size: 16px;
+    color: #D6D6D6;
+}
+
+.menu td{
+    padding: 0 20px;
+    line-height: 40px;
+}
+
+.menu td.small-padding{
+    padding: 0 10px;
+    line-height: 40px;
+}
+
+.menu .td_mall
+{
+    width: 60px;
+    height: 60px;
+    padding:0;
+    border-radius: 30px;
+    background-color: #CF524E;
+}
+.menu  .td_mall a{
+        margin-left: 13px;
+}
+
+.point{
+    width: 5px;
+    height:5px;
+    border-radius: 3px;
+    margin: 0 auto;
+    background-color:#D6D6D6;
+}
+
+.menu .line{
+    position: relative;
+    top: -31px;
+    left: 40px;
+    overflow: hidden;
+    border-top: 1px solid #D6D6D6;
+    z-index: -1;
+}
+
+.menu .active *{
+    color: #CF524E;
+    
+}
+.menu .active .point{
+    background-color: #CF524E;
+}
+/* 菜单设置结束*/
+
+footer{
+    min-height: 60px;
+    line-height: 60px;
+    padding-right: 20px;
+    background-color:#D6D6D6;
+}
+
+.store_sec_menu
+{
+    position: absolute;
+    top: 100px;
+    right: 230px;
+    z-index: 10;
+}
+
+.a_img
+{ 
+    cursor:pointer;
+    width: 100px;
+    height: 60px;
+    margin: 0 10px;
+}
