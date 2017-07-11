@@ -19,64 +19,103 @@
 
   <body>
     <!-- menu content -->
-    <table class="menu ">
-      <tr>
-      <td>
-          <div>
-            <img src="../static/img/logo.png"/>
-          </div>
-      </td>
-      <td>
-          <div class="pull-right">
-                <table>
-                  <tr>
-                      <td class="active">
-                        <a href="首页.html" >Cast</a>
-                        <div class="point"></div>
-                    </td>
-                     <td>
-                        <a href="服务.html" >服务</a>
-                        <div class="point"></div>
+    <div class="menu-holder">
+      <table class="menu" >
+        <tr>
+        <td>
+            <div>
+              <a href="首页.html">
+              <img src="../static/img/logo.png"/>
+              </a>
+            </div>
+        </td>
+        <td>
+            <div class="pull-right">
+                  <table>
+                    <tr>
+                        <td class="active a_product" >
+                          <a href="产品图.html" >Cast</a>
+                          <div class="point"></div>
                       </td>
                       <td>
-                        <a href="体验店.html" >体验店</a>
-                        <div class="point"></div>
-                    </td>
-                      <td>
-                        <a href="" >社区</a>
-                        <div class="point"></div>
-                    </td> 
-                      <td class="td_mall">
-                        <a href="企业图.html" >商城</a>
+                          <a href="服务.html" >服务</a>
+                          <div class="point"></div>
+                        </td>
+                        <td>
+                          <a href="" class="a_store">体验店</a>
+                          <div class="point"></div>
                       </td>
-
-                      <td class="small-padding">
-                        <li class="fa fa-search"></li>
-                      </td>
-
-                      <td class="small-padding">
-                        <a href="登录页面.html">
-                        <li class="fa fa-user"></li>
-                        </a>
+                        <td>
+                          <a href="" >社区</a>
+                          <div class="point"></div>
                       </td> 
-                      <td class="small-padding">
-                        <a href="" >EN</a>
-                      </td>
-                  </tr>
-                </table>
-                <div class="line">
-                </div>
-          </div><!-- 左侧菜单结束-->
-      </td>
-      </tr>
-    </table>
+                        <td >
+                          <a href="企业图.html" >商城</a>
+                          <div class="point"></div>
+                        </td>
+
+                        <td class="small-padding">
+                          <li class="fa fa-search"></li>
+                        </td>
+
+                        <td class="small-padding">
+                          <a href="登录页面.html">
+                          <li class="fa fa-user"></li>
+                          </a>
+                          <a href="" >中文|EN</a>
+                        </td> 
+                      
+                    </tr>
+                  </table>
+                  <div class="line">
+                  </div>
+                 
+            </div><!-- 左侧菜单结束-->
+        </td>
+        </tr>
+      </table>
+    
+       <div class="panel panel-default sec_menu store_sec_menu panel-body-transparent">
+                    <div class="panel-body "> 
+                      <div>
+                        <a class="a_img" href="体验店.html"> 
+                          <img class="store_img_hove"  src="../static/img/store.png" />
+                          </a>
+                        <a class="a_img" href="成为授权经销商.html" > 
+                          <img class="bussiness_img_hove" src="../static/img/bussiness.png" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+      <div class="panel panel-default sec_menu product_sec_menu panel-body-transparent">
+        <div class="panel-body "> 
+          <div>
+            <a class="a_img" href="产品图.html"> 
+              <img class="cast_img_hove" src="../static/img/cast.png" />
+              </a>
+            <a class="a_img" href="产品图.html" > 
+              <img  class="castdock_img_hove" src="../static/img/castdock.png" />
+            </a>
+          </div>
+        </div>
+      </div> 
+
+    </div>
     <!-- /menu content -->
 
     <div class="container content">
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="">360旋转</a> </div> 
+                <div class="swiper-slide"> 
+                  <div class="sider1"> 
+                    <a href="">360旋转</a>
+                    <p class="p_title" >
+                      <span class="white_span">欢迎"触摸"</span>
+                      <span class="yellow_span">下一个世界！</span>
+                    </p> 
+                  </div>
+                 </div> 
             </div> 
         </div>
         <!-- end swiper -->
@@ -95,14 +134,8 @@
                   <div class="pull-right">
                      <table class="tb_secondmenu">
                         <tr>
-                          <td class=" tb_secondmenu_item" >
-                              <a href="#" class="a_secondmenu_item " target="character">特性</a> 
-                          </td>
                           <td class="tb_secondmenu_item" >
                               <a href="#" class="a_secondmenu_item " target="parameter" >技术参数</a> 
-                          </td>
-                            <td  class="tb_secondmenu_item" >
-                              <a href="#" class="a_secondmenu_item " target="scene">应用场景</a> 
                           </td>
                             <td  class="tb_secondmenu_item" >
                               <a href="#" class="a_secondmenu_item " target="fitting">精品配件</a> 
@@ -111,7 +144,7 @@
                               <a href="#" class="a_secondmenu_item " target="advice">安全使用建议</a>
                             </td> 
                             <td class="buy"  >
-                              <a href="" >购买</a>
+                              <a href="" >立即购买</a>
                             </td> 
                         </tr>
                       </table>
@@ -125,6 +158,25 @@
     <div class="character">
         <div class="container items"> 
               <img class="productimg" src="../static/img/product1.png"/> 
+              <div class="roll-tip">
+                   <table>
+                     <tr>
+                       <td>
+                           <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+                       </td>
+                     </tr>
+                    <tr>
+                       <td>
+                            <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                            <span>了解更多</span>
+                       </td>
+                     </tr>
+                   </table>
+                 </div><!-- roll tip end-->
         </div><!-- end items -->
         <div class="container items"> 
               <img class="productimg" src="../static/img/product2.png"/> 
@@ -489,6 +541,7 @@
     <!-- Bootstrap -->
     <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script> 
     <script src="../static/plugins/swiper-3.4.1/js/swiper.min.js"></script>
+    <script src="../static/js/base.js"></script>
     <script src="../static/js/product.js"></script>
      <!-- Initialize Swiper -->
     <script>

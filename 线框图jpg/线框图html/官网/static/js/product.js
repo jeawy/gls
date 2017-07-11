@@ -27,7 +27,7 @@ $(document).ready(function(){
          if (scrollheight > height-60)
          {
              //移除 top menu的fix
-             $('.menu').addClass('menu-hidden');
+             $('.menu-holder').addClass('menu-hidden');
              $('.container-second-menu').addClass('second-menu-fixed');
              
              
@@ -46,7 +46,7 @@ $(document).ready(function(){
          }
          else{
              //移除 top menu的fix
-             $('.menu').removeClass('menu-hidden');
+             $('.menu-holder').removeClass('menu-hidden');
              $('.container-second-menu').removeClass('second-menu-fixed');
          } 
     });

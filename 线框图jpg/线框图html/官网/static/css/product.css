@@ -10,11 +10,34 @@
 }
 
 .swiper-slide
-{
-     line-height: 650px;
+{ 
+     
      text-align: center;
 }
+.p_title{
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    font-size: 40px;
+    margin-top: 200px;
+}
 
+.white_span{
+    color: white;
+}
+
+.yellow_span
+{
+    color: rgb(233, 85, 19);
+}
+.sider1
+{ 
+    position: absolute;
+     bottom: 40px;
+     width: 100%;
+    text-align: center;
+}
 .right-sider-bar
 {
     position: absolute;
@@ -33,18 +56,23 @@
     padding-left:10px;
     padding-right:10px;
 }
- 
+.container-second-menu
+{
+   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    width: 100%;
+}
 .second-menu
 {
     line-height: 60px;
+    
 }
 .second-menu a{
     color: black;
 }
 .buy
 {
-    background-color:rgb(233, 85, 19);
-    width: 70px;
+    background-color:rgb(233, 85, 19); 
     text-align: center; 
     padding-left: 10px;
     padding-right: 20px;
