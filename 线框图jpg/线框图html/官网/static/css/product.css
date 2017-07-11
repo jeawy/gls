@@ -43,7 +43,7 @@
 }
 .buy
 {
-    background-color:#CF524E;
+    background-color:rgb(233, 85, 19);
     width: 70px;
     text-align: center; 
     padding-left: 10px;
@@ -64,7 +64,7 @@
 }
 
 .tb_secondmenu .active{
-    border-bottom: 4px solid #CF524E;
+    border-bottom: 4px solid rgb(233, 85, 19);
 }
 
 .menu-hidden
@@ -102,7 +102,7 @@
 .yellowcolor
 {
     font-weight: bold;
-    color: #CF524E;
+    color: rgb(233, 85, 19);
 }
 
 .col-para
@@ -136,11 +136,11 @@
 }
 
 .panel-menu tr.active {
-    border-bottom: 4px solid #CF524E;
+    border-bottom: 4px solid rgb(233, 85, 19);
 }
 
 .panel-menu tr.active a {
-    color: #CF524E;
+    color: rgb(233, 85, 19);
 }
 
 .fitting-panel-menu .fitting-item

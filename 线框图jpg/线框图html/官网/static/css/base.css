@@ -38,7 +38,7 @@
     height: 60px;
     padding:0;
     border-radius: 30px;
-    background-color: #CF524E;
+    background-color: rgb(233, 85, 19);
 }
 .menu  .td_mall a{
         margin-left: 13px;
@@ -62,11 +62,11 @@
 }
 
 .menu .active *{
-    color: #CF524E;
+    color: rgb(233, 85, 19);
     
 }
 .menu .active .point{
-    background-color: #CF524E;
+    background-color: rgb(233, 85, 19);
 }
 /* 菜单设置结束*/
 
@@ -77,18 +77,73 @@ footer{
     background-color:#D6D6D6;
 }
 
-.store_sec_menu
+.store_sec_menu, .sec_menu
 {
     position: absolute;
-    top: 100px;
+    top: 70px;
     right: 230px;
     z-index: 10;
 }
-
+.product_sec_menu
+{
+    top: 70px;
+    right: 25%;
+}
 .a_img
 { 
     cursor:pointer;
     width: 100px;
     height: 60px;
     margin: 0 10px;
+}
+
+.panel-body-transparent
+{
+    background-color: rgba(0,0,0,0);
+    border:none;
+}
+
+.td-bar-point
+{
+    height: 40px;
+    line-height: 40px;
+    display: inline-flex;
+}
+ 
+.bar-point
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    margin:0px auto;
+    margin-left: 5px;
+    
+}
+.bar-table tr{
+    line-height: 45px;
+}
+.sidemenu
+{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.phone
+{
+    font-size: 20px;
+}
+.td_online
+{
+    max-width: 100px;
+}
+.online-div
+{
+    text-align: center;
+}
+.online-img
+{
+    width: 100px;
+    height: 30px;
 }

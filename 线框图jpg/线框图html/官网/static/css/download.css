@@ -24,7 +24,7 @@
 .col-content h1
 {
     text-align: left;
-    color:#CF524E;
+    color:rgb(233, 85, 19);
 }
 
 .col-content 
@@ -43,7 +43,7 @@
     height: 60px;
     padding:0;
     border-radius: 30px;
-    background-color: #CF524E;
+    background-color: rgb(233, 85, 19);
 }
 .menu  .td_mall a{
     margin-left: 13px;
@@ -59,11 +59,11 @@
 }
 
 .menu .active *{
-    color: #CF524E;
+    color: rgb(233, 85, 19);
     
 }
 .menu .active .point{
-    background-color: #CF524E;
+    background-color: rgb(233, 85, 19);
 }
 /* 菜单设置结束*/
 
@@ -108,7 +108,7 @@ footer{
 
 .table_code h3 
 {
-    color: #CF524E;
+    color: rgb(233, 85, 19);
 }
 .img_code
 {

@@ -50,12 +50,12 @@
 .service_active a, .active a
 {
     font-weight: bold;
-    color:#CF524E;
+    color:rgb(233, 85, 19);
 }
 
 .title
 {
-    color:#CF524E;
+    color:rgb(233, 85, 19);
     font-size: 25px;
 }
 
