@@ -1,0 +1,51 @@
+.container-title
+{ 
+    background-color: #d6d6d6; 
+    color: rgb(233, 85, 19);
+    width: 100%;
+}
+
+.container-info
+{
+    margin-top: 40px;
+}
+
+.line_input
+{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.tb_info
+{
+    width: 60%;
+}
+
+.tb_info td
+{
+    height: 50px;
+}
+.yellowcolor
+{ 
+    color: rgb(233, 85, 19); 
+    font-size: 30px;
+}
+.items_holder
+{
+    padding-bottom: 25px; 
+}
+.items_holder a{
+    color: black;
+}
+
+#map_container
+{
+    height: 400px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    margin-bottom: 10px;
+}
+.container_store
+{
+    margin-top: 20px;
+}

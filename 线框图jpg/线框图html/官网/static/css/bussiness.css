@@ -1,12 +1,39 @@
 .container-title
-{
-    line-height:  60px;
-    background-color: #d6d6d6;
-    margin-top: 120px;
+{ 
+    background-color: #d6d6d6; 
     color: rgb(233, 85, 19);
+    width: 100%;
 }
 
 .container-info
 {
     margin-top: 40px;
+}
+
+.line_input
+{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.tb_info
+{
+    width: 60%;
+}
+
+.tb_info td
+{
+    height: 50px;
+}
+.yellowcolor
+{ 
+    color: rgb(233, 85, 19); 
+    font-size: 30px;
+}
+.items_holder
+{
+    padding-bottom: 25px; 
+}
+.items_holder a{
+    color: black;
 }

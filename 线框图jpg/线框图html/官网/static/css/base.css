@@ -2,12 +2,12 @@
 /* 菜单设置开始*/
 .menu, .menu-holder{
     min-height: 60px;
-    line-height: 60px;
-    padding-right: 20px; 
+    line-height: 60px; 
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; 
+    margin-bottom: 5px;
 }
 .menu table
 {
@@ -37,6 +37,19 @@
     height: 60px;
     padding:0;
     border-radius: 30px;
+    background-color: rgb(233, 85, 19);
+}
+.menu-unfixed
+{
+    position: static !important;
+}
+.orange
+{
+    color: rgb(233, 85, 19);
+}
+
+.orange-bg
+{
     background-color: rgb(233, 85, 19);
 }
 .menu  .td_mall a{
@@ -72,7 +85,8 @@
 footer{
     min-height: 60px;
     line-height: 60px;
-    padding-right: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
     background-color:#D6D6D6;
 }
 
@@ -100,6 +114,7 @@ footer{
 {
     background-color: rgba(0,0,0,0);
     border:none;
+    z-index: 1000;
 }
 
 .td-bar-point
@@ -145,4 +160,81 @@ footer{
 {
     width: 100px;
     height: 30px;
+}
+.right-sider-bar
+{
+    position: fixed;
+    right: 0;
+    bottom: 40px;
+    right: 20px;
+    z-index: 2;
+} 
+.bar-table td {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bar-table td a, .swiper-slide a {
+    color: white;
+}
+
+.scroll-up, .scroll-down{
+    width: 33px;
+    height: 33px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    margin:5px 0;
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+    box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+    cursor: pointer;
+}
+
+.scroll-up .fa, .scroll-down .fa{
+    color: gray;
+    line-height: 33px;
+    font-size: 20px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+.logo
+{
+    width: 150px;
+    height: 45px;
+}
+ 
+td.td-bar-point
+{ 
+    display: block;
+    width: 70px;
+    text-align: right;
+    margin-top: 5px;
+}
+.second_menu_holder
+{
+    width: 100%;
+    background-color:#d6d6d6;
+}
+
+.linkitems
+{
+    padding: 40px;
+   background-image: url('../img/bk.png');
+     background-repeat:repeat; 
+     background-size:100% 100%;
+     -moz-background-size:100% 100%;
+}
+
+.fa-search
+{
+    color:#d6d6d6;
 }

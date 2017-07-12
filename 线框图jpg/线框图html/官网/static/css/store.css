@@ -2,14 +2,15 @@
 { 
     width: 100%;
     background-color: #3C3D3F;
-}
-
- 
-
-.swiper-slide
+} 
+.top-slide
 {
-     line-height: 650px;
+     height: 400px;
      text-align: center;
+     background-image: url('../img/face.jpg');
+     background-repeat:no-repeat; 
+     background-size:100% 100%;
+     -moz-background-size:100% 100%;
 }
 
 .row-select
@@ -25,9 +26,11 @@
 }
 
 .container-detail
-{
-    background-color: #d6d6d6; 
+{ 
+    background-color: white; 
     padding-top: 40px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 .map
 {
@@ -44,4 +47,109 @@
 
 .online p{
     color: white;
-} 
+}
+
+.top-tips h1{
+    color: white;
+}
+
+.top-tips span{
+    color: white;
+}
+
+.top-tips
+{
+    padding-top: 160px;
+}
+
+#map_container
+{
+    height: 400px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    margin-bottom: 10px;
+}
+
+.body_holder
+{
+    padding-top: 5px;
+    width: 100%;
+    background-color: #d6d6d6;
+}
+
+.store_list
+{
+    margin-top: 40px;
+    color: gray;
+    font-size: 30px;
+}
+
+.container-nopadding
+{
+    padding-left: 0px;
+}
+
+.store_table td {
+    line-height: 60px;
+}
+.store_table
+{
+    width: 100%;
+}
+.store_table td{
+    margin-top: 5px;
+}
+.p_border
+{
+    width: 100%;
+    line-height: 60px;
+    text-align: center; 
+    border-left: 1px solid #d6d6d6;
+
+}
+.firstline
+{
+    border-left: 1px solid #d6d6d6;
+}
+.number
+{
+    text-align: center;
+    height: 30px;
+    width: 26px;
+    line-height: 25px; 
+    color: white;
+    background-image: url('../img/map-icons.png');
+     background-repeat:no-repeat; 
+     background-size:100% 100%;
+     -moz-background-size:100% 100%;
+}
+.td_border
+{
+    text-align: center;
+    border-right: 1px solid #d6d6d6;
+    border-left: 1px solid #d6d6d6;
+}
+td.storename 
+{
+    line-height: 20px;
+}
+
+.circle
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+}
+.pagination
+{
+    width: 100%;
+    text-align: center;
+}
+.pagination-active{
+    background-color:rgb(233,85, 19);
+    color: white;
+}

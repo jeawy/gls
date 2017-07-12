@@ -89,10 +89,17 @@
 .items
 {
     margin-top: 5px;
+    background-color: rgb(177, 177, 178);
 }
 
-.tb_secondmenu .active{
-    border-bottom: 4px solid rgb(233, 85, 19);
+.sub-item
+{
+    background-color: white;
+}
+
+.tb_secondmenu .active a{
+    color: rgb(233, 85, 19); 
+    text-decoration: none;
 }
 
 .menu-hidden
@@ -123,21 +130,31 @@
 
 .titleline
 {
-    line-height: 60px;
+    height: 120px;
     background-color: #d6d6d6;
     font-size: 20px;
+    margin-top:5px;
+}
+
+.titleline a{
+    color: black;
+    font-size: 14px;
 }
 .yellowcolor
-{
-    font-weight: bold;
+{ 
     color: rgb(233, 85, 19);
+    font-weight: bold;
 }
 
 .col-para
 { 
     margin-top:15px; 
-    min-height: 400px;
-    background-color: gray;
+    min-height: 400px; 
+    text-align: left;
+}
+.parameters_png
+{
+    
 }
 .col-right
 {
@@ -146,6 +163,7 @@
 
 .scene_img img {
     width: 100%;
+    margin-top: 5px;
 }
 
 .panel-menu, .fitting-panel-menu
@@ -178,21 +196,28 @@
     color: black;
     padding-top: 60px;
 }
+.white_a
+{
+    color: white;
+}
 .roll-tip
 {
-    position:absolute;
-    bottom: 40px;
-    left: 50%;
-    width: 60px;
-    height: 60px;
+    width: 40px; 
+    height: 40px; 
     border-radius: 30px;
     background-color: white;
     cursor: pointer;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
 }
-
-.roll-tip .fa{ 
-    padding-left: 30%;
-    color:black;
+.roll-tip td, .roll-tip-holder{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.roll-tip .fa{  
+    color:#d6d6d6;
+    margin-top: 5px;
 }
 .roll-tip a{ 
     line-height: 40px;
@@ -204,8 +229,8 @@
     width: 40px;
     height: 40px;
     border-radius: 30px;
-    padding: 5px;
-    background-color: #d6d6d6;
+    padding: 5px 2px 5px 6px;
+    background-color: rgb(177, 177, 178);
     margin: 20px auto;
     cursor: pointer;
 }
@@ -225,4 +250,78 @@
     height: 200px;
     width: 420px;
     padding: 80px 160px;
+}
+
+.subproductimg, .subimg
+{
+    text-align: center;
+}
+
+.items_holder
+{
+     padding-top: 40px;
+}
+.textholder-left
+{
+    position: absolute;
+    top:  30%;
+    left: 10%;
+}
+
+.textholder-right
+{
+    position: absolute;
+    top:  30%;
+    right: 10%;
+}
+
+.title
+{
+    font-size: 40px;
+    color: gray;
+}
+.buyitems
+{
+    color:rgb(233, 85, 19);
+}
+.price{
+    font-size: 35px;
+}
+
+.btn-learnmore
+{
+    background-color: rgb(233,85,19);
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 0 15px ;
+}
+
+.scroll-tip
+{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 40px; 
+}
+
+.scroll-up, .scroll-down{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    margin:5px 0;
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+    box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+    cursor: pointer;
+}
+
+.scroll-up .fa, .scroll-down .fa{
+    color: gray;
+    line-height: 40px;
+    font-size: 20px;
+}
+.container-center
+{
+    text-align: center;
 }

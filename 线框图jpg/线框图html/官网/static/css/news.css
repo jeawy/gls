@@ -33,9 +33,10 @@
 
 .container-title
 {
-    margin-top: 100px;
-    height: 60px; 
+    margin-top: 100px; 
     width: 100%;
+    height: 120px;
+    padding-top: 30px;
     background-color: #d6d6d6;
 }
 
@@ -121,4 +122,51 @@
     line-height: 180px;
     color: white;
     text-align: center;
+}
+
+.p_title
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.col-newsitem table td{
+    width: 33%;
+}
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.19);
+    box-shadow: 0px 1px 3px rgba(0,0,0,.19);
+    margin: 3px;    
+}
+.pagination-active
+{
+    background-color: rgb(233, 85, 19);
+    color: white;
+}
+
+.new_tags
+{
+    font-size: 20px;
+}
+.tag
+{
+    border: 1px solid rgb(233, 85, 19);
+    color:rgb(233, 85, 19); 
+    font-weight: bold;
+}
+
+.col-rss
+{
+    margin-top: 20px;
+}
+.swiper-button-next, .swiper-button-prev
+{
+    top: 33%;
 }

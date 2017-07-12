@@ -90,8 +90,15 @@ h1
 
 .number
 { 
-    font-size: 30px;
+    font-size: 30px; 
+    position: absolute;
+    left: -60px;
+    top: 40px;
     color: #d6d6d6;
+}
+.orange
+{
+    color: rgb(233, 85, 19);
 }
 .active-tip
 {
@@ -101,7 +108,7 @@ h1
 
 .td_line
 {
-    width: 90%; 
+    width: 99%; 
 }
 
 .td_fa
@@ -119,4 +126,13 @@ h1
 .col-active-list table
 {
     width: 100%;
+}
+
+.container-title
+{
+    height: 120px;
+}
+
+.pull-right a, .pull-right .fa{
+    color: gray;
 }

@@ -13,74 +13,107 @@
     <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="../static/css/base.css"  rel="stylesheet">
     <link href="../static/css/footer.css"  rel="stylesheet">
-    <link href="../static/css/store.css"  rel="stylesheet">
-    <link rel="stylesheet" href="../static/plugins/swiper-3.4.1/css/swiper.min.css">
+    <link href="../static/css/store.css"  rel="stylesheet"> 
+
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.3&key=b503cd5be29613c9835846fde59eacee"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+
   </head>
 
   <body>
-    <!-- menu content -->
-    <table class="menu ">
-      <tr>
-      <td>
-          <div>
-            <img src="../static/img/logo.png"/>
-          </div>
-      </td>
-      <td>
-          <div class="pull-right">
-                <table>
-                  <tr> 
-                      <td >
-                        <a href="产品图.html" >Cast</a>
-                        <div class="point"></div>
-                    </td>
-                     <td>
-                        <a href="服务.html" >服务</a>
-                        <div class="point"></div>
+    <!-- menu content --> 
+
+    <div class="menu-holder ">
+      <table class="menu" >
+        <tr>
+        <td>
+            <div>
+              <a href="首页.html">
+              <img class="logo" src="../static/img/logo.png"/>
+              </a>
+            </div>
+        </td>
+        <td>
+            <div class="pull-right">
+                  <table>
+                    <tr>
+                        <td class="a_product" >
+                          <a href="产品图.html" >Cast</a>
+                          <div class="point"></div>
                       </td>
-                      <td class="active">
-                        <a href="体验店.html" >体验店</a>
-                        <div class="point"></div>
-                    </td>
                       <td>
-                        <a href="" >社区</a>
-                        <div class="point"></div>
-                    </td> 
-                      <td class="td_mall">
-                        <a href="企业图.html" >商城</a>
+                          <a href="服务.html" >服务</a>
+                          <div class="point"></div>
+                        </td>
+                        <td class="active">
+                          <a href="" class="a_store">体验店</a>
+                          <div class="point"></div>
                       </td>
-
-                      <td class="small-padding">
-                        <li class="fa fa-search"></li>
-                      </td>
-
-                      <td class="small-padding">
-                        <a href="登录页面.html">
-                        <li class="fa fa-user"></li>
-                        </a>
+                        <td>
+                          <a href="" >社区</a>
+                          <div class="point"></div>
                       </td> 
-                      <td class="small-padding">
-                        <a href="" >EN</a>
-                      </td>
-                  </tr>
-                </table>
-                <div class="line">
-                </div>
-          </div><!-- 左侧菜单结束-->
-      </td>
-      </tr>
-    </table>
-    <!-- /menu content -->
+                        <td >
+                          <a href="企业图.html" >商城</a>
+                          <div class="point"></div>
+                        </td>
 
-    <div class="container content">
-        <!-- Swiper -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="">体验店门图</a> </div> 
-            </div> 
+                        <td class="small-padding">
+                          <li class="fa fa-search"></li>
+                        </td>
+
+                        <td class="small-padding">
+                          
+                          <a href="" >中文|EN</a>
+                        </td> 
+                      
+                    </tr>
+                  </table>
+                  <div class="line">
+                  </div>
+                 
+            </div><!-- 左侧菜单结束-->
+        </td>
+        </tr>
+      </table>
+    
+       <div class="panel panel-default sec_menu store_sec_menu panel-body-transparent">
+                    <div class="panel-body "> 
+                      <div>
+                        <a class="a_img" href="成为授权经销商.html"> 
+                          <img class="store_img_hove"  src="../static/img/store.png" />
+                          </a>
+                        <a class="a_img" href="体验店.html" > 
+                          <img class="bussiness_img_hove" src="../static/img/bussiness.png" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+      <div class="panel panel-default sec_menu product_sec_menu panel-body-transparent">
+        <div class="panel-body "> 
+          <div>
+            <a class="a_img" href="产品图.html"> 
+              <img class="cast_img_hove" src="../static/img/cast.png" />
+              </a>
+            <a class="a_img" href="产品图.html" > 
+              <img  class="castdock_img_hove" src="../static/img/castdock.png" />
+            </a>
+          </div>
         </div>
-        <!-- end swiper -->
-    </div> <!-- end content -->
+      </div> 
+
+    </div>
+    <!-- /menu content -->
+ 
+    <div class="top-slide"> 
+      <div class="top-tips">
+        <h1 >一数线下专区</h1>
+        <span>一数线下体验店</span>
+      </div>
+    </div>  
+   
     <div class="container  ">
       <div class="row  row-select">
         <div class="col-sm-12 col-md-3 col-lg-3">
@@ -104,72 +137,160 @@
       </div>
     </div> <!-- 选择框div结束 -->
      　　　
-　  
+　  <div class="body_holder" >
     <div class="container  container-detail ">
-      <div class="row  "> 
-        <div class="col-sm-12 col-md-12 col-lg-12"> 
-              <div class="col-sm-12 col-md-8 col-lg-8"> 
-                    <img src="../static/img/map.png" class="map" />
-              </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
-                   <div class="firstline">
-                     <h1>标准服务</h1>
-                     <p>这里是店铺信息</p> 
-                   </div>
-                   <div class="online">
-                     <p class="p_center">在线咨询</p> 
-                     <p class="p_center">电话：8888888</p> 
-                   </div>
-              </div>
-        </div>
-         <div class="col-sm-12 col-md-12 col-lg-12"> 
-                   <h1>标准服务</h1>
+        <div class="row  "> 
+            <div class="col-sm-12 col-md-12 col-lg-12"> 
+                  <div class="col-sm-12 col-md-8 col-lg-8" id="map_container"> 
+                        
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-4">
+                      <div class="firstline">
+                         <img src="../static/img/service_item.png"  />
+                      </div>
+                      <!--
+                      <div class="online">
+                        <p class="p_center">在线咨询</p> 
+                        <p class="p_center">电话：8888888</p> 
+                      </div>
+                      -->
+                  </div>
+            </div><!-- end 12 -->
+        </div><!-- end row -->
+      </div><!-- end container -->
+      <div class="container container-nopadding">
+      <p class="store_list">北京市-体验店(20)</p>
+      </div>
+      <div class="container  container-detail ">
+        <div class="row  "> 
+         <div class="col-sm-12 col-md-12 col-lg-12">  
                    <div class="panel panel-default">
                    <div class="panel-body">
-                        <table class="table">
+                        <table class="store_table">
+                           
                           <tr>
-                            <th>序号</th>
-                            <th>地址</th>
-                            <th>电话</th>
+                            <td>
+                              <div class="number">1</div>
+                            </td>
+                             <td class="storename">
+                              <div >
+                                北京王府井店 
+                              </div>
+                              <div>
+                                <a href="体验店门店详情.html" class="orange map_locate" target="[116.41044,39.915873]">查看详情</a>
+                              </div>
+                            </td>
+                              <td> <p  class="p_border"> 旗舰店</p></td>
+                              <td  >
+                                <p  class="p_border">北京王府井淘汇新天</p>
+                              </td>
+                              <td  ><p  class="p_border">4006171363</p></td>
                           </tr>
-                          <tr>
-                            <td>1</td>
-                              <td>北京市朝阳区三里屯路19号院三里屯</td>
-                              <td>4006171363</td>
+                             <tr>
+                            <td>
+                              <div class="number">2</div>
+                            </td>
+                             <td class="storename">
+                              <div >
+                                马甸店 
+                              </div>
+                              <div>
+                                <a href="体验店门店详情.html" class="orange map_locate">查看详情</a>
+                              </div>
+                            </td>
+                              <td> <p  class="p_border"> 旗舰店</p></td>
+                              <td  >
+                                <p  class="p_border">北京市朝阳区三里屯路19号院三里屯</p>
+                              </td>
+                              <td  ><p  class="p_border">4006171363</p></td>
                           </tr>
-                            <tr>
-                            <td>2</td>
-                              <td>北京市朝阳区三里屯路19号院三里屯</td>
-                              <td>4006171363</td>
+                           <tr>
+                            <td>
+                              <div class="number">3</div>
+                            </td>
+                             <td class="storename">
+                              <div >
+                                万达店 
+                              </div>
+                              <div>
+                                <a href="体验店门店详情.html" class="orange map_locate">查看详情</a>
+                              </div>
+                            </td>
+                              <td> <p  class="p_border"> 旗舰店</p></td>
+                              <td  >
+                                <p  class="p_border">北京市朝阳区三里屯路19号院三里屯</p>
+                              </td>
+                              <td  ><p  class="p_border">4006171363</p></td>
                           </tr>
-                            <tr>
-                            <td>3</td>
-                              <td>北京市朝阳区三里屯路19号院三里屯</td>
-                              <td>4006171363</td>
-                          </tr>
-                            <tr>
-                            <td>4</td>
-                              <td>北京市朝阳区三里屯路19号院三里屯</td>
-                              <td>4006171363</td>
-                          </tr>
-                            <tr>
-                            <td>5</td>
-                              <td>北京市朝阳区三里屯路19号院三里屯</td>
-                              <td>4006171363</td>
-                          </tr>
-                            <tr>
-                            <td>6</td>
-                              <td>北京市朝阳区三里屯路19号院三里屯</td>
-                              <td>4006171363</td>
+                           <tr>
+                            <td>
+                              <div class="number">4</div>
+                            </td>
+                             <td class="storename">
+                              <div >
+                                北京王府井店 
+                              </div>
+                              <div>
+                                <a href="体验店门店详情.html" class="orange map_locate">查看详情</a>
+                              </div>
+                            </td>
+                              <td> <p  class="p_border"> 旗舰店</p></td>
+                              <td  >
+                                <p  class="p_border">北京市朝阳区三里屯路19号院三里屯</p>
+                              </td>
+                              <td  ><p  class="p_border">4006171363</p></td>
                           </tr>
                         </table>
                    </div>
-                </div>
-        </div>
+                </div><!-- end panel -->
+         </div><!-- end 12 -->
+        </div><!-- end row -->
+      </div><!-- end container-detail -->
+
+      <div class="container container-nopadding">
+       <table class="pagination">
+         <tr>
+           <td>
+             <div class="circle orange  " > 
+                 <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+             </div>
+           </td>
+          
+           <td>
+             <div class="circle orange orange-bg pagination-active" > 
+                 1
+             </div>
+           </td>
+        
+            <td>
+             <div class="circle orange  " > 
+                 2
+             </div>
+           </td>
+            <td>
+             <div class="circle orange  " > 
+                 3
+             </div>
+           </td>
+        
+            <td>
+             <div class="circle orange  " > 
+                 4
+             </div>
+           </td>
+           <td>
+             <div class="circle orange" > 
+                 <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+             </div>
+           </td>
+          </tr>
+       </table>
       </div>
-    </div>  
+    </div>
+         
+　  </div><!--body_holder-->
     <!-- start link footer -->
-    <div class="container linkitems"> 
+    <div class="linkitems"> 
           <table>
             <tr >
               <td class="first">
@@ -263,7 +384,7 @@
             </tr>
              <tr >
               <td>
-                <a href="">大事记</a>
+                <a href="大事记.html">大事记</a>
               </td>
               <td>
                 <a href="炫酷视频.html">炫酷视频</a>
@@ -301,7 +422,7 @@
             </tr>
              <tr >
               <td>
-                <a href="加入我们.html">联系我们</a>
+                <a href="联系我们.html">联系我们</a>
               </td>
               <td> 
               </td>
@@ -331,12 +452,29 @@
     <!-- jQuery -->
     <script src="../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script> 
-    <script src="../static/plugins/swiper-3.4.1/js/swiper.min.js"></script>
-    <script src="../static/js/product.js"></script>
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>  
+    <script src="../static/js/base.js"></script> 
      <!-- Initialize Swiper -->
     <script>
-   
+      var map = new AMap.Map('map_container', {
+        resizeEnable: true,
+        zoom:11,
+        center: [116.397428, 39.90923]
+    });
+    /*
+    $(document).ready(function(){
+       //
+       $('.map_locate').click(function(e){
+          e.preventDefault();
+          var target = $(this).attr('target');
+          var map = new AMap.Map('map_container', {
+            resizeEnable: true,
+            zoom:11,
+            center: [116.41044,39.915873],
+        });
+       });
+    });
+    */
     </script>
   </body>
 </html>

@@ -5,7 +5,7 @@ $(document).ready(function(){
     var width = window.innerWidth;
     $('.wechat_div').hide();
     $('.product_sec_menu').hide();
-    $('.swiper-container').height(height);
+    //$('.swiper-container').height(height);
     //$('.swiper-slide').css({'margin':height/2+'px ' + (width/2-20) + 'px'});
     $('.wechat').hover(function(){
         $('.wechat_div').show();
@@ -57,9 +57,8 @@ $(document).ready(function(){
             }
             $('.product_sec_menu').show();
         }
-    });
-
-
+    }); 
+   
     //
    
          $('.bussiness_img_hove').hover(
@@ -123,11 +122,3 @@ $(document).ready(function(){
     
 })
 
- var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        // Enable debugger
-        debugger: true
-    });
