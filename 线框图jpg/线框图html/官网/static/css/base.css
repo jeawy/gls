@@ -17,8 +17,12 @@
     
 }
 .menu a{
-    font-size: 16px;
+    font-size: 14px;
     color: #D6D6D6;
+}
+
+.menu a:hover, .a_img:hover{
+    text-decoration: none;
 }
 
 .menu td{
@@ -188,6 +192,11 @@ footer{
     -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.4);
     box-shadow: 0px 1px 3px rgba(0,0,0,.4);
     cursor: pointer;
+}
+.store_sec_menu, .sec_menu 
+{
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .scroll-up .fa, .scroll-down .fa{

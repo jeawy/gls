@@ -5,7 +5,10 @@
 
 table .first{
     font-weight: bold;
-    color:#d6d6d6;
+    color:#d6d6d6; 
+}
+
+table .first a{ 
     font-size: 15px;
 }
 
