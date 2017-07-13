@@ -88,7 +88,7 @@
 }
 .col-left,  .col-right
 {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .big-img-holder
 {
@@ -129,7 +129,10 @@
     font-size: 16px;
     font-weight: bold;
 }
-
+.col-newsitem
+{
+    margin-top: 40px;
+}
 .col-newsitem table td{
     width: 33%;
 }
@@ -169,4 +172,8 @@
 .swiper-button-next, .swiper-button-prev
 {
     top: 33%;
+}
+.col-sec, .col-first
+{
+    margin-top: 40px;
 }

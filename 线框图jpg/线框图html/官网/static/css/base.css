@@ -247,3 +247,9 @@ td.td-bar-point
 {
     color:#d6d6d6;
 }
+
+.container-center
+{
+    text-align: center;
+    margin: 0 auto;
+}

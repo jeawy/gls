@@ -136,3 +136,8 @@ h1
 .pull-right a, .pull-right .fa{
     color: gray;
 }
+
+.img_title
+{
+    font-size: 16px;
+}
