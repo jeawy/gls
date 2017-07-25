@@ -1,0 +1,92 @@
+
+.title{
+	margin-bottom:5px;
+}
+
+dl{
+	margin-bottom:5px;
+}
+
+.div_posted{
+	background-color:#FF9556;
+	margin-top:5px;
+	color:#fff;
+}
+
+.sign{
+	border:#FF9556 solid 1px;
+	color:#FF9556;
+}
+.number
+{
+    font-size: 20px;
+    color:#FF9556;
+}
+
+.header{/*菜单*/
+	width:1200px;
+	margin:0px auto;
+	padding:0px;
+} 
+.user_con
+{
+    padding: 30px;
+}
+.div_center table
+{
+
+    margin: 0 auto;
+}
+.bgcolor
+{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.right{
+    border: 1px solid #d6d6d6;
+}
+
+.right_holder
+{
+    padding: 40px;
+}
+.clearfix_border
+{
+    padding-bottom: 5px;
+    border-bottom:  2px solid #d6d6d6;
+}
+
+.user_loginbar
+{
+	    background-image: url(../img/jwtmp/replay.png);
+		height: 280px;
+}
+.msg
+{
+	line-height: 240px;
+}
+.top
+{
+	width: 100%;
+}
+.pull-right
+{
+	color: gray;
+}
+.date
+{
+	color: gray;
+	font-size: 14px;
+}
+.range
+{
+	padding-left: 10px;
+	font-size: 14px;
+}
+.pagination_holder
+{
+	text-align: center;
+	margin: 0 auto;
+}
