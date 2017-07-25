@@ -36,3 +36,23 @@ dl{
 {
 	height: 26px;
 }
+.cast2_sign{
+width:100%;
+color:#999;
+background-color:#FFF;
+height:90px;
+margin-top:10px;
+margin-bottom:10px;
+font-size:12px;
+line-height: 90px; 
+border:rgb(254,112,60) solid 2px;
+}
+.sign_img{
+	float: left;
+	margin-left:42px;
+}
+.sign_img img{
+	width:60px;
+	height:60px;
+	border-radius:30px;
+}

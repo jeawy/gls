@@ -1,87 +1,83 @@
 body{
-	background-color:#CCCCCC;
+	background-color:rgb(239,239,239);/*背景色*/
 }
 ul{
 	list-style:none;  					/*列表去项目符号*/
 } 
-
-a{
+a:hover{
 	text-decoration:none;				/*链接去下划线*/
-}                        
-
-
-
+}  
+a{
+	color: inherit
+}
 .wrap{/*包裹层*/
 	width:1200px;
-	margin:63px auto 20px;
+	margin:60px auto 10px;
 	overflow:hidden;
 }
 
 .main{
-	margin-top:20px;
+	margin-top:10px;
 	width:100%;
 }
 
 .left{
-	width:820px;
+	width:900px;
 	background-color:#fff;
 	float:left;
+	border: 1px solid rgb(212,212,213);
+	padding:20px;
 }
 
 .hot{
 	padding-bottom:20px;
 	border-bottom:#CCCCCC solid 1px;
-	margin:20px auto 20px;
+	margin:20px 0px;
 	overflow:hidden;
 	
 }
 
 .hot_img{
 	float:left;
-	margin:0px 20px;
+	margin-right:20px;
 }
 
 .hot_img img{
-	width:80px;
-	height:80px;
-	border-radius:40px;
+	width:60px;
+	height:60px;
+	border-radius:30px;
 }
 
 .hot_con{
 	float:left;	
-	width:650px;
+width:777px;
+color:#888
 }
 
 
-.more{
+.right{					
 	
-	text-align:center;
-	margin-bottom:20px;
-}
-
-.right{						/*右侧栏开始*/
+	margin-left:20px;
 	
-	margin-left:30px;
-	
-	width:350px;
+	width:280px;
 	float:left;
 }
 
 .footer{
-	background-color:#303030;
+	background-color:rgb(144,145,146);
 	clear:both;
 	text-align:center;
 	height:115px;
-	padding-top:15px;
+	padding-top:30px;
 }
 
 .footer li{
 	display:inline;
 }
 .footer_nav li{
-font-size:15px;
-margin:20px 20px;
-color:#fff;
+	font-size:15px;
+	margin:20px 33px;
+	color:#fff;
 
 }
 
@@ -93,43 +89,34 @@ color:#fff;
 	font-size:12px;
 }
  
-.line{
-	border-left:#666666 solid 1px;
-	border-right:#666 solid 1px;
+	.line{
+		border-left:#fff solid 1px;
+		border-right:#fff solid 1px;
+		padding:0px 5px;
+		}
+.tb_line{
+	border-left:rgb(158,158,159) solid 1px;
+	border-right:rgb(158,158,159) solid 1px;
 	padding:0px 2px;
-	}
-
+}
 .logo{
-height:auto;
-width:100px;
+	height:auto;
+	width:100px;
+	margin-top:6px;
 }
 
-.glyphicon-eye-open{
-letter-spacing:5px;
 
-}
-
-.glyphicon-comment{
-	margin-left:10px;
-	letter-spacing:5px;
-	}
 
 .posted{
-margin-left:70px;
+	margin-left:70px;
 }	
 
 .panel-default{
-margin:5px auto;
+	margin:5px auto;
 }
 
-.add{
-width:100%;
-height:100px;
-background-color:#666666;
-border-radius:4px;
-margin:5px auto;
-text-align:center;
-color:#fff;
+.tap{
+	width:100%;
 }
 
 .p2_title{
@@ -140,7 +127,7 @@ color:#fff;
 
 .title_img{
 	float:left;
-	margin:0px 20px;
+	margin-right:20px;
 }
 
 .title_img img{
@@ -149,79 +136,44 @@ color:#fff;
 	border-radius:10px;
 }
 
-.left_p2{
-	width:820px;
+
+	
+.left_warp{
+	width:900px;
 	float:left;
+	margin: 0px;
+	padding:0px;
 }
 
-.hot_p2{
-overflow:hidden;
-border-bottom:#CCCCCC solid 1px;
 
-padding:10px 10px;
-}
-.hot_con_p2{
-float:left;
-}
-
-.warp_top{
-background-color:#FFFFFF;
-}
-.warp_bottom{
-background-color:#FFFFFF;
-}
-
-.wrap_p2{/*包裹层*/
-	width:1200px;
-	margin:63px auto 20px;
+.left_title{
 	overflow:hidden;
+	border-bottom:#CCCCCC solid 1px;
+	padding-bottom: 20px;
 }
-.main_p2{
-	margin-top:0px;
-	width:100%;
-}
-.comment li{
-display:inline-block;
-}
-.comment{
-text-align:right;
-margin-top:20px;
-margin-bottom:0px;
-width:780px;
-}
+
 .reply{
-margin-left:5px;
-border-left:#666666 solid 1px;
-padding-left:5px;
+	margin-left:5px;
+	border-left:#CCCCCC solid 1px;
+	padding-left:5px;
 }
 .user_con{
-background-color:#fff;
-width:100%;
-margin-top:20px;
+	background-color:#fff;
+	width:100%;
+	margin-top:20px;
+
 }
-.user_loginbar{
-background-image:url(../img/a2.png);
-background-size: 100% 100%;
-width:100%;
-margin-top:20px;
-height:180px;
-}
+
 .msg{
-line-height:180px;
+	line-height:180px;
 }
-.my_btn{
-width:100%;
-margin-top:0px;
-background-color:#fff;
-padding-right:30px;
-text-align:right;
-}
+
 .user_name{
-width:100%;
+	width:100%;
 }
 .user_img{
-text-align:center;
-width:100%;
+	text-align:center;
+	width:100%;
 }
 .user_img img{
 	width:80px;
@@ -229,41 +181,276 @@ width:100%;
 	border-radius:40px;
 }
 .my_p{
-margin-top:20px;
+	margin-top:20px;
 }
 .bgcolor{
-width:100%;
-background-color:#fff;
-padding-top:10px;
-padding-bottom:10px;
+	width:100%;
+	background-color:#fff;
+	padding-top:10px;
+	padding-bottom:10px;
 }
 .div_width{
-width:100px;
+	width:100px;
 }
 .my_table td{
-width:60px;
-text-align:center;
+	width:60px;
+	text-align:center;
 }
 .my_progress{
-margin-top:10px;
+	margin-top:10px;
 }
 .fans_table td{
-width:80px;
-text-align:center;}
+	width:80px;
+	text-align:center;}
 .ruel_cl{
-color:#FF6600;
+	color:rgb(254,112,60);
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, 
-.navbar-inverse .navbar-nav>.active>a:hover 
-{
+.navbar-inverse .navbar-nav>.active>a:hover {
 	color: #fff;
-    background-color:#FF6600;
+    background-color:rgb(254,112,60);
 }
 
-.code
-{
+.code{
 	position: fixed;
 	bottom: 140px;
 	left: 50%;
+}
+
+.left_subnav{
+	margin: 0px;
+}
+.left_subnav li{
+	display: inline;
+}
+.font_color{
+	color:rgb(254,112,60);
+}
+.user_nub{
+	color:#999999;
+	}
+	
+.box_posted{
+width:100%;
+color:#FFF;
+background-color:rgb(254,112,60);
+text-align:center;
+height:90px;
+margin-top:10px;
+margin-bottom:10px;
+font-size:18px;
+line-height: 90px; 
+letter-spacing:6px; 
+}	
+.box_sign{
+width:100%;
+height:55px;
+margin-top:10px;
+margin-bottom:10px;
+}
+.box_sign_left{
+width:50%;
+background-color:rgb(254,112,60);
+font-size:18px;
+line-height: 55px;
+text-align:center;
+color:#FFF;
+float:left;
+height:55px;
+}
+.box_sign_right{
+float:right;
+color:rgb(147,148,148);
+width:50%;
+background-color:#fff;
+height:55px;
+border:rgb(254,112,60) solid 2px;
+}
+.login_holder
+{
+	line-height: 50px;
+}
+
+.login_holder a
+{
+	color: #d6d6d6;
+}
+
+.login_holder a:hover
+{
+	color: white;
+	text-decoration: none;
+}
+.navbar-right{
+	margin-right: 0px;
+}
+.footer_bottom a
+{
+	color:white;
+}
+.navbar-inverse .navbar-nav>li>a
+ {
+	color: white;
+}
+
+.orange
+{
+	color:rgb(254,112,60);
+}
+.orange-bg
+{
+	background-color: rgb(254,112,60);
+}
+.nav_btn{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+	margin-right:8px;
+	}
+.nav_btn button{
+	color: #333;
+    background-color: #fff;
+	padding: 6px 10px 4px;
+    font-size: 14px;
+    line-height: 1.2;
+	border: 1px solid #CCC;
+}
+.all_caret{
+	margin-left:20px;
+	}
+.search{
+	    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+	}	
+.glyphicon {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.navbar-inverse {
+    background-color: rgb(62,58,57);
+}
+.sign_ul{
+	padding:0px 25px;
+height:53px;
+text-align:left;
+font-size:12px;
+}
+.plane{
+	border-bottom:#CCCCCC solid 1px;
+	}
+.sign_ul li{
+	margin:6px 0px 4px;
+	}
+.panel-heading{
+	border-bottom: rgb(254,112,60) solid 1px;
+	}
+i{
+	margin-right:5px; 
+}
+.recommend{
+	padding: 10px 10px;
+	margin: 0px 0px 10px;
+	border: rgb(225,225,226) solid 1px;
+	background-color: #fff;
+}
+.recommend_head{
+	padding: 10px 15px;
+	margin: 0px;
+	border-bottom: rgb(254,112,60) solid 1px;
+}
+.recommend_body{
+	padding: 15px 15px 0px;
+	margin: 0px;
+}
+.recommend_body ul{
+	padding-left:0px;
+}
+.recommend_body li{
+	margin-bottom: 14px;
+}
+.black_round{
+	margin:0px 7px ;
+	height: 16px;
+	padding: 0px;
+	border: 2px solid #333;
+	border-radius: 50%;
+	display: inline-block;
+	width: 16px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 14px;
+}
+.orange_round{
+	margin:0px 7px ;
+	height: 16px;
+	padding: 0px;
+	border: 2px solid rgb(254,112,60);
+	color:rgb(254,112,60);
+	border-radius: 50%;
+	display: inline-block;
+	width: 16px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 14px;
+}
+.my_fa{
+	margin-left: 15px;
+}
+.fa-commenting,.fa-eye,.fa-share-alt,.fa-heart{
+	color:#ccc;
+}
+.navbar {
+    border: 1px;
+}
+
+
+.user_photo{
+	width: 60px;
+	height: 60px;
+	border-radius:50%;
+}
+.my_btn{
+	background-color: rgb(254,112,60); 
+	border-color:  rgb(254,112,60);
+	border: 0px;
+	color: #fff;
+	text-align: center;
+	border-radius: .2em;
+	width: 60px;
+	padding: 1px 6px;
+}
+.right_div{
+	margin: 10px auto;
+}
+.smalle_photo{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.right_div_bor{
+	margin: 20px auto;
+	border-bottom: rgb(225,225,226) solid 1px;
+	padding-bottom: 20px;
+}
+.my_progress{
+	margin: 10px auto 0px;
+}
+.moderator span{
+margin-left:5px;
 }
