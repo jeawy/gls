@@ -19,8 +19,7 @@
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-    font-size: 40px;
-    margin-top: 200px;
+    font-size: 40px; 
 }
 
 .white_span{
@@ -324,4 +323,26 @@
 .container-center
 {
     text-align: center;
+}
+
+.img360_holder
+{
+    background-color: #000201;
+    text-align: center;
+}
+
+.img360_holder>div
+{ 
+    margin: 0 10% 0 14%;
+}
+
+.img360{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.p_title_2
+{
+    font-size: 24px;
 }

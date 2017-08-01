@@ -14,7 +14,6 @@
     <link href="../static/css/base.css"  rel="stylesheet">
     <link href="../static/css/footer.css"  rel="stylesheet">
     <link href="../static/css/product.css"  rel="stylesheet">
-    <link rel="stylesheet" href="../static/plugins/swiper-3.4.1/css/swiper.css">
   </head>
 
   <body>
@@ -101,23 +100,14 @@
     </div>
     <!-- /menu content -->
 
-    <div class="container content">
-        <!-- Swiper -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"> 
-                  <div class="sider1"> 
-                    <a href="">360旋转</a>
-                    <p class="p_title" >
-                      <span class="white_span">欢迎"触摸"</span>
-                      <span class="yellow_span">下一个世界！</span>
-                    </p> 
-                  </div>
-                 </div> 
-            </div> 
-        </div>
-        <!-- end swiper -->
-    </div> <!-- end content -->
+    <div class="img360_holder"> 
+      <img src="../static/img/360pics/RubberBelt 0421.1.png" id="img360" class="img360"/>
+      <p class="p_title" >
+        <span class="white_span">欢迎"触摸"</span>
+        <span class="yellow_span">下一个世界！</span>
+      </p> 
+       <p class="p_title_2" > Cast II </p>
+    </div>
     <div class="container container-second-menu ">
       <div class="row second-menu ">
         <div class="col-sm-12 col-md-12 col-lg-12">
@@ -648,13 +638,22 @@
     <!-- jQuery -->
     <script src="../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script> 
-    <script src="../static/plugins/swiper-3.4.1/js/swiper.min.js"></script>
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>  
     <script src="../static/js/base.js"></script>
     <script src="../static/js/product.js"></script>
+    <script src="../static/plugins/jquery.threesixty.js"></script>
      <!-- Initialize Swiper -->
     <script>
-   
+      $(document).ready(function(){
+        var height = $(window).height();
+        $('.img360_holder').height(height);
+      });
+      var images = [];
+      for(var i = 1; i < 150; i+=3)
+      {
+          images.push('../static/img/360pics/RubberBelt 0421.'+i+'.png');
+      }
+      $("#img360").threesixty({images:images, method:'click', 'cycle':3, direction:"backward"});
     </script>
   </body>
 </html>
