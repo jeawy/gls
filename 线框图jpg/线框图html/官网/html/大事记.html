@@ -15,6 +15,8 @@
     <link href="../static/css/footer.css"  rel="stylesheet">
     <link href="../static/css/service.css"  rel="stylesheet"> 
     <link rel="stylesheet" href="../static/plugins/swiper-3.4.1/css/swiper.css">
+    
+    <link href="../static/css/memorabilia.css"  rel="stylesheet"> 
   </head>
 
   <body>
@@ -123,10 +125,55 @@
       </div> 
     </div>
     <div class="container  ">
-      <div class="row  row-select">
-      
+      <div class="row  row-select row-not">
         <div class="col-sm-12 col-md-12 col-lg-12">
-          <img src="../static/img/event.png" />
+          <div class="years h3">2017</div>  
+          </div>
+          
+        
+        <div class="col-sm-12 col-md-12 col-lg-12 col-note">
+          <div class="month"><span>12月</span><div class="round"></div>  
+          </div>
+          <ul class="note-list">
+            <li><time>12月12日</time>小米活动...</li>
+            <li><time>12月12日</time>小米活动...</li>
+            <li><time>12月12日</time>小米活动...</li>
+            <li><time>12月12日</time>小米活动...</li>
+          </ul>
+          
+        </div> 
+         <div class="col-sm-12 col-md-12 col-lg-12 col-note">
+          <div class="month"><span>12月</span><div class="round"></div>  
+          </div>
+          <ul class="note-list">
+            <li><time>12月12日</time>小米活动...</li>
+            <li><time>12月12日</time>小米活动...</li>
+            <li><time>12月12日</time>小米活动...</li>
+            <li><time>12月12日</time>小米活动...</li>
+          </ul>
+          
+        </div> 
+         <div class="col-sm-12 col-md-12 col-lg-12 col-note">
+          <div class="month"><span>12月</span><div class="round"></div>  
+          </div>
+          <ul class="note-list">
+            <li><time>12月12日</time>小米活动...</li>
+            <li><time>12月12日</time>小米活动...</li>
+            <li><time>12月12日</time>小米活动...</li>
+            <li><time>12月12日</time>小米活动...</li>
+          </ul>
+          
+        </div> 
+         <div class="col-sm-12 col-md-12 col-lg-12 col-note">
+          <div class="month"><span>12月</span><div class="round"></div>  
+          </div>
+          <ul class="note-list">
+            <li><time>12月12日</time>小米活动...</li>
+            <li><time>12月12日</time>小米活动...</li>
+            <li><time>12月12日</time>小米活动...</li>
+            <li><time>12月12日</time>小米活动...</li>
+          </ul>
+          
         </div> 
       </div>
     </div>  
@@ -300,8 +347,16 @@
      <!-- Initialize Swiper -->
      <script src="../static/js/base.js"></script>   
      <script src="../static/js/menu.js"></script> 
+      <!-- mouseover event -->
     <script>
-   
+          $(document).ready(function(){
+            $('.note-list').mouseover( function(){ 
+               $(this).siblings().find('div').css({'background-color':'rgb(233, 85, 19)'}); 
+                });
+             $('.note-list').mouseout( function(){ 
+               $(this).siblings().find('div').css({'background-color':'#ccc'}); 
+                });
+          });
     </script>
   </body>
 </html>

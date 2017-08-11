@@ -1,0 +1,40 @@
+.col-note{
+    border-left: 1px solid #999;
+   
+}
+.col-note ul{
+    list-style:none;   
+    padding-left:90px;
+    text-align: left;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+.col-note li{
+    margin-top: 5px;
+}
+.round{
+    display: inline-block;
+    width: 10px; 
+    height: 10px;
+    border-radius:50%;
+    background-color: #999;
+    
+}
+.month  span{
+    padding-right:10px;
+    color: #999;
+}
+.month{
+
+    position: absolute;
+    left: -44px;
+    top: 5px;
+}
+.row-not{
+    padding-left: 20%;
+    padding-top: 20px;
+}
+.years{
+    position: relative;
+    left:-505px;
+}
