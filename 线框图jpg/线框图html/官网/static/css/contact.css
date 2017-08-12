@@ -1,0 +1,33 @@
+.col-style{
+    text-align: left;
+    margin-top: 30px;
+    font-size:15px;
+    line-height: 2.5;
+    letter-spacing:1px;
+}
+li{
+    list-style: none;
+}
+.col-style ul{
+  padding-left: 20px;
+}
+.ul-title{
+    position: relative;
+    left: -20px;
+    font-weight: 600;
+}
+.main-title{
+    font-weight: 600;
+    font-size: 17px
+}
+.map-div{
+    width:600px;
+    height:400px;
+    border:#ccc solid 1px;
+    font-size:12px;
+   
+}
+.map-wrap{
+    padding-left:40%;
+    padding-top: 30px;
+}

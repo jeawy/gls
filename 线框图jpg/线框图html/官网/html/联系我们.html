@@ -15,11 +15,12 @@
     <link href="../static/css/footer.css"  rel="stylesheet">
     <link href="../static/css/service.css"  rel="stylesheet"> 
     <link rel="stylesheet" href="../static/plugins/swiper-3.4.1/css/swiper.css">
+    <link href="../static/css/contact.css"  rel="stylesheet">
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=28176ab538f60a16a72f6d7b4d261efe"></script>
   </head>
 
   <body>
-    <!-- menu content --> 
-
+    <!-- menu content -->  
     <div class="menu-holder ">
       <table class="menu" >
         <tr>
@@ -129,8 +130,27 @@
     <div class="container  ">
       <div class="row  row-select">
       
-        <div class="col-sm-12 col-md-12 col-lg-12">
-          <img src="../static/img/contact.png" />
+        <div class="col-sm-12 col-md-12 col-lg-12 col-style clearfix">
+          <div class="main-title">联系方式</div>
+          <p>公司地址：北京市东城区北三环东路36号环球贸易中心E座15层1506（100013）
+          <div class="pull-left">
+              <ul>
+                <li class="ul-title">对外联系：</li>
+                <li>媒体合作：&nbsp;media@a-su.com.cn</li>
+                <li>商务合作：&nbsp;bd@a-su.com.cn</li>
+                <li>产品建议：&nbsp;idea@a-su.com.cn</li>
+                <li>联系电话：&nbsp;+8610&nbsp;80456328</li>
+              </ul>
+              <ul>
+                <li class="ul-title">客户服务：</li>
+                <li>客户邮箱：&nbsp;service@a-su.com.cn</li>
+                <li>客服热线：&nbsp;400-608-0106</li>
+                <li>服务时间：&nbsp;周一至周五&nbsp;9:00~18:00</li>
+              </ul>
+          </div>
+         <div class="map-wrap"> <!--百度地图容器-->
+    <div class="map-div" id="map"></div>
+   </div>
         </div> 
       </div>
     </div>  
@@ -305,8 +325,72 @@
      <!-- Initialize Swiper -->
      <script src="../static/js/base.js"></script>  
      <script src="../static/js/menu.js"></script>  
-    <script>
-   
-    </script>
+   <script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(116.417441,39.973329),15);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:"一数科技",title:"一数科技",imageOffset: {width:-46,height:-21},position:{lat:39.972925,lng:116.416875}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+      var labels = [
+      ];
+      for(var index = 0; index < labels.length; index++){
+        var opt = { position: new BMap.Point(labels[index].position.lng,labels[index].position.lat )};
+        var label = new BMap.Label(labels[index].content,opt);
+        map.addOverlay(label);
+      };
+      var plOpts = [
+      ];
+      var plPath = [
+      ];
+      for(var index = 0; index < plOpts.length; index++){
+        var polyline = new BMap.Polyline(plPath[index],plOpts[index]);
+        map.addOverlay(polyline);
+      }
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_RIGHT,type:1});
+      map.addControl(navControl);
+    }
+    var map;
+      initMap();
+  </script>
   </body>
 </html>
