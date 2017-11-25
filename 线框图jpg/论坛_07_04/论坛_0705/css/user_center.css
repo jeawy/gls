@@ -1,0 +1,186 @@
+/* 
+ *菜单-----已登录板块
+ */
+ .logged_in,.msg_reminder{
+     padding: 10px 15px;
+     line-height: 20px;
+ }
+ .logged_in{
+     text-align: center;
+     cursor: pointer;
+ }
+ #user_login_nav{
+     display: none; 
+     background-color: rgb(62,58,57);
+     position: absolute;
+     bottom: -90px;
+     width: 130%;
+     transform: translateX(-40%);
+     padding: 10px 0;
+ }
+ #user_login_nav ul{
+     padding: 0px;
+ }
+ #user_login_nav a:hover,#user_login_nav a:active{
+    color: rgb(254,112,60);
+    text-decoration: none;
+ }
+ #user_login_nav ul>li{
+     display: inline-block;
+     padding: 0 6px;
+     margin: 4px 0;
+ }
+ #user_login_nav::before{
+    border-left: 6px solid;
+    border-right:6px solid; 
+    border-color:transparent; 
+     background: transparent;
+     content: '';
+     border-bottom:5px solid rgb(62,58,57);
+     position: absolute;
+     top:0;
+     transform: translate(-50%,-100%);
+     height: 28px;
+     width: 12px;
+ }
+ .vertical_line{
+     border-left: 1px solid #ddd;
+     border-right: 1px solid #ddd;
+ }
+ .logged_in img{
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+ }
+ .logged_in_name{
+     margin-left:8px; 
+     font-size: 12px;
+ }
+ .navbar-nav{
+     color: #fff;
+ }
+ .msg_num{
+     display: inline-block;
+     background-color: rgb(254,112,60);
+     width: 15px;
+     height: 15px;
+     border-radius: 50%;
+     font-size: 10px;
+     line-height: 15px;
+     text-align: center;
+     transform: translate(-40%,-50%);
+ }
+ i {
+    margin-right: 0px;
+}
+.fa-envelope-o-custom{
+    font-size: 18px;
+    vertical-align:bottom;
+    cursor: pointer;
+}
+
+/* 
+ *用户信息展示-头部
+ */
+ .userinfo_top{
+     margin-top:90px; 
+ }
+ .userinfo_top img{
+     width:140px;
+     width:140px;
+     border-radius: 50%;
+     padding: 5px;
+     border: 1px solid #ddd;
+     background-color: #fff;
+     margin-left: 15px;
+ }
+ .userinfo_top_msg{
+     margin-left: 10px;
+     padding-bottom: 15px;
+ }
+ .msg_table{
+    color: #aaa;
+ }
+ .msg_table td{
+	width:120px;
+    text-align:center;
+    font-size: 16px;
+}
+.msg_table .left_line{
+    border-left:#ccc solid 1px;
+    padding:0px 5px;
+}
+.userinfo_top_msg>h2{
+    padding-left: 30px;
+}
+.userinfo_tab_nav{
+    margin-top:30px; 
+}
+.userinfo_tab_nav>span{
+    background-color: #ccc;
+    color:#fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding:3px 6px;
+    text-align: center;
+    display: inline-block;
+    width:100px;
+    letter-spacing:2px; 
+    cursor: pointer;
+}
+span.act{
+    background-color: rgb(254,112,60);
+}
+/* 
+ *用户信息展示-详细列表
+ */
+.userinfo_bottom{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+.userinfo_bottom span{
+    display: inline-block;
+}
+.userinfo_bottom>div{
+    padding: 20px 0;
+}
+.user_id{
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 15px;
+}
+.left_line {
+    border-left: #bbb solid 1px;
+}
+.identification span,.statistics span{
+    text-align: center;
+    padding: 0px 8px;
+}
+.h3_custom{
+    margin-top: 0px;
+}
+.top_dotted{
+    border-top: dotted 1px #bbb;
+}
+.birthday{
+    margin-left: 30px;
+}
+.user_msg span{
+    margin-left: 8px;
+}
+.liveness table{
+    width: 100%;
+    line-height: 1.8;
+}
+.liveness span{
+    margin-left: 8px;
+}
+.statistics_num span{
+    padding: 0 10px;
+    text-align: center;
+    line-height: 1.8;
+}
+.statistics_num_list{
+    margin-left: -11px;
+}

@@ -88,7 +88,6 @@ color:#888
 	color:#666;
 	font-size:12px;
 }
- 
 	.line{
 		border-left:#fff solid 1px;
 		border-right:#fff solid 1px;
@@ -104,7 +103,9 @@ color:#888
 	width:100px;
 	margin-top:6px;
 }
-
+.i_block{
+	display: inline-block;
+}
 
 
 .posted{
@@ -454,3 +455,9 @@ i{
 .moderator span{
 margin-left:5px;
 }
+
+.header{/*菜单*/
+	width:1200px;
+	margin:0px auto;
+	padding:0px;
+} 
