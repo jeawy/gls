@@ -1,0 +1,96 @@
+/* 
+ *菜单-----已登录板块
+ */
+
+.logged_in,
+.msg_reminder {
+    padding: 10px 15px;
+    line-height: 20px;
+}
+
+.logged_in {
+    text-align: center;
+    cursor: pointer;
+}
+
+#user_login_nav {
+    display: none;
+    background-color: rgb(62, 58, 57);
+    position: absolute;
+    bottom: -90px;
+    width: 130%;
+    transform: translateX(-40%);
+    padding: 10px 0;
+}
+
+#user_login_nav ul {
+    padding: 0px;
+}
+
+#user_login_nav a:hover,
+#user_login_nav a:active {
+    color: rgb(254, 112, 60);
+    text-decoration: none;
+}
+
+#user_login_nav ul>li {
+    display: inline-block;
+    padding: 0 6px;
+    margin: 4px 0;
+}
+
+#user_login_nav::before {
+    border-left: 6px solid;
+    border-right: 6px solid;
+    border-color: transparent;
+    background: transparent;
+    content: '';
+    border-bottom: 5px solid rgb(62, 58, 57);
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, -100%);
+    height: 28px;
+    width: 12px;
+}
+
+.vertical_line {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.logged_in img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.logged_in_name {
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+.navbar-nav {
+    color: #fff;
+}
+
+.msg_num {
+    display: inline-block;
+    background-color: rgb(254, 112, 60);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    transform: translate(-40%, -50%);
+}
+
+i {
+    margin-right: 0px;
+}
+
+.fa-envelope-o-custom {
+    font-size: 18px;
+    vertical-align: bottom;
+    cursor: pointer;
+}

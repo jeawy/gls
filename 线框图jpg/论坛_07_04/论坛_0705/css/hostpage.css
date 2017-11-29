@@ -1,6 +1,6 @@
  .title{
-	margin-bottom:11px;
-	margin-top:8px;
+	margin-bottom:10px;
+	margin-top:6px;
 }
 
 .div_posted{
@@ -79,7 +79,7 @@
 }
 .sign_img{
 	float: left;
-	margin-left:42px;
+	margin-left:38px;
 }
 .sign_img img{
 	width:60px;
@@ -99,8 +99,8 @@ line-height: 90px;
 border:rgb(254,112,60) solid 2px;
 }
 table.sign_table{
-	margin:10px 0px 10px 170px;
-	line-height:35px;
+	margin:21px 0px 0px 170px;
+	line-height:25px;
 }
 
 .sign_msg{
@@ -163,4 +163,7 @@ textarea{
 .panel-body{
 	max-height: 120px;
 	height: 120px;
+}
+.cast_ii_left,.serve_left{
+	padding: 0px;
 }

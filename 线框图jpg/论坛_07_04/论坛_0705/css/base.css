@@ -1,5 +1,11 @@
 body{
 	background-color:rgb(239,239,239);/*背景色*/
+    font-family: 微软雅黑;
+}
+/* 内容包裹层自定义 */
+.container_custom{
+	margin-top:65px;
+	margin-bottom:  15px;	
 }
 ul{
 	list-style:none;  					/*列表去项目符号*/
@@ -10,37 +16,31 @@ a:hover{
 a{
 	color: inherit
 }
-.wrap{/*包裹层*/
+.wrap{/*xx*/
 	width:1200px;
 	margin:60px auto 10px;
 	overflow:hidden;
 }
 
 .main{
-	margin-top:10px;
-	width:100%;
+	margin-top:15px;
+	margin-bottom:15px;
 }
 
 .left{
-	width:900px;
 	background-color:#fff;
-	float:left;
+	/* width:900px;
+	float:left; */
 	border: 1px solid rgb(212,212,213);
 	padding:20px;
 }
 
 .hot{
-	padding-bottom:20px;
-	border-bottom:#CCCCCC solid 1px;
-	margin:20px 0px;
+	margin:15px 0px;
 	overflow:hidden;
-	
 }
 
-.hot_img{
-	float:left;
-	margin-right:20px;
-}
+
 
 .hot_img img{
 	width:60px;
@@ -49,19 +49,16 @@ a{
 }
 
 .hot_con{
-	float:left;	
-width:777px;
-color:#888
+overflow: hidden;
+color:#888;
+border-bottom : #ddd solid 1px;
+padding-bottom: 10px;
 }
 
 
 .right{					
-	
-	margin-left:20px;
-	
-	width:280px;
-	float:left;
-}
+padding-right:0px; 
+} 
 
 .footer{
 	background-color:rgb(144,145,146);
@@ -109,16 +106,14 @@ color:#888
 
 
 .posted{
-	margin-left:70px;
+	margin-left:72px;
 }	
 
 .panel-default{
 	margin:5px auto;
 }
 
-.tap{
-	width:100%;
-}
+.contact_us
 
 .p2_title{
 	width:100%;
@@ -139,7 +134,7 @@ color:#888
 
 
 	
-.left_warp{
+.left_warp{/* xx */
 	width:900px;
 	float:left;
 	margin: 0px;
@@ -221,6 +216,7 @@ color:#888
 
 .left_subnav{
 	margin: 0px;
+	padding: 0 15px 15px;
 }
 .left_subnav li{
 	display: inline;
@@ -236,7 +232,6 @@ color:#888
 width:100%;
 color:#FFF;
 background-color:rgb(254,112,60);
-text-align:center;
 height:90px;
 margin-top:10px;
 margin-bottom:10px;
@@ -316,6 +311,7 @@ border:rgb(254,112,60) solid 2px;
     font-size: 14px;
     line-height: 1.2;
 	border: 1px solid #CCC;
+	border-radius:4px;
 }
 .all_caret{
 	margin-left:20px;
@@ -365,18 +361,19 @@ i{
 	margin-right:5px; 
 }
 .recommend{
-	padding: 10px 10px;
+	padding: 15px;
 	margin: 0px 0px 10px;
 	border: rgb(225,225,226) solid 1px;
 	background-color: #fff;
 }
 .recommend_head{
-	padding: 10px 15px;
+	padding: 0px 0px 15px;
 	margin: 0px;
-	border-bottom: rgb(254,112,60) solid 1px;
+	color: #999;
+	border-bottom: rgb(254,112,60) solid 2px;
 }
 .recommend_body{
-	padding: 15px 15px 0px;
+	padding: 15px 0px 0px;
 	margin: 0px;
 }
 .recommend_body ul{
@@ -389,13 +386,14 @@ i{
 	margin:0px 7px ;
 	height: 16px;
 	padding: 0px;
-	border: 2px solid #333;
+	border: 2px solid #aaa;
 	border-radius: 50%;
 	display: inline-block;
 	width: 16px;
 	font-size: 12px;
 	text-align: center;
 	line-height: 14px;
+	color: #aaa;
 }
 .orange_round{
 	margin:0px 7px ;
@@ -456,8 +454,54 @@ i{
 margin-left:5px;
 }
 
-.header{/*菜单*/
+.header{/*XX*/
 	width:1200px;
 	margin:0px auto;
 	padding:0px;
 } 
+
+/* 
+ *关注我们
+ */
+ .contact_microblog,.contact_weixin{
+	 margin: 10px 0 0 20px;
+ }
+.contact_us_title{
+	padding: 15px;
+	background-color: #e5e5e5;
+}
+.microblog_logo,.qr_code{
+	width: 60px;
+	height: 60px;
+}
+.contact_us_con>div{
+	margin: 0 auto;
+	padding: 15px 45px;
+	background-color: #fff;
+}
+.fa-weibo-custom{
+	color:rgb(227, 36, 43);
+}
+.microblog{
+	border-bottom: rgb(225,225,226) solid 1px
+}
+.contact_us{
+	border: rgb(225,225,226) solid 1px
+}
+.contact_us h4{
+	margin: 0px;
+}
+.contact_us_con button{
+	color: rgb(28, 127, 214);
+	font-family:华文行楷;
+	line-height: 1;
+	border:#ddd 1px solid; 
+	outline: #ddd 1px;
+	background-color: rgb(241, 241, 241);
+}
+.contact_weixin p{
+	color: #999;
+}
+.fa-weixin-custom{
+	color: #62b900;
+}

@@ -3,16 +3,19 @@
 
 <head>
     <meta http-equiv="con-Type" con="text/html; charset=utf-8" />
-    <title>用户中心</title>
+    <title>好友</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/user_center.css">
+    <link rel="stylesheet" href="css/logged_in.css">
+    <link rel="stylesheet" href="css/friends.css">
 </head>
 
 <body>
+    <!-- 菜单开始 -->
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-        <div class="header">
+            <div class="container">
+                    <div class="row">
             <div class="navbar-header">
                 <a href="#">
                     <img class="logo" alt="Brand" src="img/logo.png"> </a>
@@ -86,119 +89,60 @@
                     <span class="msg_num">1</span>
                 </li>
                 <li>
-                    </span>
+                    <a>
                     <span class="sr-only">(current)</span>
                     </a>
                 </li>
             </ul>
+            </div>
         </div>
     </nav>
-
-    <!-- 用户资料 -->
-    <section class="container userinfo_top">
+    <!-- 菜单结束 -->
+    <section class="container">
         <div class="row">
-            <div class="clearfix">
-                <div class="pull-left">
-                    <img src="img/li_1.png" />
-                </div>
-                <div class="pull-left userinfo_top_msg">
-                    <h2 class="orange">meiki</h2>
-                    <table class="msg_table">
-                        <tr>
-                            <td>无</td>
-                            <td class="left_line">无</td>
-                            <td class="left_line">无</td>
-                            <td class="left_line orange">
-                                <strong>5</strong>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>VIP等级</td>
-                            <td class="left_line">贡献值</td>
-                            <td class="left_line">第多少位VIP</td>
-                            <td class="left_line">论坛积分</td>
-                        </tr>
-                    </table>
+            <div class="col-sm-3 col-md-3 col-lg-3 leftsidebar">
+                <div class="leftsidebar_title">好友</div>
+                <div class="leftsidebar_list">
+                    <div class="list_active">好友列表</div>
+                    <div>查找用户</div>
                 </div>
             </div>
-            <div class="userinfo_tab_nav">
-                <span>主题</span>
-                <span class="act">个人资料</span>
+            <div class="col-sm-9 col-md-9 col-lg-9 frirnds_list">
+                <div class="rightsidebar">
+                    <span class="empty_tags"></span>
+                    <a class="rightsidebar_act">全部好友</a>
+                    <a>当前在线好友</a>
+                    <a>在线成员</a>
+                    <a>就在我附近的朋友</a>
+                    <a>我的访客</a>
+                    <a>我的足迹</a>
+                    <a>我的黑名单</a>
+                </div>
+                <div class="frirnds_details">
+                    <p class="prompt_message">按照<a class="heat">好友热度</a>排序</p>
+                    
+                    <div class="online_members">
+                            <div class="pull-left">
+                                <a href="#" target="_blank">
+                                    <img src="img/li_1.png" />
+                                </a>
+                            </div>
+                            <div class="pull-left online_members_info">
+                                <div>
+                                    <a class="online-user-name" href="帖子详情.html">yexv8j</a>
+                                </div>
+                                <div>
+                                 <span>红杉娱官方直属总代招商1956</span>
+                                 <a class="add_Friend" href="#">加为好友</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="container userinfo_bottom">
-        
-            <div>
-                <h3 class="h3_custom">meiki
-                    <span class="user_id">(UID:3078313)</span>
-                </h3>
-                <div class="identification">
-                    <div class="i_block">邮箱状态<span>未验证</span></div>
-                    <span class="left_line">视频认证<span>未认证</span></span>
-                </div>
-            </div>
-            <div class="statistics top_dotted">
-                <div class="i_block">统计信息</div>
-                <span>好友数0</span>
-                <span class="left_line">相册数0</span>
-                <span class="left_line">回帖数0</span>
-                <span class="left_line">主题数0</span>
-            </div>
-            <div class="user_msg top_dotted">
-                <div class="i_block">性别</div>
-                <span>保密</span>
-                <div class="i_block birthday">生日</div>
-                <span>-</span>
-            </div>
-            <div class="top_dotted">
-                <strong>用户认证</strong>
-            </div>
-            <div class="top_dotted liveness">
-                <strong>活跃概况</strong>
-                <table>
-                    <tr>
-                        <td>用户组
-                            <span>newbie</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>注册时间
-                            <span>2017-06-18 14:20</span>
-                        </td>
-                        <td>最后访问
-                            <span>2017-06-18 14:20</span>
-                        </td>
-                        <td>注册IP
-                            <span>122.121.202.208--北京朝阳</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>上次访问IP
-                            <span>122.121.202.208--北京朝阳</span>
-                        </td>
-                        <td>上次活动时间
-                            <span>2017-06-18 14:20</span>
-                        </td>
-                        <td>所在时区
-                            <span>使用系统默认</span>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="top_dotted statistics_num">
-                    <strong>统计信息</strong>
-                    <div class="statistics_num_list">
-                            <span>已用空间08</span>
-                            <span class="left_line">积分08</span>
-                            <span class="left_line">威望08</span>
-                            <span class="left_line">金币08枚</span>
-                            <span class="left_line">贡献0点</span>
-                            <span class="left_line">体力0</span>
-                            <span class="left_line">激情2</span>
-                    </div>
-            </div>
-    </section>
+
     <div class="footer">
         <div class="code">
             <img class="code_img" src="img/code1.png" />
@@ -232,14 +176,15 @@
             </li>
         </ul>
     </div>
-    
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/footer.js"></script>
     <script type="text/javascript">
-    jQuery('.logged_in').click(function(){
-        jQuery('#user_login_nav').toggle();
-    })
+    /* 点击菜单栏用户头像显示、隐藏菜单 */
+        jQuery('.logged_in').click(function() {
+            jQuery('#user_login_nav').toggle();
+        })
     </script>
 </body>
 
