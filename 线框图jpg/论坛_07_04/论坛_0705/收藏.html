@@ -14,81 +14,84 @@
 <body>
     <!-- 菜单开始 -->
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-            <div class="container">
-                    <div class="row">
-            <div class="navbar-header">
-                <a href="#">
-                    <img class="logo" alt="Brand" src="img/logo.png"> </a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active">
-                    <a href="论坛首页.html">论坛首页
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <a href="#">
+                        <img class="logo" alt="Brand" src="img/logo.png"> </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="论坛首页.html">论坛首页
                         
                     </a>
-                </li>
-                <li>
-                    <a href="cast_ii_社区.html">Cast II 社区
+                    </li>
+                    <li>
+                        <a href="cast_ii_社区.html">Cast II 社区
                         
                     </a>
-                </li>
-                <li>
-                    <a href="活动列表.html">活动
+                    </li>
+                    <li>
+                        <a href="活动列表.html">活动
                         
                     </a>
-                </li>
-                <li>
-                    <a href="服务.html">服务
+                    </li>
+                    <li>
+                        <a href="服务.html">服务
                         
                     </a>
-                </li>
-                <li>
-                    <a href="#">进入商城
+                    </li>
+                    <li>
+                        <a href="#">进入商城
                         
                     </a>
-                </li>
-                <li>
-                    <a href="#">官网
+                    </li>
+                    <li>
+                        <a href="#">官网
                         
                     </a>
-                </li>
-                <li>
-                    <a href="#">软件下载
+                    </li>
+                    <li>
+                        <a href="#">软件下载
                         
                     </a>
-                </li>
-                <li class="logged_in">
-                    <img src="img/li_1.png">
-                    <span class="logged_in_name">用户昵称</span>
-                    <div id="user_login_nav">
-                        <ul>
-                            <li>
-                                <a href="javascript:;">设置</a>
-                            </li>
-                            <li class="vertical_line">
-                                <a href="javascript:;">消息</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">好友</a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a href="javascript:;">帖子</a>
-                            </li>
-                            <li class="vertical_line">
-                                <a href="javascript:;">收藏</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">退出</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="msg_reminder">
-                    <i class="fa fa-envelope-o fa-envelope-o-custom" aria-hidden="true"></i>
-                    <span class="msg_num">1</span>
-                </li>
-            </ul>
+                    </li>
+                    <li class="logged_in">
+                        <img src="img/li_1.png">
+                        <span class="logged_in_name">用户昵称</span>
+
+                        <div id="user_login_nav">
+                            <ul>
+                                <li>
+                                    <a href="设置.html">设置</a>
+                                </li>
+                                <li class="vertical_line">
+                                    <a href="消息.html">消息</a>
+                                </li>
+                                <li>
+                                    <a href="好友.html">好友</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="我的帖子.html">帖子</a>
+                                </li>
+                                <li class="vertical_line">
+                                    <a href="收藏.html">收藏</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">退出</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="消息.html">
+                            <i class="fa fa-envelope-o fa-envelope-o-custom" aria-hidden="true"></i>
+                            <span class="msg_num">1</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -157,7 +160,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/footer.js"></script>
     <script type="text/javascript">
-    /* 点击菜单栏用户头像显示、隐藏菜单 */
+        /* 点击菜单栏用户头像显示、隐藏菜单 */
         jQuery('.logged_in').click(function() {
             jQuery('#user_login_nav').toggle();
         })
