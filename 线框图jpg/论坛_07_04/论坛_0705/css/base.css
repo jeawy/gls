@@ -24,7 +24,6 @@ a{
 
 .main{
 	margin-top:15px;
-	margin-bottom:15px;
 }
 
 .left{
@@ -50,11 +49,12 @@ a{
 
 .hot_con{
 overflow: hidden;
-color:#888;
 border-bottom : #ddd solid 1px;
-padding-bottom: 10px;
+padding-bottom: 15px;
 }
-
+.hot_con ul{
+	margin: 0;
+}
 
 .right{					
 padding-right:0px; 
@@ -134,10 +134,7 @@ padding-right:0px;
 
 
 	
-.left_warp{/* xx */
-	width:900px;
-	float:left;
-	margin: 0px;
+.left_warp{
 	padding:0px;
 }
 
@@ -426,13 +423,16 @@ i{
 }
 .my_btn{
 	background-color: rgb(254,112,60); 
-	border-color:  rgb(254,112,60);
+	border-color:  rgb(253, 99, 42);
 	border: 0px;
 	color: #fff;
 	text-align: center;
-	border-radius: .2em;
-	width: 60px;
-	padding: 1px 6px;
+}
+.btn-add-friend{
+	padding: 0px 6px;
+}
+.btn-reply{
+	padding: 4px 20px;
 }
 .right_div{
 	margin: 10px auto;
@@ -471,12 +471,12 @@ margin-left:5px;
 	background-color: #e5e5e5;
 }
 .microblog_logo,.qr_code{
-	width: 60px;
-	height: 60px;
+	width: 68px;
+	height: 68px;
 }
 .contact_us_con>div{
 	margin: 0 auto;
-	padding: 15px 45px;
+	padding: 15px 42px;
 	background-color: #fff;
 }
 .fa-weibo-custom{
@@ -498,10 +498,14 @@ margin-left:5px;
 	border:#ddd 1px solid; 
 	outline: #ddd 1px;
 	background-color: rgb(241, 241, 241);
+	margin-top: 3px;
 }
 .contact_weixin p{
 	color: #999;
 }
 .fa-weixin-custom{
 	color: #62b900;
+}
+.date{
+	color: #999;
 }

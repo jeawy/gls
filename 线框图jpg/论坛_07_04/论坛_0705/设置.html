@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="con-Type" con="text/html; charset=utf-8" />
+    <title>设置</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/logged_in.css">
+    <link rel="stylesheet" href="css/set.css">
+</head>
+
+<body>
+    <!-- 菜单开始 -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+            <div class="container">
+                    <div class="row">
+            <div class="navbar-header">
+                <a href="#">
+                    <img class="logo" alt="Brand" src="img/logo.png"> </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                    <a href="论坛首页.html">论坛首页
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="cast_ii_社区.html">Cast II 社区
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="活动列表.html">活动
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="服务.html">服务
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">进入商城
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">官网
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">软件下载
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="logged_in">
+                    <img src="img/li_1.png">
+                    <span class="logged_in_name">用户昵称</span>
+                    <div id="user_login_nav">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">设置</a>
+                            </li>
+                            <li class="vertical_line">
+                                <a href="javascript:;">消息</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">好友</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:;">帖子</a>
+                            </li>
+                            <li class="vertical_line">
+                                <a href="javascript:;">收藏</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">退出</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="msg_reminder">
+                    <i class="fa fa-envelope-o fa-envelope-o-custom" aria-hidden="true"></i>
+                    <span class="msg_num">1</span>
+                </li>
+                
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 菜单结束 -->
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3 leftsidebar">
+                <div class="leftsidebar_title">设置</div>
+                <div class="leftsidebar_list">
+                    <div>修改头像</div>
+                    <div class="list_active">个人资料</div>
+                    <div>认证</div>
+                    <div>积分</div>
+                    <div>用户组</div>
+                    <div>隐私筛选</div>
+                    <div>邮件提醒</div>
+                    <div>密码安全</div>
+                    <div>QQ绑定</div>
+                    <div>QQ秀</div>
+                    <div>开发者认证</div>
+                </div>
+            </div>
+            <div class="col-sm-9 col-md-9 col-lg-9 personal_data">
+                <div class="h4">当前我的头像</div>
+                <p>如果你还没有设置自己的头像，系统会显示为默认的头像，您需要自己上传一张新照片来做自己的头像。</p>
+               <div class="clearfix text-center userimg_show">
+                <div class="pull-left">
+                        <img class="big_userimg" src="img/li_1.png"> 150x150
+                    </div>
+                    <div class="pull-left text-center">
+                        <img class="small_userimg" src="img/li_1.png"> 50x50
+                    </div>
+                </div>
+                <div class="h4">设置我的新头像</div>
+                <p>如果你还没有设置自己的头像，系统会显示为默认的头像，您需要自己上传一张新照片来做自己的头像。</p>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="code">
+            <img class="code_img" src="img/code1.png" />
+            <img class="code_img" src="img/code2.png" /> </div>
+        <ul class="footer_nav">
+            <li>
+                <a href="">一数官网</a>
+            </li>
+            <li>
+                <a href="">一数商城</a>
+            </li>
+            <li>
+                <a class="wechat" href="">微信群</a>
+            </li>
+            <li>
+                <a class="qqgroup" href="">qq群</a>
+            </li>
+            <li>
+                <a href="技术支持.html">开发者论坛</a>
+            </li>
+        </ul>
+        <ul class="footer_bottom">
+            <li>
+                <a href="">一数社区</a>
+            </li>
+            <li>
+                <a class="line" href="">版权所有</a>
+            </li>
+            <li>
+                <a href="规则.html">社区规则</a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/footer.js"></script>
+    <script type="text/javascript">
+    /* 点击菜单栏用户头像显示、隐藏菜单 */
+        jQuery('.logged_in').click(function() {
+            jQuery('#user_login_nav').toggle();
+        })
+    </script>
+</body>
+
+</html>
