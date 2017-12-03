@@ -1,12 +1,10 @@
- $(document).ready(function(){
-	 $('.code').hide();
-	 $('.qqgroup, .wechat').hover(function(){
-		 $('.code').show();
-	 });
-	 
-	 $( ".qqgroup, .wechat" ).mouseout(function() {
-         $('.code').hide();
-    });
+ jQuery(document).ready(function() {
+     jQuery('.code').hide();
+     jQuery('.qqgroup, .wechat').hover(function() {
+         jQuery('.code').show();
+     });
 
-	
- })
+     jQuery(".qqgroup, .wechat").mouseout(function() {
+         jQuery('.code').hide();
+     });
+ });
