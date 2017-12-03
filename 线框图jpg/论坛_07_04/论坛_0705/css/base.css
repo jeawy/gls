@@ -5,7 +5,10 @@ body {
 
 
 /* 内容包裹层自定义 */
-
+body {
+    background-color: rgb(239, 239, 239);
+    /*背景色*/
+}
 .container_custom {
     margin-top: 65px;
     margin-bottom: 15px;
@@ -183,7 +186,7 @@ a {
     width: 100%;
     background-color: #fff;
     padding-top: 10px;
-    a padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .div_width {
