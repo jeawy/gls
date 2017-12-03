@@ -102,26 +102,37 @@
                         <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">全部主题
                             <span class="caret all_caret"></span>
                         </button>
-                        <ul class="dropdown-menu">
-                            ...
+                        <ul class="dropdown-menu spinner">
+                            <li><a href="javascropt:;">全部主题</a></li>
+                            <li><a href="javascropt:;">活动</a></li>
                         </ul>
                     </div>
                     <div class="nav_btn">
-                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">全部时间
+                        <button class="spinner_btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">全部时间
                             <span class="caret all_caret"></span>
                         </button>
-                        <ul class="dropdown-menu">
-                            ...
+                        <ul class="dropdown-menu spinner">
+                            <li>
+                                <a href="javascropt:;">全部时间</a>
+                            </li>
+                            <li>
+                                <a href="javascropt:;">一天</a>
+                            </li>
+                            <li>
+                                <a href="javascropt:;">两天</a>
+                            </li>
+                            <li>
+                                <a href="javascropt:;">一周</a>
+                            </li>
+                            <li>
+                                <a href="javascropt:;">一个月</a>
+                            </li>
+                            <li>
+                                <a href="javascropt:;">三个月</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="nav_btn">
-                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 全部排序
-                            <span class="caret all_caret"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            ...
-                        </ul>
-                    </div>
+
                     <div class="pull-right">
                         <a href="javascript:;">
                             <span>最新</span>
@@ -486,6 +497,7 @@
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/base.js"></script>
     <script src="js/footer.js"></script>
     <script language="javascript">
         /* 轮播图初始化 */
@@ -494,10 +506,6 @@
                 prevButton: '.swiper-button-prev',
                 nextButton: '.swiper-button-next',
             })
-            /* 点击按钮链接微博 */
-        jQuery('#microblog').click(function() {
-            location.href = 'https://weibo.com/asu001';
-        })
     </script>
 </body>
 

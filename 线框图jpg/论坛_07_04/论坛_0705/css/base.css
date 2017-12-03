@@ -49,7 +49,7 @@ a {
 .hot_con {
     overflow: hidden;
     border-bottom: #ddd solid 1px;
-    padding-bottom: 15px;
+    padding-bottom: 19px;
 }
 
 .hot_con ul {
@@ -183,7 +183,7 @@ a {
     width: 100%;
     background-color: #fff;
     padding-top: 10px;
-    padding-bottom: 10px;
+    a padding-bottom: 10px;
 }
 
 .div_width {
@@ -320,7 +320,7 @@ a {
 .nav_btn button {
     color: #333;
     background-color: #fff;
-    padding: 6px 10px 4px;
+    padding: 6px 10px;
     font-size: 14px;
     line-height: 1.2;
     border: 1px solid #CCC;
@@ -558,4 +558,21 @@ i {
 
 .fa-weixin-custom {
     color: #62b900;
+}
+
+.menu-hide {
+    display: none;
+}
+
+
+/* 
+ *bootstrap样式覆盖
+ */
+
+.nav-tabs>li>a {
+    border-radius: 0px;
+}
+
+.dropdown-menu{
+    min-width: 0;
 }

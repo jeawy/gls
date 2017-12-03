@@ -15,46 +15,55 @@
     <!-- 菜单**开始 -->
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
         <div class="container">
-            <div class="row"></div>
-            <div class="navbar-header">
-                <a href="#">
-                    <img class="logo" alt="Brand" src="img/logo.png"> </a>
+            <div class="row">
+                <div class="navbar-header">
+                    <a href="#">
+                        <img class="logo" alt="Brand" src="img/logo.png"> </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="论坛首页.html">论坛首页
+                                
+                            </a>
+                    </li>
+                    <li>
+                        <a href="cast_ii_社区.html">Cast II 社区  </a>
+                    </li>
+                    <li class="active">
+                        <a href="活动列表.html">活动
+                                
+                            </a>
+                    </li>
+                    <li>
+                        <a href="服务.html">服务
+                                
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">进入商城
+                                
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">官网
+                                
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">软件下载
+                                
+                            </a>
+                    </li>
+                    <li>
+                        <div class="login_holder">
+                            <a href="个人资料.html">登录</a>|
+                            <a href="#">注册</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="论坛首页.html">论坛首页
-                    </a>
-                </li>
-                <li>
-                    <a href="cast_ii_社区.html">Cast II 社区
-                    </a>
-                </li>
-                <li class="active">
-                    <a href="活动列表.html">活动</a>
-                </li>
-                <li>
-                    <a href="服务.html">服务</a>
-                </li>
-                <li>
-                    <a href="#">进入商城</a>
-                </li>
-                <li>
-                    <a href="#">官网</a>
-                </li>
-                <li>
-                    <a href="#">软件下载</a>
-                </li>
-                <li>
-                    <div class="login_holder">
-                        <a href="#">登录</a>|
-                        <a href="#">注册</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
         </div>
     </nav>
-    <!-- 菜单**结束 -->
     <div class="container container_custom">
         <div class="row">
             <div class="col-sm-7 col-md-8 col-lg-9 cast_ii_left">
@@ -82,24 +91,34 @@
                             <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">全部主题
                                 <span class="caret all_caret"></span>
                             </button>
-                            <ul class="dropdown-menu">
-                                ...
+                            <ul class="dropdown-menu spinner">
+                                <li><a href="javascropt:;">全部主题</a></li>
+                                <li><a href="javascropt:;">活动</a></li>
                             </ul>
                         </div>
                         <div class="nav_btn">
-                            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">全部时间
+                            <button class="spinner_btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">全部时间
                                 <span class="caret all_caret"></span>
                             </button>
-                            <ul class="dropdown-menu">
-                                ...
-                            </ul>
-                        </div>
-                        <div class="nav_btn">
-                            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 全部排序
-                                <span class="caret all_caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                ...
+                            <ul class="dropdown-menu spinner">
+                                <li>
+                                    <a href="javascropt:;">全部时间</a>
+                                </li>
+                                <li>
+                                    <a href="javascropt:;">一天</a>
+                                </li>
+                                <li>
+                                    <a href="javascropt:;">两天</a>
+                                </li>
+                                <li>
+                                    <a href="javascropt:;">一周</a>
+                                </li>
+                                <li>
+                                    <a href="javascropt:;">一个月</a>
+                                </li>
+                                <li>
+                                    <a href="javascropt:;">三个月</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="pull-right">
@@ -434,6 +453,7 @@
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/base.js"></script>
     <script src="js/footer.js"></script>
 </body>
 
