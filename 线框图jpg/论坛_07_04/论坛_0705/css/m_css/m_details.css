@@ -1,0 +1,111 @@
+/* 回复按钮 */
+.reply-btn {
+    background-color: rgb(254, 112, 60);
+    border-color: rgb(253, 99, 42);
+    border: 1px;
+    color: #fff;
+    text-align: center;
+    padding: 6px 18px; 
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+/* 
+ * 帖子内容
+ */
+    /*标题 */
+    .posted_title ul{
+        overflow: hidden;
+        list-style-type: none;
+    }
+    .posted_title h3{
+        font-size: 22px;
+    }
+    .posted_title li{
+        float: left; 
+        padding: 0 2px;
+    }
+    .posted_title{
+        color: rgb(121, 121, 121);
+        padding-bottom: 15px;
+        overflow: hidden;
+        border-bottom:1px solid #ddd; 
+    }
+    /* 帖子内容 */
+    .posted_content{
+        font-size: 16px;
+        padding: 15px 0;
+    }
+    .user_nub .fa{
+        margin-right: 3px;
+    }
+
+/* 
+ * 回复列表
+ */
+    .reply{
+        padding: 15px;
+    }
+    .container{
+        background-color: #fff;
+        margin: 15px 0;
+    }
+    .post-list{
+        margin-top: 15px;
+        padding-top: 5px;
+    }
+    .post-list ul{/*  */
+        overflow: hidden;
+        list-style-type: none;
+    }
+    .post-list li{
+        float: left; 
+        padding: 0 2px;
+    }
+    .list-user-img img{
+        width: 50px;
+        border-radius: 50%;
+    }
+    .summary-title{
+        font-size: 16px;
+        color:rgb(233, 85, 19);
+        margin-bottom: 4px; 
+    }
+    .post-summary{
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        color: rgb(121, 121, 121);
+    }
+    
+    .user_nub span{
+        padding: 0px 4px;
+        line-height: 1;
+        font-size: 12px;
+    }
+    .user_nub a:link{
+        color: inherit;
+    }
+    .fa-magin{
+        margin-left: 6px;
+    }
+    .summary-wrap{
+        padding-left: 5px;
+    }
+    ul .user-name{
+        margin-right: 10px;
+        padding: 0;
+    }
+    .reply-time{
+        color: #b5b6b6;
+        font-size: 12px;
+        padding:5px 0 0 10px; 
+    }
+    .reply-content{
+        font-size: 16px;
+        color: #333;
+        line-height: 1;
+    }
+    .left-border{
+        border-left: 1px solid #444;
+    }

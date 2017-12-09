@@ -1,0 +1,56 @@
+.fa-search img{
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+/* 
+ *头像区
+ */
+.info-user-img img{
+    width: 110px;
+    border-radius:50%;
+    border: 2px solid rgb(254, 112, 60);
+}
+.main-info{
+    padding: 15px 15px 15px 60px;
+    overflow: hidden;
+}
+.info-user-name{
+    margin-left: 30px;
+    color: #888;
+    font-size: 16px;
+}
+.info-user-name h2{
+    margin-top: 10px;
+}
+
+.container{
+    background-color: #fff;
+    padding: 15px;
+}
+.border-bottom{
+    border-bottom:1px solid #ddd;
+    float: left;
+    width: 82%;
+    padding-top: 18px;
+}
+.list-title{
+    padding-right:0px;
+    width: 18%;
+    float: left;
+    font-size: 16px;
+}
+.list-content{
+    padding:15px 0;
+}
+.list-content div{
+    padding-bottom:15px;
+}
+.left-border{
+    border-left: 1px solid #ddd;
+}
+.list-content span{
+    padding:0 12px;
+    float:left;
+    text-align: center;
+}

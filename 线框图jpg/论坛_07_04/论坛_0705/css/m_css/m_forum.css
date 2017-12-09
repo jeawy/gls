@@ -1,0 +1,89 @@
+/* 
+ * 通用
+ */    
+ a:link{
+    color: inherit;
+}
+.left-border{
+    border-left: #444 solid 1px;
+}
+.right-border{
+    border-right: #fff solid 1px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+/* 
+* 板块标题
+*/
+.forum{
+    padding: 15px;
+}
+.forum-logo{
+    width: 70px;
+    height: 76px;
+    border-radius: 6px;
+    vertical-align: bottom;
+}
+.forum-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left:15px;
+    color: rgb(180, 180, 181);
+}
+
+/* 
+* 帖子列表
+*/
+.content{
+    background-color: #fff;
+}
+.post-list{
+    margin-top: 15px;
+    padding-top: 5px;
+}
+.post-list ul{
+    overflow: hidden;
+    list-style-type: none;
+    line-height: 1;
+}
+.post-list li{
+    float: left; 
+    padding: 0 2px;
+}
+.list-user-img img{
+    width: 50px;
+    border-radius: 50%;
+}
+.summary-title{
+    font-size: 16px;
+    color:rgb(233, 85, 19);
+    margin-bottom: 4px; 
+}
+.post-summary{
+    border-bottom: 1px solid #ddd;
+    padding-top: 4px;
+    padding-bottom: 10px;
+    color: rgb(121, 121, 121);
+}
+.user_nub {
+    color: #b5b6b6;
+    line-height: 1;
+}
+.user_nub .fa{
+    margin-right: 3px;
+}
+.fa-magin{
+    margin-left: 6px;
+}
+.summary-wrap{
+    padding-left: 5px;
+}
+ul .user-name{
+    margin-right: 10px;
+    padding: 0;
+}
+
