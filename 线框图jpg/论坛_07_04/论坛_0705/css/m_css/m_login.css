@@ -40,14 +40,20 @@
     padding-left:6px; 
 }
 
-.btn-submit
+button.btn_submit
 {
     width: 100%;
     border-radius: 0; 
-    background-color: rgb(254, 112, 60);
-    border-color: rgb(254, 112, 60);
+    background-color: #fff;
+    border: rgb(254, 112, 60) 1px solid;
+    color: rgb(254, 112, 60);
+    margin-top: 10px;
 }
 .col-protocal
 {
-    margin: 10px 0;
+    margin-top: 10px;
+}
+
+.panel {
+   box-shadow: 0 0 0 0;
 }

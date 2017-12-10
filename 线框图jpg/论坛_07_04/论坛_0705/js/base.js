@@ -30,7 +30,7 @@ jQuery('#forum').click(function(){
 /* 回到顶部 */
 window.onload = function(){
     var oTop = document.getElementById("to_top");
-    var screenh = jQuery(window).height()/2;
+    var screenh = jQuery(window).height()/4;
     window.onscroll = function(){
       var scrolltop =document.documentElement.scrollTop;
       if(screenh<scrolltop){

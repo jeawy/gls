@@ -42,14 +42,14 @@
     }
     /* 编辑内容 */
     .reply-btn {
-        background-color: rgb(254, 112, 60);
-        border-color: rgb(253, 99, 42);
-        border: 1px;
-        color: #fff;
+        border:1px solid rgb(254, 112, 60);
+        color: rgb(254, 112, 60);
         text-align: center;
-        padding: 6px 18px; 
+        padding: 6px 20px; 
         display: block;
         margin: 0 auto;
         font-size: 18px;
+        background-color: #fff;
+        width: 150px;
     }
     
