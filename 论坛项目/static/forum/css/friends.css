@@ -1,0 +1,92 @@
+section.container{
+    margin-top: 65px;
+    margin-bottom: 15px;
+}
+/* 
+ *左侧导航
+ */
+
+.list_active{
+    color: rgb(254,112,60);
+    border-bottom: 1px solid rgb(254,112,60);
+    font-weight: 600;
+}
+.leftsidebar{
+    padding-left: 0px;
+}
+
+.leftsidebar_title{
+    background-color: rgb(254,112,60);
+    color: #fff;
+    margin: 0px;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.leftsidebar_list{
+    background-color: #fff;
+    padding: 10px 25px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0,.2)
+}
+.leftsidebar_list>div{
+    padding: 10px 0px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* 
+ *右侧好友列表详情
+ */
+ .frirnds_list{
+    background-color: #fff;
+    min-height: 380px;
+}
+.rightsidebar{
+    padding: 15px 0px;
+    border-bottom: 1px #ddd dashed;
+}
+.rightsidebar a{
+    border-right: 1px solid #333;
+    padding: 0 15px;
+}
+span.empty_tags{
+    padding: 0px;
+    border-right: 1px solid #333;
+}
+.rightsidebar_act{
+   color: rgb(254,112,60);
+   font-weight: 600;
+}
+
+div.frirnds_details{
+   padding:15px 0; 
+}
+a.heat{
+    color: #333;
+    font-weight:600; 
+}
+/* 在线好友 */
+.online_members{
+    background-color: rgb(239,239,239);
+    color:#999;
+    padding: 10px 15px;
+    display: inline-block;
+    border:#ddd 1px solid;
+}
+.online_members img{
+    width:50px;
+	height:50px;
+	border-radius:50%;
+}
+.online_members_info{
+    margin: 0 15px;
+}
+.online-user-name{
+    font-weight: 600;
+    color: #333;
+}
+.add_Friend{
+    margin-left: 15px;
+}
+.add_Friend:link{
+    text-decoration: underline;
+}

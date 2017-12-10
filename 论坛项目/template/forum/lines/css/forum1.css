@@ -1,0 +1,71 @@
+ .title{
+	margin-bottom:5px;
+}
+
+dl{
+	margin-bottom:5px;
+}
+
+.div_posted{
+	background-color:#FF9556;
+	margin-top:5px;
+	color:#fff;
+}
+
+.sign{
+	border:#FF9556 solid 1px;
+	color:#FF9556;
+}
+
+.header{/*菜单*/
+	width:1200px;
+	margin:0px auto;
+	padding:0px;
+} 
+.circle
+{
+   margin: 0 auto;
+   width: 100px;
+   height: 100px;
+   background-color:gray;
+   border-radius: 50px;
+}
+
+.top
+{
+    background-color: white;
+}
+
+.top-row
+{ 
+    width: 100%;
+    text-align:center;
+	display: inline-flex;
+}
+
+.top-col-4
+{
+   width: 25%;
+}
+.right{
+margin-top: 13px;
+}
+
+.roles
+{
+    min-height: 300px;
+}
+
+.loadmore
+{
+   text-align: center;
+    margin: 20px; 
+    padding-bottom: 20px;
+}
+
+.code
+{
+	position: fixed;
+	bottom: 140px;
+	left: 50%;
+}

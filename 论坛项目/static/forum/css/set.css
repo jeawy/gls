@@ -1,0 +1,71 @@
+section.container{
+    margin-top: 65px;
+    margin-bottom: 15px;
+}
+/* 
+ *左侧导航
+ */
+
+.a{
+    color: rgb(254,112,60);
+    border-bottom: 1px solid rgb(254,112,60);
+    font-weight: 600;
+}
+.leftsidebar{
+    padding-left: 0px;
+}
+
+.leftsidebar_title{
+    background-color: rgb(254,112,60);
+    color: #fff;
+    margin: 0px;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.leftsidebar_list{
+    background-color: #fff;
+    padding: 10px 25px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0,.2)
+}
+.leftsidebar_list>div{
+    padding: 10px 0px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* 
+ *右侧详情
+ */
+ .personal_data{
+     background-color: #fff;
+     padding: 15px;
+ }
+ .personal_data div.h4{
+     font-size: 16px;
+     font-weight: 600;
+ }
+ .big_userimg>img{
+    display: block;
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     margin-bottom: 15px;
+ }
+ .small_userimg>img{
+    display:block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 50px 50px 65px;
+}
+ img.small_userimg{
+    display:block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 50px 50px 65px;
+}
+.userimg_show{
+    margin: 30px;
+}

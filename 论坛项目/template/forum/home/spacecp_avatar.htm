@@ -1,0 +1,56 @@
+<!--{template common/header}-->
+<link rel="stylesheet" href="{$_G['own_static_path']}/css/set.css">
+    <div  class="col-sm-3 col-md-3 col-lg-3 leftsidebar">
+		<!--{subtemplate home/spacecp_footer}-->
+	</div>
+    <div class="col-sm-9 col-md-9 col-lg-9 personal_data">
+	<!--{subtemplate home/spacecp_header}-->
+			<!--{hook/spacecp_avatar_top}-->
+			<script type="text/javascript">
+				function updateavatar() {
+					window.location.href = document.location.href.replace('&reload=1', '') + '&reload=1';
+				}
+				<!--{if !$reload}-->
+				saveUserdata('avatar_redirect', document.referrer);
+				<!--{/if}-->
+			</script>
+			<form method="post" autocomplete="off" action="home.php?mod=spacecp&ac=avatar&ref">
+					
+							<div class="h4">{lang current_my_space}</div>
+							<p>{lang setting_avatar_message}</p>
+							<div class="clearfix text-center userimg_show">
+								<div class="pull-left big_userimg">
+									<!--{avatar($space[uid],big)}--> 150x150
+								</div>
+								<div class="pull-left text-center small_userimg">
+									<!--{avatar($space[uid],small)}--> 50x50
+								</div>
+							</div>
+							
+			 
+				<table cellspacing="0" cellpadding="0" class="tfm">
+					<tr>
+						<td>
+							<script type="text/javascript">document.write(AC_FL_RunContent('<!--{echo implode("','", $uc_avatarflash);}-->'));</script>
+						</td>
+					</tr>
+					<caption>
+							<h2 class="xs2">{lang setting_my_new_avatar}</h2>
+							<p>{lang setting_my_new_avatar_message}</p>
+					</caption>
+				</table>
+				<input type="hidden" name="formhash" value="{FORMHASH}" />
+			</form>
+			<!--{hook/spacecp_avatar_bottom}-->
+		</div>
+	</div>
+	<script type="text/javascript">
+		var redirecturl = loadUserdata('avatar_redirect');
+		if(redirecturl) {
+			$('retpre').innerHTML = '<a href="' + redirecturl + '">{lang previous_page}</a>';
+		}
+	</script>
+	
+    </div>
+</div><!-- col -->
+<!--{template common/footer}-->

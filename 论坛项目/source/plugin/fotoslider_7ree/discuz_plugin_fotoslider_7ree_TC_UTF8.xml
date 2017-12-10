@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3]]></item>
+	<item id="Time"><![CDATA[2016-10-08 13:09]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[柒瑞幻燈圖片展]]></item>
+			<item id="identifier"><![CDATA[fotoslider_7ree]]></item>
+			<item id="description"><![CDATA[為discuz增加超炫的可DIY的幻燈圖片展示的功能]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[fotoslider_7ree/]]></item>
+			<item id="copyright"><![CDATA[柒瑞 www.7ree.com]]></item>
+			<item id="version"><![CDATA[v2.5]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[more_7ree]]></item>
+					<item id="menu"><![CDATA[[柒瑞更多產品服務]]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[fotoslider_7ree]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2,X2.5,X3,X3.1,X3.2]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[是否同意柒瑞用戶協議？]]></item>
+				<item id="description"><![CDATA[必須同意柒瑞用戶協議，方可使用該插件。（協議地址：http://www.7ree.com/agreement.html）]]></item>
+				<item id="variable"><![CDATA[agreement_7ree]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[是否開啟幻燈圖]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[onoff_7ree]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[展示圖片參數設置]]></item>
+				<item id="description"><![CDATA[格式：「標題,註釋,高清大圖,縮略小圖,URL地址」
+(注意順序，變量之間用半角逗號「,」分隔，組之間用三個豎線|||分隔，需要5組。)
+高清大圖最佳尺寸：960*380px   縮略小圖最佳尺寸：60*40px]]></item>
+				<item id="variable"><![CDATA[vars_7ree]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[柒瑞華麗十二格超值商業版,明星應用、持久暢銷、精品之選,1_big_7ree.png,1_icon_7ree.png,http://addon.discuz.com/?@toplist_7ree.plugin.21|||
+柒瑞會員秀秀特殊主題,會員展示豐富多彩，主題擴展靈活多樣,2_big_7ree.png,2_icon_7ree.png,http://addon.discuz.com/?@xiuxiu_7ree.plugin|||
+柒瑞主題自主置頂,置頂廣告創收不可少，論壇積分提升價值,3_big_7ree.png,3_icon_7ree.png,http://addon.discuz.com/?@zhiding_7ree.plugin|||
+柒瑞在線大禮包,充分刺激會員活躍度，有效提升論壇發帖量和PV,4_big_7ree.png,4_icon_7ree.png,http://addon.discuz.com/?@olgift_7ree.plugin|||
+柒瑞更多應用更多精彩…,@Discuz!應用中心，支持X3全線升級中,5_big_7ree.png,5_icon_7ree.png,http://addon.discuz.com/?@7ree]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[圖片存放目錄]]></item>
+				<item id="description"><![CDATA[默認路徑，圖片存放在：「source/plugin/fotoslider_7ree/image/」]]></item>
+				<item id="variable"><![CDATA[path_7ree]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[source/plugin/fotoslider_7ree/image/]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[是否在新窗口打開鏈接]]></item>
+				<item id="description"><![CDATA[自定義點擊幻燈大圖打開鏈接的目標窗口。
+新窗口或原窗口。]]></item>
+				<item id="variable"><![CDATA[blank_7ree]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[顯示的範圍]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[where_7ree]]></item>
+				<item id="type"><![CDATA[selects]]></item>
+				<item id="extra"><![CDATA[portal=門戶
+forum=論壇
+group=群組
+home=家園
+forum=插件]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[portal]]></item>
+					<item id="1"><![CDATA[forum]]></item>
+					<item id="2"><![CDATA[forum]]></item>
+				</item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[是否在論壇內頁顯示]]></item>
+				<item id="description"><![CDATA[如「帖子頁面」和「論壇版塊頁面」]]></item>
+				<item id="variable"><![CDATA[inner_7ree]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[是否在門戶內頁顯示]]></item>
+				<item id="description"><![CDATA[控制包括是否在門戶的「頻道列表頁」「文章頁面」是否顯示幻燈，必須先選定，在「門戶」顯示幻燈圖片展。]]></item>
+				<item id="variable"><![CDATA[artical_7ree]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[切換速度]]></item>
+				<item id="description"><![CDATA[（單位：秒）
+幻燈片切換的時間間隔]]></item>
+				<item id="variable"><![CDATA[speed_7ree]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[幻燈片高度]]></item>
+				<item id="description"><![CDATA[（單位：px）
+設定幻燈片的高度]]></item>
+				<item id="variable"><![CDATA[height_7ree]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[380]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[不顯示幻燈圖片展的用戶組]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[gid_7ree]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[1]]></item>
+					<item id="1"><![CDATA[2]]></item>
+					<item id="2"><![CDATA[3]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="php_lang_agree_7ree"><![CDATA[管理員必須同意柒瑞軟件產品用戶協議方可使用該插件，請在Discuz後台插件管理處設置同意。]]></item>
+				<item id="php_more_lang_production_7ree"><![CDATA[柒瑞插件產品]]></item>
+				<item id="php_more_lang_free_7ree"><![CDATA[應用中心插件]]></item>
+				<item id="php_more_lang_trade_7ree"><![CDATA[2012精品商業產品]]></item>
+				<item id="php_more_lang_shangjia_7ree"><![CDATA[柒瑞已經在DISCUZ應用中心上架的產品]]></item>
+				<item id="php_more_lang_baojia_7ree"><![CDATA[柒瑞《突破潛能·超越價值·騰飛夢想》系列精品商業插件產品]]></item>
+				<item id="php_more_lang_moreinfo_7ree"><![CDATA[[ 瞭解詳情 ]]]></item>
+				<item id="php_more_lang_service_7ree"><![CDATA[柒瑞公益服務]]></item>
+				<item id="php_more_lang_logo_7ree"><![CDATA[網站LOGO製作]]></item>
+				<item id="php_more_lang_logodetail_7ree"><![CDATA[幾年來，我們已經為上千位站長免費製作了LOGO]]></item>
+				<item id="php_more_lang_analysis_7ree"><![CDATA[網站運營分析]]></item>
+				<item id="php_more_lang_analysisdetail_7ree"><![CDATA[在網站運營過程中有任何困惑均可求助或交流，已經有上百位站長參與]]></item>
+				<item id="php_more_lang_discuz_7ree"><![CDATA[DISCUZ問題解答]]></item>
+				<item id="php_more_lang_discuzdetail_7ree"><![CDATA[Discuz及其插件安裝、使用的問題可以在這裡尋求幫助]]></item>
+				<item id="php_more_lang_about_7ree"><![CDATA[關於柒瑞]]></item>
+				<item id="php_more_lang_trust_7ree"><![CDATA[信賴與責任]]></item>
+				<item id="php_more_lang_trustdetail_7ree"><![CDATA[	柒瑞是Discuz! 開放平台認證的企業開發者、康盛官方授權認可的第三方資源提供商和長期忠實合作夥伴，幾年來我們專業的discuz插件產品和優質服務已經得到了全球大量discuz站長的支持和認可，具有較強的影響力。
+	我們的典型客戶有：卡巴斯基官方論壇、招商銀行、盛大遊戲、中國電信**市分公司、中國移動**市分公司、中國聯通**市分公司、**市廣電局、**市旅遊局、北京協和醫院、21CN論壇、電腦報官方論壇、硅谷動力論壇、電玩巴士、中華網汽車論壇、中少論壇、中國書法網、東林書院、綠森數碼商城、深圳論壇、濟南論壇、YY公會聯盟、DOD不死血戰工會、永恆國度工會……]]></item>
+				<item id="php_more_lang_detailinfo_7ree"><![CDATA[[更多]]]></item>
+				<item id="php_more_lang_siteweibo_7ree"><![CDATA[官網&微博]]></item>
+				<item id="php_more_lang_site_7ree"><![CDATA[柒瑞官網：]]></item>
+				<item id="php_more_lang_weibo_7ree"><![CDATA[官方微博：]]></item>
+				<item id="php_more_lang_qqweibo_7ree"><![CDATA[騰訊微博]]></item>
+				<item id="php_more_lang_sinaweibo_7ree"><![CDATA[新浪微博]]></item>
+				<item id="php_more_lang_club_7ree"><![CDATA[QQ群]]></item>
+				<item id="php_more_lang_qqqun_7ree"><![CDATA[柒瑞活躍站長超級群]]></item>
+				<item id="php_more_lang_qqcopy_7ree"><![CDATA[點擊複製QQ群號]]></item>
+				<item id="php_more_lang_qqtip_7ree"><![CDATA[QQ群號已經複製到剪貼板]]></item>
+				<item id="php_more_lang_document_7ree"><![CDATA[法律文書]]></item>
+				<item id="php_more_lang_agreement_7ree"><![CDATA[柒瑞終端用戶協議]]></item>
+				<item id="php_more_lang_lawyer_7ree"><![CDATA[法律顧問]]></item>
+				<item id="php_more_lang_wuxingliang_7ree"><![CDATA[吳興亮]]></item>
+				<item id="php_more_lang_appdy1_7ree"><![CDATA[柒瑞應用動態(24小時]]></item>
+				<item id="php_more_lang_appdy2_7ree"><![CDATA[條)]]></item>
+				<item id="php_more_lang_yu_7ree"><![CDATA[於]]></item>
+				<item id="php_more_lang_cong_7ree"><![CDATA[從]]></item>
+				<item id="php_more_lang_zhongxin_7ree"><![CDATA[應用中心]]></item>
+				<item id="php_more_lang_anzhuang_7ree"><![CDATA[安裝了]]></item>
+				<item id="php_more_lang_gengxin_7ree"><![CDATA[更新於]]></item>
+				<item id="php_more_lang_dytitle1_7ree"><![CDATA[截止現在(]]></item>
+				<item id="php_more_lang_dytitle2_7ree"><![CDATA[)柒瑞在應用中心共計]]></item>
+				<item id="php_more_lang_dytitle3_7ree"><![CDATA[款產品深受好評，並被]]></item>
+				<item id="php_more_lang_dytitle4_7ree"><![CDATA[個網站安裝使用！]]></item>
+			</item>
+		</item>
+	</item>
+</root>

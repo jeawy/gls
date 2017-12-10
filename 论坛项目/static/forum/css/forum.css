@@ -1,0 +1,143 @@
+ .title{
+	margin-bottom:5px;
+}
+
+dl{
+	margin-bottom:5px;
+}
+
+.div_posted{
+	background-color:#FF9556;
+	margin-top:5px;
+	color:#fff;
+}
+
+.sign{
+	border:#FF9556 solid 1px;
+	color:#FF9556;
+}
+
+.header{/*菜单*/
+	width:1200px;
+	margin:0px auto;
+	padding:0px;
+} 
+.my_circle
+{
+   margin: 0 auto;
+   width: 100px;
+
+}
+.circle_img
+{
+	width: 100px; 
+	height: 100px;
+	border-radius: 50%
+}
+
+
+.top
+{
+    background-color: white;
+	border: 1px solid rgb(212,212,213);
+}
+
+.top-row
+{ 
+    width: 100%;
+    text-align:center;
+	display: inline-flex;
+}
+
+.top-col-4
+{
+   width: 25%;
+}
+
+
+.roles
+{
+    min-height: 300px;
+}
+
+.loadmore
+{
+   text-align: center;
+    margin: 20px; 
+    padding-bottom: 20px;
+}
+
+.code
+{
+	position: fixed;
+	bottom: 140px;
+	left: 50%;
+}
+.p_title
+{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.p_detail
+{
+	color: gray;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.p_detail_table  
+{
+	width: 40% !important;
+	margin: 0 auto;
+}
+.td_right
+{
+	text-align: right;
+
+}
+
+.td_left
+{
+	text-align: left; 
+}
+
+.warp_bottom
+{
+	margin-top: 0;
+}
+.panel_body{
+	width: 100%;
+	margin: 10px;
+}
+.user {
+    padding-left: 0px;
+}
+.user li{
+	display: inline;
+}
+.forum_nav{
+	font-size:15px;
+}
+.p_title{
+	text-align: center;
+}
+.search_m{
+	width: 80%;
+}
+.blue_btn {
+    background-color: rgb(84,128,189);
+    border-color: rgb(84,128,189);
+    border: 0px;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    width: 160px;
+    padding: 2px 12px;
+	font-size: 18px;
+	line-height: 2;
+	margin: 30px auto;
+}
+.box_p{
+	margin-top:50px;
+}

@@ -1,0 +1,13 @@
+<div class="tbn">
+	<h2 class="leftsidebar_title">{lang friends}</h2>
+	<div class="leftsidebar_list">
+		<div$actives[me]><a href="home.php?mod=space&do=friend">{lang friend_list}</a></div>
+		<div$actives[search]><a href="home.php?mod=spacecp&ac=search">{lang search_friend}</a></div>
+		<div$actives[find]><a href="home.php?mod=spacecp&ac=friend&op=find">{lang people_might_know}</a></div>
+		<!--{if $_G['setting']['regstatus'] > 1}-->
+			<div$actives[invite]><a href="home.php?mod=spacecp&ac=invite">{lang invite_friend}</a></div>
+		<!--{/if}-->
+		<div$actives[request]><a href="home.php?mod=spacecp&ac=friend&op=request">{lang friend_request}</a></div>	
+		<div$actives[group]><a href="home.php?mod=spacecp&ac=friend&op=group">{lang set_friend_group}</a></div>
+	</div>
+</div>

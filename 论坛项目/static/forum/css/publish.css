@@ -1,0 +1,58 @@
+ .title{
+	margin-bottom:5px;
+}
+
+dl{
+	margin-bottom:5px;
+}
+
+.div_posted{
+	background-color:#FF9556;
+	margin-top:5px;
+	color:#fff;
+}
+
+.sign{
+	border:#FF9556 solid 1px;
+	color:#FF9556;
+}
+
+.header{/*菜单*/
+	width:1200px;
+	margin:0px auto;
+	padding:0px;
+} 
+#title
+{
+	border:none;
+	border-bottom: 1px solid #d6d6d6;
+}
+
+.jqte_editor
+{
+	min-height: 360px  !important;
+}
+.jqte_tool.jqte_tool_1 .jqte_tool_label
+{
+	height: 26px;
+}
+.cast2_sign{
+width:100%;
+color:#999;
+background-color:#FFF;
+height:90px;
+margin-top:10px;
+margin-bottom:10px;
+font-size:12px;
+line-height: 90px; 
+border:rgb(254,112,60) solid 2px;
+}
+.sign_img{
+	float: left;
+	margin-left:42px;
+}
+.sign_img img{
+	width:60px;
+	height:60px;
+	border-radius:30px;
+}
