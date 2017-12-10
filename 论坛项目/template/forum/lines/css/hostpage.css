@@ -1,0 +1,171 @@
+ .title{
+	margin-bottom:11px;
+	margin-top:8px;
+}
+
+.div_posted{
+	background-color:rgb(254,112,60);
+	margin-top:5px;
+	color:#fff;
+}
+
+.sign{
+	border:rgb(254,112,60) solid 1px;
+	color:rgb(254,112,60);
+}
+
+.header{/*菜单*/
+	width:1200px;
+	margin:0px auto;
+	padding:0px;
+} 
+.div_posted a{
+	color: #FFF;
+	width: 100%;
+	margin: 0px auto;
+}
+.label {
+    padding: .1em .5em 0em;
+	position: relative;
+	top:-5px;
+	margin: 0px 5px;
+}
+.title_1{
+	color:#f0ad4e;
+}
+.vip{
+	color:#F2CC03;
+}
+.user{
+	padding-left: 0px;
+}
+.user li{
+	display: inline-block;
+}
+.title_red{
+	color:#d9534f;
+}
+.title_blue{
+	color:#3E82D3;
+}
+.fa_rel{
+	position: relative;
+	top:-5px;
+	margin: 0px 5px;
+	color:green
+}
+.nav-tabs{
+	border: 0px;
+}
+.left_bottom{
+	width:100%;
+	background-color:#fff;
+	border: 1px solid rgb(212,212,213);
+	padding:20px;
+	margin-top: 10px;
+}
+.left_top{
+	width:100%;
+	background-color:#fff;
+	border: 1px solid rgb(212,212,213);
+	padding:20px 20px 0px;
+}
+
+.cast2_title{
+	color:rgb(180,180,181);
+	margin-left:20px;
+	position: relative;
+	top:42px;
+}
+.box_posted img{
+	width:60px;
+	height:60px;
+	border-radius:30px;
+}
+.sign_img{
+	float: left;
+	margin-left:42px;
+}
+.sign_img img{
+	width:60px;
+	height:60px;
+	border-radius:30px;
+}
+
+.cast2_sign{
+width:100%;
+color:#999;
+background-color:#FFF;
+height:90px;
+margin-top:10px;
+margin-bottom:10px;
+font-size:12px;
+line-height: 90px; 
+border:rgb(254,112,60) solid 2px;
+}
+table.sign_table{
+	margin:10px 0px 10px 170px;
+	line-height:35px;
+}
+
+.sign_msg{
+	color: rgb(254,112,60);
+	font-size:18px;
+	letter-spacing: 6px;
+}
+.moderator{
+	padding:0px 10px 10px 0px;
+	color: #888;
+}
+.moderator img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.left_nav{
+	width:100%;
+	background-color:#fff;
+	border: 1px solid rgb(212,212,213);
+	padding:0px;
+}
+.my_label{
+	padding: .2em .6em;
+	background-color: rgb(254,112,60);
+	font-size: 80%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+.time{
+	    border-bottom: 1px solid rgb(212,212,213);
+		padding-bottom:10px;
+		margin-bottom: 10px;
+}
+.time span{
+	font-size:12px;
+}
+textarea{
+	width: 100%;
+	border-color:rgb(212,212,213);
+	border-left:0px;
+	border-right:0px;
+}
+.collect{
+	margin-left: 5px;
+}
+.progress{
+	background-color: rgb(62,58,57);
+}
+.progress-bar-danger{
+	background-color: rgb(254,112,60);
+}
+.my_table{
+	margin: 0px auto;
+}
+.panel-body{
+	max-height: 120px;
+	height: 120px;
+}

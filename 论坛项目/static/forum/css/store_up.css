@@ -1,0 +1,57 @@
+section.container{
+    margin-top: 65px;
+    margin-bottom: 15px;
+}
+/* 
+ *左侧导航
+ */
+
+.list_active{
+    color: rgb(254,112,60);
+    border-bottom: 1px solid rgb(254,112,60);
+    font-weight: 600;
+}
+.leftsidebar{
+    padding-left: 0px;
+}
+
+.leftsidebar_title{
+    background-color: rgb(254,112,60);
+    color: #fff;
+    margin: 0px;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.leftsidebar_list{
+    background-color: #fff;
+    padding: 10px 25px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0,.2)
+}
+.leftsidebar_list>div{
+    padding: 10px 0px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* 
+ *右侧收藏详情
+ */
+ .store_up{
+     background-color: #fff;
+     min-height: 380px;
+ }
+ .store_up_head{
+    padding: 15px 0px;
+    border-bottom: 1px #ddd dashed;
+    font-weight:600;
+}
+.store_up_head>span{
+    margin-left: 5px;
+}
+div.store_up_details{
+    padding:15px 0; 
+}
+.prompt_message{
+    font-weight: 600;
+}

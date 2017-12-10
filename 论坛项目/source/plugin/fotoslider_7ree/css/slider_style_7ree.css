@@ -1,0 +1,57 @@
+/*
+	ID: fotoslider_7ree
+    for DiscuzX 2.X GBK
+	[www.7ree.com] (C)2007-2012 7ree.com.
+	This is NOT a freeware, use is subject to license terms
+	Update: 13:15 2012/9/27
+    Agreement: http://www.7ree.com/agreement.html
+ */
+					  				  
+/*
+	UTILITY STYLES
+*/				  				  
+					  				  
+.floatLeft 									{ float: left; margin-right: 10px;}
+.floatRight									{ float: right; }
+.clear 										{ clear: both; }
+a											{ outline: none; }
+
+
+
+/*
+	TYPOGRAPHY
+*/
+ul											{ list-style: square inside; }
+blockquote									{ padding: 0 20px; margin-left: 20px; border-left: 20px solid #ccc; font-size: 14px; 
+									  		  font-family: Georgia, serif; font-style: italic; margin-top: 10px;}
+
+/*
+	SLIDER
+*/
+.slider-wrap								{ width: 419px;  }			
+.stripViewer .panelContainer 
+.panel ul									{ text-align: left; margin: 0 15px 0 30px; }
+.stripViewer								{ position: relative; overflow: hidden; width: 960px; height:auto; }
+.stripViewer .panelContainer				{ position: relative; left: 0; top: 0; }
+.stripViewer .panelContainer .panel			{ float: left; height: 100%; position: relative; width: 960px; }
+.stripNavL, .stripNavR, .stripNav			{ display: none; }
+.nav-thumb 									{ border: 1px solid gray; margin-right: 5px; }
+#movers-row									{ margin: -43px 0 0 62px; }
+#movers-row div								{ width: 20%; float: left; }
+#movers-row div a.cross-link 				{ float: right;}
+.photo-meta-data							{ background: url(../image/system_7ree/transpbg_7ree.png); padding: 12px; height: 50px; 
+											  margin-top: -74px; position: relative; z-index: 9999; color: white;}
+
+
+.photo-meta-data span 						{ font-size: 12px; }
+.photo-meta-data h2 						{ font-size: 20px; font-family: Microsoft YaHei, Microsoft JhengHei, SimHei;}
+
+.cross-link									{ padding-left:2px; display: block; width: 62px;height:50px; margin-top: -22px; 
+											  position: relative; padding-top: 15px; z-index: 9999; }
+.active-thumb 								{ padding-left:2px; width:64px;height:50px; background-image: url(../image/system_7ree/uparrow_icon_7ree.png); background-repeat:no-repeat; background-position:0px 4px;}
+.thumb_7ree									{ position: relative; left:600px;top:-50px;}
+
+.main_gride_7ree							{margin: 0 auto; padding:0px; width:960px;height:380px;}
+
+.thumb_7ree_2								{ position: static; margin-left:580px;margin-top:-70px;+margin-top:-50px; width:450px;}
+

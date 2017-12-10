@@ -1,0 +1,83 @@
+<!--{eval $_G['home_tpl_titles'] = array('{lang pm}');}-->
+<!--{template common/header}-->
+<link rel="stylesheet" href="{$_G['own_static_path']}/css/information.css">
+<section class="container">
+		
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3 leftsidebar"> 
+				<!--{subtemplate home/space_prompt_nav}-->
+            </div>
+            <div class="col-sm-9 col-md-9 col-lg-9 information">
+					<ul class="tb cl"> 
+							<li$actives[privatepm] $actives[newpm]><a href="home.php?mod=space&do=pm&filter=privatepm">{lang private_pm}</a></li>
+							<li$actives[announcepm]><a href="home.php?mod=space&do=pm&filter=announcepm">{lang announce_pm}</a></li>
+							<li ><a class="my_btn" href="home.php?mod=spacecp&ac=pm">{lang send_pm}</a></li>
+					</ul>
+              
+                <div class="information_details"> 
+					<!--{if empty($list)}-->
+						<div class="emp mtw ptw hm xs2">
+							<!--{if $new == 1}-->
+								{lang no_new_notice}<a href="home.php?mod=space&do=notice&isread=1">{lang view_old_notice}</a>
+							<!--{else}-->
+							<p class="prompt_message">{lang no_notice}</p>
+							<!--{/if}-->
+						</div>
+					<!--{/if}-->
+					<script type="text/javascript"> 
+						function deleteQueryNotice(uid, type) {
+							var dlObj = $(type + '_' + uid);
+							if(dlObj != null) {
+								var id = dlObj.getAttribute('notice');
+								var x = new Ajax();
+								x.get('home.php?mod=misc&ac=ajax&op=delnotice&inajax=1&id='+id, function(s){
+									dlObj.parentNode.removeChild(dlObj);
+								});
+							}
+						}
+		
+						function errorhandle_pokeignore(msg, values) {
+							deleteQueryNotice(values['uid'], 'pokeQuery');
+						}
+					</script>
+					<!--{if $list}-->
+						<div class="xld xlda"> 
+								<div class="nts">
+									<!--{loop $list $key $value}-->
+										<dl class="cl {if $key==1}bw0{/if}" $value[rowid] notice="$value[id]">
+											<dd class="m avt mbn">
+												<!--{if $value[authorid]}-->
+												<a href="home.php?mod=space&uid=$value[authorid]"><!--{avatar($value[authorid],small)}--></a>
+												<!--{else}-->
+												<img src="{IMGDIR}/systempm.png" alt="systempm" />
+												<!--{/if}-->
+											</dd>
+											<dt>
+												<a class="d b" href="home.php?mod=spacecp&ac=common&op=ignore&authorid=$value[authorid]&type=$value[type]&handlekey=addfriendhk_{$value[authorid]}" id="a_note_$value[id]" onclick="showWindow(this.id, this.href, 'get', 0);" title="{lang shield}">{lang shield}</a>
+												<span class="xg1 xw0"><!--{date($value[dateline], 'u')}--></span>
+											</dt>
+											<dd class="ntc_body" style="$value[style]">
+												$value[note]
+											</dd>
+			
+											<!--{if $value[from_num]}-->
+											<dd class="xg1 xw0">{lang ignore_same_notice_message}</dd>
+											<!--{/if}-->
+			
+										</dl>
+									<!--{/loop}-->
+								</div>
+							</div>
+			
+							<!--{if $view!='userapp' && $space[notifications]}-->
+							<div class="mtm mbm"><a href="home.php?mod=space&do=notice&ignore=all">{lang ignore_same_notice_message} <em>&rsaquo;</em></a></div>
+							<!--{/if}-->
+			
+							<!--{if $multi}--><div class="pgs cl">$multi</div><!--{/if}-->
+				   <!--{/if}-->
+                </div>
+            </div>
+        </div>
+</section>
+ 
+<!--{template common/footer}-->

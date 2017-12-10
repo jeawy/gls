@@ -1,0 +1,98 @@
+.title{
+	margin-bottom:5px;
+}
+
+dl{
+	margin-bottom:5px;
+}
+
+.div_posted{
+	background-color:#FF9556;
+	margin-top:5px;
+	color:#fff;
+}
+
+.sign{
+	border:#FF9556 solid 1px;
+	color:#FF9556;
+}
+
+.header{/*菜单*/
+	width:1200px;
+	margin:0px auto;
+	padding:0px;
+} 
+.circle
+{
+   margin: 0 auto;
+   width: 100px;
+   height: 100px;
+   background-color:gray;
+   border-radius: 50px;
+}
+
+.top
+{
+    background-color: white;
+}
+.panel-default{
+    margin-top:0;
+    margin-bottom:0;
+}
+.top-row
+{ 
+    width: 100%;
+    text-align:center; 
+}
+  
+.roles
+{
+    min-height: 300px;
+}
+.top-col-4
+{
+   width: 100%;
+}
+.loadmore
+{
+   text-align: center;
+    margin: 20px; 
+    padding-bottom: 20px;
+}
+.search
+{
+   margin-top: 6px;
+}
+.list_title
+{
+   border-bottom: 1px solid #d6d6d6;
+}
+.list_title table
+{
+   width: 100%; 
+}
+
+.list_title table a
+{
+   color: black;
+}
+.title-right
+{
+    margin-top: 20px; 
+    float: right;
+}
+.title-right a{
+   margin: 0 10px;
+}
+.title-left
+{
+margin-top: 20px;
+margin-left: 30px; 
+    float: left;
+}
+.code
+{
+	position: fixed;
+	bottom: 140px;
+	left: 50%;
+}

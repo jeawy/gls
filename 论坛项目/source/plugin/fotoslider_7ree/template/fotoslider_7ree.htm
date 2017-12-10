@@ -1,0 +1,52 @@
+<!--{block return}-->
+<!--
+	ID: fotoslider_7ree
+	(C)2007-2013 [www.7ree.com]
+	Update: 11:30 2013/5/20
+	This is NOT a freeware, use is subject to license terms
+	Agreement: http://addon.discuz.com/?@7.developer.doc/agreement_7ree_html
+	More Plugins: http://addon.discuz.com/?@7ree
+-->
+	<script type="text/javascript">
+		!window.jQuery && document.write("<script src=\"source/plugin/fotoslider_7ree/js/jquery-1.7.1.min.js\"></script"+">");
+	</script>
+	<script type="text/javascript" src="source/plugin/fotoslider_7ree/js/swiper-3.4.2.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="source/plugin/fotoslider_7ree/css/swiper.css" />
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			prevButton: '.swiper-button-prev',
+			nextButton: '.swiper-button-next',
+		})
+	</script>
+	<style>
+		.swiper-slide img{
+			width: 100%;
+		}
+	</style>
+	<style id="diy_style" type="text/css">
+		.swiper-container{
+			padding-left:0px;
+			padding-right: 0px;
+		}
+	</style>
+<div class="swiper-container container">
+	<div class="swiper-wrapper ">
+		<!--{loop $slider_7ree $slider_value}-->
+		<div class="swiper-slide" title="$slider_value[0]">
+				<a href="$slider_value[4]" <!--{if $vars_7ree[blank_7ree]}-->target="_blank"<!--{else}-->target="_self"<!--{/if}-->>
+					<img src="{$vars_7ree[path_7ree]}{$slider_value[2]}" alt="$slider_value[0]" style="width:100%"/></a>				
+		</div>
+		<!--{/loop}-->
+	</div>
+	<div class="swiper-pagination"></div>
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+</div>
+
+</div>
+</div>
+<div>
+
+
+<!--{/block}-->

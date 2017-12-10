@@ -1,0 +1,77 @@
+.font-grey{
+    color:#999;
+}
+section.container{
+    margin-top: 65px;
+    margin-bottom: 15px;
+}
+
+.fa{
+    font-size: 16px;
+}
+.title_my_posts{
+    font-size: 16px;
+    font-weight:600;
+    margin: 15px 0;
+    padding: 10px 15px;
+    background-color: #fff;
+}
+
+.Posted_btn{
+    background-color: rgb(254,112,60);
+    outline: none;
+    border: 1px solid rgb(255, 101, 45);
+    padding: 4px 16px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing:2px;
+    text-align: center;
+}
+.my_posts_tab{
+    margin-top: 15px;
+}
+.my_posts_tab span{
+    background-color: #d4d4d4;
+    font-weight: 600;
+    padding: 3px 6px;
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    float: left;
+    margin-right: 1px;
+}
+li.a span{
+    background-color: rgb(254,112,60);
+    color: #fff;
+}
+.details_head{
+    background-color: rgb(249, 249, 249);
+    padding: 10px 20px;
+    color: #666;
+}
+.details_body{
+    background-color: #fff; 
+}
+
+.details_head ul{
+    margin: 0px;
+    padding:0px;
+}
+.details_head li{
+    float: left;
+    list-style-type: none;
+    padding: 0 8px;
+    text-align: center;
+    line-height: 1;
+}
+.cut-off{
+    border-right:rgb(158,158,159) solid 1px;
+}
+ul li.item-title{
+    padding: 0 15px 0 0;
+}
+.item-writer{
+    margin-right: 20px;
+}

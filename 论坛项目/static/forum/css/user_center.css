@@ -1,0 +1,105 @@
+/* 
+ *用户信息展示-头部
+ */
+ .userinfo_top{
+     margin-top:90px; 
+ }
+ .userinfo_top img{
+     width:140px;
+     width:140px;
+     border-radius: 50%;
+     padding: 5px;
+     border: 1px solid #ddd;
+     background-color: #fff;
+     margin-left: 15px;
+ }
+ .userinfo_top_msg{
+     margin-left: 10px;
+     padding-bottom: 15px;
+ }
+ .msg_table{
+    color: #aaa;
+ }
+ .msg_table td{
+	width:120px;
+    text-align:center;
+    font-size: 16px;
+}
+.msg_table .left_line{
+    border-left:#ccc solid 1px;
+    padding:0px 5px;
+}
+.userinfo_top_msg>h2{
+    padding-left: 30px;
+}
+.userinfo_tab_nav{
+    margin-top:30px; 
+}
+.userinfo_tab_nav>span{
+    background-color: #d4d4d4;
+    color:#fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding:3px 6px;
+    text-align: center;
+    display: inline-block;
+    width:100px;
+    letter-spacing:2px; 
+    cursor: pointer;
+}
+span.act{
+    background-color: rgb(254,112,60);
+}
+/* 
+ *用户信息展示-详细列表
+ */
+.userinfo_bottom{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+.userinfo_bottom span{
+    display: inline-block;
+}
+.userinfo_bottom>div{
+    padding: 20px 0;
+}
+.user_id{
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 15px;
+}
+.left_line {
+    border-left: #bbb solid 1px;
+}
+.identification span,.statistics span{
+    text-align: center;
+    padding: 0px 8px;
+}
+.h3_custom{
+    margin-top: 0px;
+}
+.top_dotted{
+    border-top: dotted 1px #bbb;
+}
+.birthday{
+    margin-left: 30px;
+}
+.user_msg span{
+    margin-left: 8px;
+}
+.liveness table{
+    width: 100%;
+    line-height: 1.8;
+}
+.liveness span{
+    margin-left: 8px;
+}
+.statistics_num span{
+    padding: 0 10px;
+    text-align: center;
+    line-height: 1.8;
+}
+.statistics_num_list{
+    margin-left: -11px;
+}
