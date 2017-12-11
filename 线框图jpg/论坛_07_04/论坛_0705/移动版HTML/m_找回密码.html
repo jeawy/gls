@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>一数论坛设置密码</title>
+    <title>找回密码</title>
     <meta http-equiv="con-Type" con="text/html; charset=utf-8" />
     <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
     <meta content="yes" name="apple-mobile-web-app-capable"/><!-- 删除默认的苹果工具栏和菜单栏 -->
@@ -18,19 +18,23 @@
     <div class="panel panel-default">
             <div class="panel-body">
                 <div >
-                    <div class="col-gray"><strong class="orange">设置密码</strong></div>
-                </div> 
-      
-                <div >
-                    <input type="text" class="form-control-bottom"  placeholder="密码" name="pwd1" id="pwd1" value="" />
+                    <div class="col-gray"><strong class="orange">找回密码</strong></div>
                 </div> 
                 <div >
-                    <input type="text" class="form-control-bottom"  placeholder="再次输入密码" name="pwd2" id="pwd2" value="" />
-                </div>
+                    <input type="text" class="form-control-bottom"  placeholder="手机号" name="phone" id="phone" value="" />
+                </div> 
+                <div class="code_wrap">
+                    <input type="text" class="form-control-bottom code"  placeholder="验证码" name="code" id="code" value="" />
+                    <img class="identifying_code" src="../img/show.png" alt="验证码">
+                </div> 
                 <div >
-                        <button type="submit" class="btn btn_submit" >提交</button>
-    
-                    </div>
+                    <input type="text" class="form-control-bottom"  placeholder="短信验证码" name="pwd1" id="pwd1" value="" />
+                </div> 
+                 
+                 <div >
+                    <button type="submit" class="btn btn_submit" >提交</button>
+
+                </div> 
             </div><!--end panel-body -->
           </div><!--end panel-panel -->
 
@@ -81,7 +85,6 @@
     
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/base.js"></script>
 </body>
 
 </html>

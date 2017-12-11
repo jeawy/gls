@@ -1,6 +1,6 @@
 .microblog_logo{
     display: block;
-    margin: 60px auto 15px;
+    margin: 45px auto 15px;
     width: 110px;
     height: auto;
 }
@@ -13,6 +13,7 @@
     padding:30px;
     background-color: inherit;
     border: 0px;
+    margin: 0px;
 }
 .panel-body{
     background-color: #fff;
@@ -56,4 +57,17 @@ button.btn_submit
 
 .panel {
    box-shadow: 0 0 0 0;
+}
+/* 验证码图片 */
+.identifying_code{
+    position: absolute;
+    right: 4px;
+    bottom:4px;
+    width: 100px;
+}
+.code_wrap{
+    position: relative;
+}
+.code{
+    padding-right: 106px;
 }
