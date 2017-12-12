@@ -1,18 +1,6 @@
 <!--{eval $threadsort = $threadsorts = null;}-->
 <!--{template common/header}-->
-<!-- header start -->
-<header class="header">
-
-	<div class="nav">
-		<span class="y">
-			<button class="btn_pn btn_pn_blue" id="replyid"><span>{lang reply}</span></button>
-		</span>
-		<a href="<!--{if $_GET[fromguid] == 'hot'}-->forum.php?mod=guide&view=hot&page=$_GET[page]<!--{else}-->forum.php?mod=forumdisplay&fid=$_G[fid]&<!--{eval echo rawurldecode($_GET[extra]);}--><!--{/if}-->" class="z"><img src="{STATICURL}image/mobile/images/icon_back.png" /></a>
-		<span class="name"><!--{eval echo strip_tags($_G['forum']['name']) ? strip_tags($_G['forum']['name']) : $_G['forum']['name'];}--></span>
-	</div>
-
-</header>
-<!-- header end -->
+<link rel="stylesheet" href="../css/m_css/m_details.css">
 
 <!--{hook/viewthread_top_mobile}-->
 <!-- main postlist start -->
@@ -188,7 +176,8 @@
 				<input type="button" class="redirect button" href="forum.php?mod=post&action=reply&fid=$_G[fid]&tid=$_G[tid]&repquote=$post[pid]&extra=$_GET[extra]&page=$page" value="{lang reply}">
 			</div>
 			<!--{/if}-->
-       </div>
+	   </div>
+	   <button class="reply-btn" id="replyid"><span>{lang reply}</span></button>
    </div>
    <!--{hook/viewthread_postbottom_mobile $postcount}-->
    <!--{eval $postcount++;}-->
