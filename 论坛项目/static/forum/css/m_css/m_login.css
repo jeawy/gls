@@ -1,0 +1,73 @@
+.microblog_logo{
+    display: block;
+    margin: 45px auto 15px;
+    width: 110px;
+    height: auto;
+}
+.title{
+    color: #888;
+    font-size: 20px;
+}
+
+.panel{
+    padding:30px;
+    background-color: inherit;
+    border: 0px;
+    margin: 0px;
+}
+.panel-body{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+
+.col-gray
+{
+    background-color:#D6D6D6;
+    line-height: 40px;
+    padding-left: 6px;
+}
+
+
+.form-control-bottom
+{
+    border:none;
+    border-radius: 0;
+    width: 100%; 
+    margin-top: 30px; 
+    outline: 0px;
+    border-bottom: 1px solid #ddd;
+    padding-left:6px; 
+}
+
+button.btn_submit
+{
+    width: 100%;
+    border-radius: 0; 
+    background-color: #fff;
+    border: rgb(254, 112, 60) 1px solid;
+    color: rgb(254, 112, 60);
+    margin-top: 10px;
+}
+.col-protocal
+{
+    margin-top: 10px;
+}
+
+.panel {
+   box-shadow: 0 0 0 0;
+}
+/* 验证码图片 */
+.identifying_code{
+    position: absolute;
+    right: 4px;
+    bottom:4px;
+    width: 100px;
+}
+.code_wrap{
+    position: relative;
+}
+.code{
+    padding-right: 106px;
+}

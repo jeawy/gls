@@ -5,48 +5,72 @@
 <!-- 板块标题**开始 -->
 <!--{if $_G[fid] == 38}-->
   <div class="clearfix forum"> 
-				  <img class="forum-logo" src="{$_G['own_static_path']}//img/cast_title.png" />
-				  <span class="forum-title" href="#" target="_blank">$_G['forum']['name']</span>
+				  <img class="forum-logo" src="{$_G['own_static_path']}/img/cast_title.png" />
+				  <span class="forum-title" >$_G['forum']['name']</span>
   </div>
   <!--{/if}-->
+  <!--{if $_G[fid] == 37}-->
+   <!-- 板块标题**开始 -->
+   <div class="clearfix forum"> 
+		<img class="forum-logo" src="{$_G['own_static_path']}/img/cast_title.png" />
+		<span class="forum-title" >ASUWatch</span>
+  </div>
+  <!-- 板块标题**结束 -->
+<!--{/if}-->
   <!-- 板块标题**结束 -->
 <!--{hook/forumdisplay_top_mobile}-->
 <!-- main threadlist start -->
-<!--{if !$subforumonly}-->
-<div class="threadlist"> 
-			<ul>
-			<!--{if $_G['forum_threadcount']}-->
-				<!--{loop $_G['forum_threadlist'] $key $thread}-->
-					<!--{if !$_G['setting']['mobile']['mobiledisplayorder3'] && $thread['displayorder'] > 0}-->
-						{eval continue;}
-					<!--{/if}-->
-                	<!--{if $thread['displayorder'] > 0 && !$displayorder_thread}-->
-                		{eval $displayorder_thread = 1;}
-                    <!--{/if}-->
-					<!--{if $thread['moved']}-->
-						<!--{eval $thread[tid]=$thread[closed];}-->
-					<!--{/if}-->
-					<li>
-					<!--{hook/forumdisplay_thread_mobile $key}-->
-                    <a href="forum.php?mod=viewthread&tid=$thread[tid]&extra=$extra" $thread[highlight] >
-					{$thread[subject]}
-					<span class="by">$thread[author]</span>
-					</a>
-					<span class="num">{$thread[replies]}</span>
-					<!--{if in_array($thread['displayorder'], array(1, 2, 3, 4))}-->
-						<span class="icon_top"><img src="{STATICURL}image/mobile/images/icon_top.png"></span>
-					<!--{elseif $thread['digest'] > 0}-->
-						<span class="icon_top"><img src="{STATICURL}image/mobile/images/icon_digest.png"></span>
-					<!--{elseif $thread['attachment'] == 2 && $_G['setting']['mobile']['mobilesimpletype'] == 0}-->
-						<span class="icon_tu"><img src="{STATICURL}image/mobile/images/icon_tu.png"></span>
-					<!--{/if}-->
-					</li>
-                <!--{/loop}-->
-            <!--{else}-->
-			<li>{lang forum_nothreads}</li>
-			<!--{/if}-->
-		</ul>
+<!--帖子列表**开始 -->
+<div class="container content">
+	<!--{if !$subforumonly}-->
+	
+				 
+				<!--{if $_G['forum_threadcount']}-->
+					<!--{loop $_G['forum_threadlist'] $key $thread}-->
+					<div class="post-list row"> 
+						<!--{if !$_G['setting']['mobile']['mobiledisplayorder3'] && $thread['displayorder'] > 0}-->
+							{eval continue;}
+						<!--{/if}-->
+						<!--{if $thread['displayorder'] > 0 && !$displayorder_thread}-->
+							{eval $displayorder_thread = 1;}
+						<!--{/if}-->
+						<!--{if $thread['moved']}-->
+							<!--{eval $thread[tid]=$thread[closed];}-->
+						<!--{/if}-->
+						<div class="list-user-img col-xs-2 col-sm-2">
+							<a href="#"  >
+								<img src="uc_server/avatar.php?uid=$thread[authorid]&size=middle"/>
+							</a>
+						</div>
+						 
+						<div class="col-xs-10 col-sm-10 summary-wrap">
+								<div class="post-summary clearfix">
+									<!--{hook/forumdisplay_thread_mobile $key}-->
+									<a href="forum.php?mod=viewthread&tid=$thread[tid]&extra=$extra" $thread[highlight] >
+											<div class="summary-title">{$thread[subject]}</div></a><!-- 超链接修改 -->
+									</a>
+											<ul>
+													<li class="user-name">$thread[author]</li>
+													<li>$thread[dateline]</li>
+													<li></li>
+													<li> </li>
+											
+													<div class="pull-right user_nub">
+														<i class="fa fa-eye" aria-hidden="true"></i>{$thread[views]}
+														<i class="fa fa-commenting fa-magin" aria-hidden="true"></i>{$thread[replies]}
+													</div> 
+										    </ul> 
+							    </div>
+					    </div>
+					</div>
+					<!--{/loop}-->
+				<!--{else}-->
+				<li>{lang forum_nothreads}</li>
+				<!--{/if}-->
+			 
+	</div>
 </div>
+<!--帖子列表**结束 -->
 $multipage
 <!--{/if}-->
 <!-- main threadlist end -->
