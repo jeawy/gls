@@ -1,0 +1,100 @@
+/* 
+ * 通用
+ */    
+    a:link{
+        color: inherit;
+    }
+    .left-border{
+        border-left: #444 solid 1px;
+    }
+
+/* 
+ * 下拉菜单
+ */
+    .nav_btn {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+        background-color: #fff;
+    }
+    .nav_btn button {
+        background-color: #fff;
+        padding: 5px 10px;
+        font-size: 14px;
+        line-height: 1.2;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .dropdown-menu{
+        min-width:min-content;
+    }
+    .dropdown-menu>li>a{
+        padding:0 0 0 10px;
+    }
+    .screen{
+        padding: 15px;
+        color: rgb(113, 112, 113);
+    }
+    .screen-right{
+        padding-top: 5px;
+    }
+    .screen-right a{
+        line-height: 1;
+        float: left;
+        padding: 0px 4px;
+        text-align: center;
+    }
+
+/* 
+ * 帖子列表
+ */
+    .content{
+        background-color: #fff;
+        padding-bottom: 15px;
+    }
+    .post-list{
+        margin-top: 15px;
+        padding-top: 5px;
+    }
+    .post-list ul{
+        overflow: hidden;
+        list-style-type: none;
+        line-height: 1;
+    }
+    .post-list li{
+        float: left; 
+        padding: 0 2px;
+    }
+    .list-user-img img{
+        width: 50px;
+        border-radius: 50%;
+    }
+    .summary-title{
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 4px; 
+    }
+    .post-summary{
+        border-bottom: 1px solid #ddd;
+        padding-top: 4px;
+        padding-bottom: 10px;
+        color: rgb(121, 121, 121);
+    }
+    .user_nub {
+        color: #b5b6b6;
+        line-height: 1;
+    }
+    .user_nub .fa{
+        margin-right: 3px;
+    }
+    .fa-magin{
+        margin-left: 6px;
+    }
+    .summary-wrap{
+        padding-left: 5px;
+    }
+    ul .user-name{
+        margin-right: 10px;
+        padding: 0;
+    }
