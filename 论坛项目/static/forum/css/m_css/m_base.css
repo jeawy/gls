@@ -119,6 +119,9 @@ nav a:active,nav a:hover,nav a:focus,nav a:visited{
     margin-top:2px;
     margin-bottom: 2px;
 }
+.forum-logo {
+    background-color: rgb(181, 181, 181);
+}
 .hide-menu::after{
   content: '';
   border-left: 1px solid #ccc;
@@ -154,4 +157,9 @@ nav a:active,nav a:hover,nav a:focus,nav a:visited{
     width: 22px;
     vertical-align:middle;
     padding-bottom: 1px;
+}
+.avatar img{
+    width:40px;
+    height: 40px;
+    border-radius: 20px;
 }

@@ -138,47 +138,11 @@
 				</div>
 				<div class="col-xs-10 col-sm-10 summary-wrap">
 							<div class="posted_content" href="#replybtn_$post[pid]">
-								<ul class="authi">
-										<li class="grey">
-											<em>
-												<!--{if isset($post[isstick])}-->
-													<img src ="{IMGDIR}/settop.png" title="{lang replystick}" class="vm" /> 
-													{lang from} {$post[number]}{$postnostick}
-												<!--{elseif $post[number] == -1}-->
-													{lang recommend_post}
-												<!--{else}-->
-													<!--{if !empty($postno[$post[number]])}-->$postno[$post[number]]<!--{else}-->{$post[number]}{$postno[0]}<!--{/if}-->
-												<!--{/if}-->
-											</em>
-											<b>
-											<!--{if $post['authorid'] && $post['username'] && !$post['anonymous']}-->
-												<a href="home.php?mod=space&uid=$post[authorid]" class="blue">$post[author]</a></b>
-											<!--{else}--> 
-												<!--{if !$post['authorid']}-->
-												<a href="javascript:;">{lang guest} <em>$post[useip]{if $post[port]}:$post[port]{/if}</em></a>
-												<!--{elseif $post['authorid'] && $post['username'] && $post['anonymous']}-->
-												<!--{if $_G['forum']['ismoderator']}--><a href="home.php?mod=space&uid=$post[authorid]" target="_blank">{lang anonymous}</a><!--{else}-->{lang anonymous}<!--{/if}-->
-												<!--{else}-->
-												$post[author] 
-												<em>{lang member_deleted}</em>
-												<!--{/if}-->
-											<!--{/if}-->
-										</li>
-										
-										<li class="grey rela">
-											<!-- manage start -->
-												<!--{if $_G['forum']['ismoderator']}-->
-												<em><a href="#moption_$post[pid]" class="popup blue">{lang manage}</a></em>
-												<!--{/if}-->
-												<div id="moption_$post[pid]" popup="true" class="manage" style="display:none;">
-													<input type="button" value="{lang edit}" class="redirect button" href="forum.php?mod=post&action=edit&fid=$_G[fid]&tid=$_G[tid]&pid=$post[pid]{if !empty($_GET[modthreadkey])}&modthreadkey=$_GET[modthreadkey]{/if}&page=$page">
-													<!--{if $_G['group']['allowdelpost']}--><input type="button" value="{lang modmenu_deletepost}" class="dialog button" href="forum.php?mod=topicadmin&action=delpost&fid={$_G[fid]}&tid={$_G[tid]}&operation=&optgroup=&page=&topiclist[]={$post[pid]}"><!--{/if}-->
-													<!--{if $_G['group']['allowbanpost']}--><input type="button" value="{lang modmenu_banpost}" class="dialog button" href="forum.php?mod=topicadmin&action=banpost&fid={$_G[fid]}&tid={$_G[tid]}&operation=&optgroup=&page=&topiclist[]={$post[pid]}"><!--{/if}-->
-													<!--{if $_G['group']['allowwarnpost']}--><input type="button" value="{lang modmenu_warn}" class="dialog button" href="forum.php?mod=topicadmin&action=warn&fid={$_G[fid]}&tid={$_G[tid]}&operation=&optgroup=&page=&topiclist[]={$post[pid]}"><!--{/if}-->
-												</div> 
-											$post[dateline]
-										</li>
-									</ul>
+									<div class="clearfix">
+										<div class="summary-title pull-left">$post[author]</div>
+									    <div class="reply-time pull-left">$post[dateline]</div>
+									</div>
+						 
 									<div class="reply-content">
 											<!--{if $post['warned']}-->
 												<span class="grey quote">{lang warn_get}</span>
@@ -265,15 +229,14 @@
 									<!--{/if}-->
 									<!--{/if}-->
 									<!--{if $_G[uid] && $allowpostreply && !$post[first]}-->
-									<div id="replybtn_$post[pid]" class="replybtn" display="true" style="display:none;position:absolute;right:0px;top:5px;">
-										<input type="button" class="redirect button" href="forum.php?mod=post&action=reply&fid=$_G[fid]&tid=$_G[tid]&repquote=$post[pid]&extra=$_GET[extra]&page=$page" value="{lang reply}">
-									</div>
+									 
 									<!--{/if}-->
+								 
 							</div>
 						<!--标题及内容结束-->
 						<div class="pull-right user_nub"> 
-								<a href="#">
-									<span >回复</span>
+								<a href="forum.php?mod=post&action=reply&fid=$_G[fid]&tid=$_G[tid]&repquote=$post[pid]&extra=$_GET[extra]&page=$page">
+									<span >{lang reply}</span>
 								</a>
 						</div>
 				</div>
@@ -290,8 +253,9 @@
 
 </div>
 <!-- main postlist end -->
-
+<div class="text-center">
 $multipage
+</div>
 
 <!--{hook/viewthread_bottom_mobile}-->
 

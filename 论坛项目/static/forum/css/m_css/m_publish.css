@@ -16,6 +16,9 @@
     .posted-title{
         position: relative;
     }
+    .input-posted-title{
+        width: 100%;
+    }
     #posted-title{
         width: 100%;
         padding:10px 60px 10px 10px; 

@@ -34,8 +34,9 @@
     }
     /* 帖子内容 */
     .posted_content{
-        font-size: 16px;
-        padding: 15px 0;
+        font-size: 16px; 
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     .user_nub .fa{
         margin-right: 3px;
@@ -46,10 +47,10 @@
  */
     .reply{
         padding: 15px;
+        border-bottom: 1px solid #D9D8D8;
     }
     .container{
-        background-color: #fff;
-        margin: 15px 0;
+        background-color: #fff; 
     }
     .post-list{
         margin-top: 15px;
@@ -105,7 +106,12 @@
         font-size: 16px;
         color: #333;
         line-height: 1;
+        margin-top: 10px;
     }
     .left-border{
         border-left: 1px solid #444;
+    }
+    .list-user-img
+    {
+        padding-left:5px;
     }

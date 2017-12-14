@@ -10,14 +10,13 @@
 <title><!--{if !empty($navtitle)}-->$navtitle - <!--{/if}--><!--{if empty($nobbname)}--> $_G['setting']['bbname'] - <!--{/if}--> {lang waptitle} - Powered by Discuz!</title>
 <link rel="stylesheet" href="{STATICURL}image/mobile/style.css" type="text/css" media="all">
 
-
 <link href="{$_G['own_static_path']}/css/bootstrap/bootstrap.min.css" rel="stylesheet">
 <link href="{$_G['own_static_path']}/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
 <link href="{$_G['own_static_path']}/css/pagination.css" rel="stylesheet"><!--分页插件 -->
 <link rel="stylesheet" href="{$_G['own_static_path']}/css/m_css/m_base.css">
 <link rel="stylesheet" href="{$_G['own_static_path']}/css/m_css/m_forum.css">
-
-<script src="{STATICURL}js/mobile/jquery.min.js?{VERHASH}"></script>
+<script src="{$_G['own_static_path']}/js/jquery.min.js"></script>
+<!--<script src="{STATICURL}js/mobile/jquery.min.js?{VERHASH}"></script>-->
 
 <script type="text/javascript">var STYLEID = '{STYLEID}', STATICURL = '{STATICURL}', IMGDIR = '{IMGDIR}', VERHASH = '{VERHASH}', charset = '{CHARSET}', discuz_uid = '$_G[uid]', cookiepre = '{$_G[config][cookie][cookiepre]}', cookiedomain = '{$_G[config][cookie][cookiedomain]}', cookiepath = '{$_G[config][cookie][cookiepath]}', showusercard = '{$_G[setting][showusercard]}', attackevasive = '{$_G[config][security][attackevasive]}', disallowfloat = '{$_G[setting][disallowfloat]}', creditnotice = '<!--{if $_G['setting']['creditnotice']}-->$_G['setting']['creditnames']<!--{/if}-->', defaultstyle = '$_G[style][defaultextstyle]', REPORTURL = '$_G[currenturl_encode]', SITEURL = '$_G[siteurl]', JSPATH = '$_G[setting][jspath]';</script>
 
@@ -29,7 +28,7 @@
     <!-- 页眉**开始 -->
     <header class="clearfix">
             <div class="pull-left"> 
-                <a href="forum.php?mobile=2"><img class="logo" alt="Brand" src="{$_G['own_static_path']}/img/logo-01.png"></a>一数社区
+                <a href="forum.php?mod=guide&view=new&mobile=2"><img class="logo" alt="Brand" src="{$_G['own_static_path']}/img/logo-01.png"></a>一数社区
             </div>
             <i class="fa fa-search fa-pull-right" aria-hidden="true"></i>
     </header>

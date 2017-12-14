@@ -33,14 +33,27 @@
 			<object class="icon-menu" data="{$_G['own_static_path']}/img/plate.svg" type="image/svg+xml">
 			</object>板块
 		</a>
-		<a class="right-border col-xs-4 col-sm-4" href="m_看帖.html">
+		 
+		     <!--{if $_G[fid]  }-->
+		     <a class="right-border col-xs-4 col-sm-4" href="forum.php?mod=post&action=newthread&fid=$_G[fid]">
+			 <!--{else}-->
+			 <a class="right-border col-xs-4 col-sm-4" href="forum.php?mod=post&action=newthread&fid=37">
+			 <!--{/if}-->
 			<object class="icon-menu" data="{$_G['own_static_path']}/img/posted.svg" type="image/svg+xml">
-			</object>发帖</a>
-		<a class="col-xs-4 col-sm-4 act-grey" href="javascript:;">
+			</object>{lang send_threads}</a>
+		<!--{if !$_G[uid] && !$_G['connectguest']}-->
+		<a class="col-xs-4 col-sm-4 act-grey" href="member.php?mod=logging&action=login">
 			<object class="icon-menu" data="{$_G['own_static_path']}/img/login.svg" type="image/svg+xml">
-			  </object> 登录</a>
+			  </object> 登录
+		</a>
+		<!--{else}-->
+		<a class="col-xs-4 col-sm-4 act-grey" href="member.php?mod=logging&action=logout&formhash={FORMHASH}">
+				<object class="icon-menu" data="{$_G['own_static_path']}/img/login.svg" type="image/svg+xml">
+				  </object> {$_G['member']['username']}
+		</a> 
+		<!--{/if}-->
 		<div class="hide-menu"> 
-			<a href="forum.php?mod=forumdisplay&fid=37&mobile=2">ASU Watch社区</a>
+			<a href="forum.php?mod=forumdisplay&fid=37&mobile=2">Watch社区</a>
 			<hr class="menu-hr">
 			<a href="forum.php?mod=forumdisplay&fid=38&mobile=2">活动</a>
 			<hr class="menu-hr">
@@ -55,7 +68,7 @@
 			</i>
 	</div>
 	<!-- 回到顶部**结束 -->
-		<script src="{$_G['own_static_path']}/js/jquery.min.js"></script>
+		
 		<script src="{$_G['own_static_path']}/js/bootstrap.min.js"></script>
 		<script src="{$_G['own_static_path']}/js/m_js/m_base.js"></script>
 </body>
