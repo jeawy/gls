@@ -1,3 +1,4 @@
+<!-- xiong主页 -->
 <!--{template common/header}-->
 <style>
 	.container_custom{
@@ -68,17 +69,6 @@
 		</form>
 		<!-- 搜索框**结束 -->
 
-		<!-- 主体右侧发帖按钮**开始 -->
-		<a href="javascript:;" id="newspecial" 
-		onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})"
-		{if !$_G['forum']['allowspecialonly'] && empty($_G['forum']['picstyle']) && !$_G['forum']['threadsorts']['required']} 
-		onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=37')"
-		{else} onclick="location.href='forum.php?mod=post&action=newthread&fid=37';return false;"
-		{/if} title="{lang send_posts}"> 
-			<div class="box_posted text-center">+发帖 </div>
-		</a>
-		<!-- 主体右侧发帖按钮**结束 -->
-
 		<!-- 主体右侧签到按钮**开始 -->
 		<!--{if $_G['setting']['forumallowside']}-->
 		<div id="sd" class="sd">
@@ -126,31 +116,53 @@
 		</div>
 		<!-- 主体右侧推荐板块**结束 -->
 
+		<!-- 主体右侧发帖按钮**开始 -->
+		<a href="javascript:;" id="newspecial" 
+		onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})"
+		{if !$_G['forum']['allowspecialonly'] && empty($_G['forum']['picstyle']) && !$_G['forum']['threadsorts']['required']} 
+		onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=37')"
+		{else} onclick="location.href='forum.php?mod=post&action=newthread&fid=37';return false;"
+		{/if} title="{lang send_posts}"> 
+			<div class="text_posted text-center"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>发帖</div>
+		</a>
+		<!-- 主体右侧发帖按钮**结束 -->
+		
+		<!-- 右侧公告板块**开始 -->
+		<div class="ntc">
+			<div class="notice_title">公告</div>
+			<div class="notice_con clearfix">
+				<div class="pull-left"><img src="{$_G['own_static_path']}/img/watch.png" alt="watch"></div>
+				<div class="pull-left notice_text">
+					<div>2018.01.15</div>
+					<div>ASU Watch震撼来袭</div>
+					<a class="Reservations" href="#" target="_blank">
+						预约购买<i class="fa fa-cart-plus" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 右侧公告板块**结束 -->
+
 		<!-- 主体右侧关注我们板块**开始 -->
 		<div class="contact_us">
-			<h4 class="contact_us_title">关注我们</h4>
+			<div class="contact_us_title">关注我们</div>
 			<div class="contact_us_con">
 				<div class="clearfix microblog">
 					<div class="pull-left">
 						<img class="microblog_logo" src="{$_G['own_static_path']}/img/microblog.png">
 					</div>
 					<div class="pull-left contact_microblog">
-						<h4>
-							<i class="fa fa-weibo fa-weibo-custom" aria-hidden="true"></i>官方微博</h4>
-						<button id="microblog" class="pull-right" type="button">
-							<i class="fa fa-weibo fa-weibo-custom" aria-hidden="true"></i>加关注</button>
+						<div class="weibo">官方微博</div>
+						<a id="microblog" href="https://weibo.com/asu001" target="_blank">加关注</a>
 					</div>
 				</div>
-				<div class="clearfix">
-					<div class="pull-left">
-						<img class="qr_code" src="{$_G['own_static_path']}/img/qrcode.bmp">
+				
+					<div class="contact_weixin text-center">
+						<img class="qr_code" src="{$_G['own_static_path']}/img/qrcode.png">
+						<div class="weixin">官方微信<span>扫一扫</span></div>
+						
 					</div>
-					<div class="pull-left contact_weixin">
-						<h4>
-							<i class="fa fa-weixin fa-weixin-custom" aria-hidden="true"></i>官方微博</h4>
-						<p class="pull-right">扫一扫</p>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 		<!-- 主体右侧关注我们板块**结束 -->

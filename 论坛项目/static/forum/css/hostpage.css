@@ -1,6 +1,5 @@
  .title{
-	margin-bottom:10px;
-	margin-top:6px;
+padding-left: 0px;
 }
 
 .div_posted{
@@ -27,6 +26,9 @@
 }
 .title_1{
 	color:#f0ad4e;
+}
+.hot_con .title {
+    padding-top: 4px;
 }
 .vip{
 	color:#F2CC03;
@@ -66,11 +68,12 @@
 	padding:20px 20px 0px;
 }
 
-.cast2_title{
-	color:rgb(180,180,181);
-	margin-left:20px;
-	position: relative;
-	top:42px;
+.cast2_title {
+    color: rgb(180, 180, 181);
+    margin-left: 30px;
+    position: relative;
+    top: 40px;
+    font-size: 30px;
 }
 .box_posted img{
 	width:60px;

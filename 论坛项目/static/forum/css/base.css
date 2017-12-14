@@ -7,10 +7,10 @@ body{
 	margin-bottom:  15px;	
 }
 ul{
-	list-style:none;  					/*列表去项目符号*/
+	list-style:none;
 } 
 a:hover{
-	text-decoration:none;				/*链接去下划线*/
+	text-decoration:none;			
 }  
 a{
 	color: inherit
@@ -115,7 +115,7 @@ ul.cl{
 	margin:5px auto;
 }
 
-.contact_us
+
 
 .p2_title{
 	width:100%;
@@ -128,12 +128,16 @@ ul.cl{
 	margin-right:20px;
 }
 
-.title_img img{
-	width:100px;
-	height:100px;
-	border-radius:10px;
+.title_img span{    
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    background-color: rgb(181, 181, 181);
 }
-
+.title_img img {
+    width: 100%;
+}
 
 	
 .left_warp{
@@ -141,10 +145,10 @@ ul.cl{
 }
 
 
-.left_title{
-	overflow:hidden;
-	border-bottom:#CCCCCC solid 1px;
-	padding: 10px;
+.left_title {
+    overflow: hidden;
+    border-bottom: #ddd solid 1px;
+    padding: 15px;
 }
 
 .reply{
@@ -227,16 +231,26 @@ ul.cl{
 .user_nub{
 	color:#999999;
 	}
-	
-.box_posted{
+	.box_posted {
+		width: 100%;
+		color: #FFF;
+		background-color: rgb(254, 112, 60);
+		height: 90px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 18px;
+		line-height: 90px;
+		letter-spacing: 6px;
+	}
+.text_posted{
 width:100%;
 color:#FFF;
 background-color:rgb(254,112,60);
-height:90px;
+height:59px;
 margin-top:10px;
 margin-bottom:10px;
 font-size:18px;
-line-height: 90px; 
+line-height: 59px; 
 letter-spacing:6px; 
 }	
 .box_sign{
@@ -470,49 +484,94 @@ margin-left:5px;
 /* 
  *关注我们
  */
- .contact_microblog,.contact_weixin{
-	 margin: 10px 0 0 20px;
- }
-.contact_us_title{
+
+.contact_us_title,.notice_title{
 	padding: 15px;
 	background-color: #e5e5e5;
+	font-size: 16px;
+	font-weight: 600;
 }
-.microblog_logo,.qr_code{
+.microblog{
+padding-left:40px;;
+
+}
+.microblog_logo{
 	width: 68px;
 	height: 68px;
 }
-.contact_us_con>div{
-	margin: 0 auto;
-	padding: 15px 42px;
+.qr_code{
+	width: 150px;
+	height: 150px;
+}
+.contact_us_con,.notice_con{
+	padding: 15px;
 	background-color: #fff;
 }
-.fa-weibo-custom{
-	color:rgb(227, 36, 43);
-}
-.microblog{
-	border-bottom: rgb(225,225,226) solid 1px
-}
-.contact_us{
+
+.contact_us,.ntc{
 	border: rgb(225,225,226) solid 1px
 }
 .contact_us h4{
 	margin: 0px;
 }
-.contact_us_con button{
-	color: rgb(28, 127, 214);
-	font-family:华文行楷;
-	line-height: 1;
-	border:#ddd 1px solid; 
-	outline: #ddd 1px;
-	background-color: rgb(241, 241, 241);
+.contact_us_con a{
+	color: rgb(236, 82, 18);
+	outline: 0px;
+	border-bottom: 1px solid rgb(236, 82, 18);
+	background-color: inherit;
 	margin-top: 3px;
 }
-.contact_weixin p{
-	color: #999;
+.contact_microblog{
+	margin: 10px 0 0 10px;
 }
-.fa-weixin-custom{
-	color: #62b900;
+.contact_weixin span{
+	color: rgb(236, 82, 18);
+	font-size: 14px;
+	margin-left: 8px;
+	border-bottom: 1px solid rgb(236, 82, 18);
+	line-height: 1;
+	font-weight: 300;
 }
+
 .date{
 	color: #999;
+}
+.weibo,.weixin{
+	font-size: 16px;
+	color: #888;
+	font-weight: 600;
+}
+
+/* 
+ *公告
+ */
+ 
+.notice_con img{
+	width: 110px;
+}
+.Reservations{
+	background: rgb(254,112,60);
+	padding: 4px 12px;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 4px;
+	display: inline-block;
+}
+.Reservations:hover,.Reservations:visited{
+	background: rgb(254,112,60);
+	color: #fff;
+	text-decoration: none;
+}
+.Reservations .fa-cart-plus{
+	margin-left: 4px;
+}
+.notice_text{
+	margin-top: 12px;
+}
+.notice_text div{
+	margin-bottom: 6px
+}
+.ntc{
+	margin-bottom: 10px;
 }

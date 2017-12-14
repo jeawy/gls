@@ -40,15 +40,27 @@
 				<!-- {if $_G[fid] == 37} -->
 					<div class="left_title"> 
 							<div class="title_img">
-								<a href="#" target="_blank">
+								<span>
 									<img src="{$_G['own_static_path']}/img/cast_title.png" />
-								</a>
+								</span>
 								<a class="cast2_title h1" href="#" target="_blank">ASU Watch</a>
 							</div>
 					</div>
 				<!-- {/if} -->
+				
+				
 				<!--{if ($_G['forum']['threadtypes'] && $_G['forum']['threadtypes']['listable']) || count($_G['forum']['threadsorts']['types']) > 0}-->
-						<ul id="thread_types" class=" nav nav-tabs">
+				<!-- {if $_G[fid] == 38} -->
+						<div class="left_title">
+								<div class="title_img">
+									<span>
+										<img src="{$_G['own_static_path']}/img/activity.png" />
+									</span>
+									<a class="cast2_title h1" href="#" target="_blank">活动</a>
+								</div>
+							</div>
+			<!-- {/if} -->
+						<ul id="thread_types" class=" nav nav-tabs"><!-- sivan活动 -->
 							<!--{hook/forumdisplay_threadtype_inner}-->
 							<li id="ttp_all" {if !$_GET['typeid'] && !$_GET['sortid']}class="xw1 a"{/if}><a href="forum.php?mod=forumdisplay&fid=$_G[fid]{if $_G['forum']['threadsorts']['defaultshow']}&filter=sortall&sortall=1{/if}{if $_GET['archiveid']}&archiveid={$_GET['archiveid']}{/if}">
 								<strong class="font_color"> {lang forum_viewall}</strong></a></li>
