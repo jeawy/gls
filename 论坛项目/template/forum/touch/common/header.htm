@@ -9,17 +9,22 @@
 <meta name="description" content="{if !empty($metadescription)}{echo dhtmlspecialchars($metadescription)} {/if},$_G['setting']['bbname']" />
 <title><!--{if !empty($navtitle)}-->$navtitle - <!--{/if}--><!--{if empty($nobbname)}--> $_G['setting']['bbname'] - <!--{/if}--> {lang waptitle} - Powered by Discuz!</title>
 <link rel="stylesheet" href="{STATICURL}image/mobile/style.css" type="text/css" media="all">
+
+
+<link href="{$_G['own_static_path']}/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="{$_G['own_static_path']}/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+<link href="{$_G['own_static_path']}/css/pagination.css" rel="stylesheet"><!--分页插件 -->
+<link rel="stylesheet" href="{$_G['own_static_path']}/css/m_css/m_base.css">
+<link rel="stylesheet" href="{$_G['own_static_path']}/css/m_css/m_forum.css">
+
 <script src="{STATICURL}js/mobile/jquery.min.js?{VERHASH}"></script>
 
 <script type="text/javascript">var STYLEID = '{STYLEID}', STATICURL = '{STATICURL}', IMGDIR = '{IMGDIR}', VERHASH = '{VERHASH}', charset = '{CHARSET}', discuz_uid = '$_G[uid]', cookiepre = '{$_G[config][cookie][cookiepre]}', cookiedomain = '{$_G[config][cookie][cookiedomain]}', cookiepath = '{$_G[config][cookie][cookiepath]}', showusercard = '{$_G[setting][showusercard]}', attackevasive = '{$_G[config][security][attackevasive]}', disallowfloat = '{$_G[setting][disallowfloat]}', creditnotice = '<!--{if $_G['setting']['creditnotice']}-->$_G['setting']['creditnames']<!--{/if}-->', defaultstyle = '$_G[style][defaultextstyle]', REPORTURL = '$_G[currenturl_encode]', SITEURL = '$_G[siteurl]', JSPATH = '$_G[setting][jspath]';</script>
 
 <script src="{STATICURL}js/mobile/common.js?{VERHASH}" charset="{CHARSET}"></script>
+
 </head>
 
-<<<<<<< HEAD
-<body class="bg">
-<!--{hook/global_header_mobile}-->
-=======
 <body >
     <!-- 页眉**开始 -->
     <header class="clearfix">
@@ -30,4 +35,3 @@
     </header>
     <!-- 页眉**结束 -->
  
->>>>>>> 78b417ab69967c4235b4bdfaf823ae2aea2bd1ae

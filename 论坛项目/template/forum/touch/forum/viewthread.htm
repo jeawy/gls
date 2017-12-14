@@ -1,18 +1,6 @@
 <!--{eval $threadsort = $threadsorts = null;}-->
 <!--{template common/header}-->
-<!-- header start -->
-<header class="header">
-
-	<div class="nav">
-		<span class="y">
-			<button class="btn_pn btn_pn_blue" id="replyid"><span>{lang reply}</span></button>
-		</span>
-		<a href="<!--{if $_GET[fromguid] == 'hot'}-->forum.php?mod=guide&view=hot&page=$_GET[page]<!--{else}-->forum.php?mod=forumdisplay&fid=$_G[fid]&<!--{eval echo rawurldecode($_GET[extra]);}--><!--{/if}-->" class="z"><img src="{STATICURL}image/mobile/images/icon_back.png" /></a>
-		<span class="name"><!--{eval echo strip_tags($_G['forum']['name']) ? strip_tags($_G['forum']['name']) : $_G['forum']['name'];}--></span>
-	</div>
-
-</header>
-<!-- header end -->
+<link rel="stylesheet" href="{$_G['own_static_path']}/css/m_css/m_details.css">
 
 <!--{hook/viewthread_top_mobile}-->
 <!-- main postlist start -->
@@ -132,34 +120,6 @@
 								$post[message]
 							<!--{/if}-->
 
-<<<<<<< HEAD
-					<!--{/if}-->
-			</div>
-			<!--{if $_G['setting']['mobile']['mobilesimpletype'] == 0}-->
-			<!--{if $post['attachment']}-->
-               <div class="grey quote">
-               {lang attachment}: <em><!--{if $_G['uid']}-->{lang attach_nopermission}<!--{else}-->{lang attach_nopermission_login}<!--{/if}--></em>
-               </div>
-            <!--{elseif $post['imagelist'] || $post['attachlist']}-->
-               <!--{if $post['imagelist']}-->
-				<!--{if count($post['imagelist']) == 1}-->
-				<ul class="img_one">{echo showattach($post, 1)}</ul>
-				<!--{else}-->
-				<ul class="img_list cl vm">{echo showattach($post, 1)}</ul>
-				<!--{/if}-->
-				<!--{/if}-->
-                <!--{if $post['attachlist']}-->
-				<ul>{echo showattach($post)}</ul>
-				<!--{/if}-->
-			<!--{/if}-->
-			<!--{/if}-->
-			<!--{if $_G[uid] && $allowpostreply && !$post[first]}-->
-			<div id="replybtn_$post[pid]" class="replybtn" display="true" style="display:none;position:absolute;right:0px;top:5px;">
-				<input type="button" class="redirect button" href="forum.php?mod=post&action=reply&fid=$_G[fid]&tid=$_G[tid]&repquote=$post[pid]&extra=$_GET[extra]&page=$page" value="{lang reply}">
-			</div>
-			<!--{/if}-->
-       </div>
-=======
 						<!--{/if}-->
 				</div>
 		 
@@ -318,7 +278,6 @@
 						</div>
 				</div>
 	        </div>	
->>>>>>> 78b417ab69967c4235b4bdfaf823ae2aea2bd1ae
    </div>
    <!--{/if}-->
   <!--帖子列表**结束 -->
