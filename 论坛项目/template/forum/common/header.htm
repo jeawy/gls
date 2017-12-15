@@ -39,72 +39,82 @@
 </head>
 <body>
 	<!-- [gls] menu start -->
+	 
 	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation" >
 		<div class="container container_nav">
 		   <div class="row">
 				<div class="navbar-header"> 
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 					<a href="#"> <img class="logo" alt="Brand" src="{$_G['own_static_path']}/img/logo.png"> </a>
 				</div>
-				<ul class="nav navbar-nav navbar-right">
-					<li {if !$_G['fid'] } class="active" {/if}><a href="forum.php?">论坛首页</a></li>
-					<li {if $_G['fid'] == 37 } class="active" {/if}><a href="forum.php?mod=forumdisplay&fid=37">Watch社区</a></li>
-					<li {if $_G['fid'] == 38 } class="active" {/if}><a href="forum.php?mod=forumdisplay&fid=38">活动</a></li>
-					<li {if $_G['fid'] == 39 } class="active" {/if}><a href="forum.php?mod=forumdisplay&fid=39">服务</a></li>
-					<li><a href="#">进入商城</a></li>
-					<li><a href="#">官网</a></li>
-					<li><a href="#">软件下载</a></li>
-				
-				<!--{if $_G['uid']==0 }-->
-					<li>
-						<div class="login_holder">
-							<a href="member.php?mod=logging&action=login">登录</a><a class="menu-reply" href="member.php?mod=register">注册</a>
-						</div>
-					</li>
-				<!--{/if}-->
-				<!--{if $_G['uid']>0}-->
-				   <li class="logged_in">  
-                         <!--{avatar($_G[uid],small)}-->
-                        <span class="logged_in_name">{$_G['member']['username']}</span>
-                        <div id="user_login_nav">
-                            <ul>
-                                <li>
-                                    <a href="home.php?mod=spacecp&ac=avatar">设置</a>
-                                </li>
-                                <li class="vertical_line">
-                                    <a href="home.php?mod=space&do=pm">消息</a>
-                                </li>
-                                <li>
-                                    <a href="home.php?mod=space&do=friend">好友</a>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <a href="forum.php?mod=guide&view=my">帖子</a>
-                                </li>
-                                <li class="vertical_line">
-                                    <a href="home.php?mod=space&do=favorite&view=me">收藏</a>
-                                </li>
-                                <li>
-                                    <a href="member.php?mod=logging&action=logout&formhash={FORMHASH}">{lang logout}</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="text-center">
-						<a href="home.php?mod=space&do=notice" id="myprompt" class=" showmenu-old {if $_G[member][newprompt]} new12{/if}" >
-							<i class="fa fa-envelope-o fa-envelope-o-custom" aria-hidden="true"></i>
-							<!--{if $_G[member][newprompt]}--><span class="msg_num">
-								$_G[member][newprompt]
-							</span>
-							<!--{/if}-->
-						</a>
-                    </li>
-				 
-				<!--{/if}-->
-				</ul>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li {if !$_G['fid'] } class="active" {/if}><a href="forum.php?">论坛首页</a></li>
+						<li {if $_G['fid'] == 37 } class="active" {/if}><a href="forum.php?mod=forumdisplay&fid=37">Watch社区</a></li>
+						<li {if $_G['fid'] == 38 } class="active" {/if}><a href="forum.php?mod=forumdisplay&fid=38">活动</a></li>
+						<li {if $_G['fid'] == 39 } class="active" {/if}><a href="forum.php?mod=forumdisplay&fid=39">服务</a></li>
+						<li><a href="#">进入商城</a></li>
+						<li><a href="#">官网</a></li>
+						<li><a href="#">软件下载</a></li>
+					
+					<!--{if $_G['uid']==0 }-->
+						<li>
+							<div class="login_holder">
+								<a href="member.php?mod=logging&action=login">登录</a><a class="menu-reply" href="member.php?mod=register">注册</a>
+							</div>
+						</li>
+					<!--{/if}-->
+					<!--{if $_G['uid']>0}-->
+					<li class="logged_in">  
+							<!--{avatar($_G[uid],small)}-->
+							<span class="logged_in_name">{$_G['member']['username']}</span>
+							<div id="user_login_nav">
+								<ul>
+									<li>
+										<a href="home.php?mod=spacecp&ac=avatar">设置</a>
+									</li>
+									<li class="vertical_line">
+										<a href="home.php?mod=space&do=pm">消息</a>
+									</li>
+									<li>
+										<a href="home.php?mod=space&do=friend">好友</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="forum.php?mod=guide&view=my">帖子</a>
+									</li>
+									<li class="vertical_line">
+										<a href="home.php?mod=space&do=favorite&view=me">收藏</a>
+									</li>
+									<li>
+										<a href="member.php?mod=logging&action=logout&formhash={FORMHASH}">{lang logout}</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="text-center">
+							<a href="home.php?mod=space&do=notice" id="myprompt" class=" showmenu-old {if $_G[member][newprompt]} new12{/if}" >
+								<i class="fa fa-envelope-o fa-envelope-o-custom" aria-hidden="true"></i>
+								<!--{if $_G[member][newprompt]}--><span class="msg_num">
+									$_G[member][newprompt]
+								</span>
+								<!--{/if}-->
+							</a>
+						</li>
+					
+					<!--{/if}-->
+					</ul>
+		       </div>
 		    </div><!-- row -->
 	    </div> <!--container-->
 	</nav>
+
 	<!-- menu end -->
 	<div id="append_parent"></div><div id="ajaxwaitid"></div>
 	<!--{if $_GET['diy'] == 'yes' && check_diy_perm($topic)}-->
