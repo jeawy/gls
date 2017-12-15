@@ -47,7 +47,7 @@
 				</div>
 				<ul class="nav navbar-nav navbar-right">
 					<li {if !$_G['fid'] } class="active" {/if}><a href="/bbs/forum.php?">论坛首页</a></li>
-					<li {if $_G['fid'] == 37 } class="active" {/if}><a href="/bbs//forum.php?mod=forumdisplay&fid=37">ASU Watch 社区</a></li>
+					<li {if $_G['fid'] == 37 } class="active" {/if}><a href="/bbs//forum.php?mod=forumdisplay&fid=37">Watch社区</a></li>
 					<li {if $_G['fid'] == 38 } class="active" {/if}><a href="/bbs//forum.php?mod=forumdisplay&fid=38">活动</a></li>
 					<li {if $_G['fid'] == 39 } class="active" {/if}><a href="/bbs//forum.php?mod=forumdisplay&fid=39">服务</a></li>
 					<li><a href="#">进入商城</a></li>
@@ -57,8 +57,7 @@
 				<!--{if $_G['uid']==0 }-->
 					<li>
 						<div class="login_holder">
-								<a href="member.php?mod=logging&action=login">登录</a>
-							|<a href="member.php?mod=register">注册</a>
+							<a href="member.php?mod=logging&action=login">登录</a><a class="menu-reply" href="member.php?mod=register">注册</a>
 						</div>
 					</li>
 				<!--{/if}-->

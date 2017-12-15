@@ -2,6 +2,11 @@ body{
 	background-color:rgb(239,239,239);/*背景色*/
     font-family: 微软雅黑;
 }
+
+.menu-reply{
+	border-left: #CCCCCC solid 1px;
+	padding-left: 5px;
+	margin-left: 5px;}
 /* 内容包裹层自定义 */
 .container_custom{
 	margin-bottom:  15px;	
@@ -152,7 +157,6 @@ ul.cl{
 }
 
 .reply{
-	margin-left:5px;
 	border-left:#CCCCCC solid 1px;
 	padding-left:5px;
 }
@@ -285,6 +289,8 @@ border:rgb(254,112,60) solid 2px;
 .login_holder a
 {
 	color: #d6d6d6;
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 
 .login_holder a:hover
@@ -486,7 +492,7 @@ margin-left:5px;
  */
 
 .contact_us_title,.notice_title{
-	padding: 15px;
+	padding:12px 15px;
 	background-color: #e5e5e5;
 	font-size: 16px;
 	font-weight: 600;
@@ -509,7 +515,7 @@ padding-left:40px;;
 }
 
 .contact_us,.ntc{
-	border: rgb(225,225,226) solid 1px
+	border: #ddd solid 1px
 }
 .contact_us h4{
 	margin: 0px;
@@ -574,4 +580,24 @@ padding-left:40px;;
 }
 .ntc{
 	margin-bottom: 10px;
+}
+.notice_title .more{
+	font-size: 15px;
+	font-weight: 300;
+	color: #888;
+}
+.notice_title .more .fa{
+	margin-left: 4px;
+}
+/* 官方活动 */
+.official_functions{
+	position: relative;
+}
+.official_functions img{
+	width:100%;
+}
+.official_functions .Reservations{
+	position: absolute;
+	right: 25px;
+	bottom: 10px;
 }
