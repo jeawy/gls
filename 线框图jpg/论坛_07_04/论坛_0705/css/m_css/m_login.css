@@ -27,6 +27,7 @@
     background-color:#D6D6D6;
     line-height: 40px;
     padding-left: 6px;
+    padding-right: 6px;
 }
 
 
@@ -49,6 +50,17 @@ button.btn_submit
     border: rgb(254, 112, 60) 1px solid;
     color: rgb(254, 112, 60);
     margin-top: 10px;
+    font-weight: 600;
+}
+.functionality a{
+    color: #888;
+}
+.functionality{
+    margin-top: 10px;
+}
+
+.fa-angle-right{
+    margin-left: 4px;
 }
 .col-protocal
 {
@@ -70,4 +82,39 @@ button.btn_submit
 }
 .code{
     padding-right: 106px;
+}
+/* 其他登录方式 */
+.fa-bluebg{
+    padding: 8px;
+    background-color:rgb(104, 164, 224);
+    color:#fff;
+    border-radius: 50%; 
+    margin: 0 12px;
+    font-size: 16px;
+}
+.fa-redbg{
+    padding: 8px;
+    background-color:rgb(245, 99, 103);
+    color:#fff;
+    border-radius: 50%; 
+    margin: 0 12px;
+    font-size: 16px;
+}
+.otherwise_text{
+    color: #888;
+    position: relative;
+    bottom: -8px;
+    padding: 5px;
+    background-color: rgb(239, 239, 239);
+    
+}
+.dotted{
+    content: '';
+    border-bottom: dotted 2px #999;
+    margin-bottom: 20px;
+}
+.otherwise{
+    padding:0 30px;
+    margin-top: -20px;
+    margin-bottom: 30px;
 }
