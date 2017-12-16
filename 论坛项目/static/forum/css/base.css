@@ -73,6 +73,7 @@ padding-right:0px;
 .footer_nav{
 	display: inline-block;
 	overflow: hidden;
+	margin-bottom: 24px;
 }
 .footer_nav a{
 	color:#fff;
