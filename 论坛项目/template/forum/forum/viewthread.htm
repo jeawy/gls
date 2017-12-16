@@ -395,9 +395,7 @@
 
 	$_G['forum_tagscript']
 
-	 
-
-	
+	  
 
 	<!--{hook/viewthread_middle}-->
 	<!--[diy=diyfastposttop]--><div id="diyfastposttop" class="area"></div><!--[/diy]-->
@@ -417,10 +415,11 @@
 				</tr>
 			</table>
 		</div>
-	<!--{/if}-->
+	<!--{/if}--> 
 	<!--{if $_G['medal_list']}-->
 	<!--{loop $_G['medal_list'] $medalid $medal}-->
 		<div id="md_{$medalid}_menu" class="tip tip_4" style="display: none;">
+			fff
 			<div class="tip_horn"></div>
 			<div class="tip_c">
 				<h4>$medal[name]</h4>
@@ -446,7 +445,7 @@
 	</div>
 </div><!-- left_warp -->
 <div class="col-sm-5 col-md-4 col-lg-3 right">
-        <div class="recommend">
+        <div class="recommend"> 
 			<div class="text-center">
 					<div class="avatar">
 					 <a href="home.php?mod=space&uid=$post[authorid]" class="avtm" target="_blank">$post[avatar]</a>
@@ -509,6 +508,18 @@
 			<! --start 头像、积分、主题-->
 			<!--{if $post['authorid'] && $post['username'] && !$post['anonymous']}-->
 				<div>
+						<div class="font_color right_div">积分等级</div>
+                    <div class="progress my_progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                            style="width: $post['upgradeprogress']%">
+
+                        </div>
+
+                    </div>
+                    <div>积分
+                        <span class="pull-right">$post['credits']</span>
+                    </div>
+				<hr>
 				<!--{if !$postshowavatars}-->
 					<div class="avatar">{lang member_avatar_banned}</div>
 				<!--{elseif $post['avatar'] && $showavatars}-->
