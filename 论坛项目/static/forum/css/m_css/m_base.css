@@ -163,3 +163,6 @@ nav a:active,nav a:hover,nav a:focus,nav a:visited{
     height: 40px;
     border-radius: 20px;
 }
+#needmessage{
+    border: 1px solid #ccc;
+}

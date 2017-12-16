@@ -38,13 +38,19 @@
 	<input type="hidden" name="specialextra" value="$specialextra" />
 <!--{/if}-->
 
- 
+ <!-- 标题**开始 -->
+<div class="posted-top orange">
+	+<!--{if $_GET[action] == 'newthread'}-->{lang send_thread}<!--{elseif $_GET[action] == 'reply'}-->{lang join_thread}
+					<!--{elseif $_GET[action] == 'edit'}-->{lang edit_save}<!--{/if}-->
+</div>
+<!-- 标题**结束 -->
 <!-- main postbox start -->
 <div class="content">
 	<div class="post_from">
 		<ul class="cl">
 			<li class=" ">
 			<!--{if $_GET['action'] != 'reply'}-->
+		 
 			<div class="posted-title">
 			<input type="text" tabindex="1" class="input-posted-title" id="needsubject" size="30" autocomplete="off" value="$postinfo[subject]" name="subject" placeholder="{lang thread_subject}" fwin="login">
 		    </div>
@@ -54,7 +60,7 @@
 			<!--{/if}-->
 			</li>
 			<!--{if $isfirstpost && !empty($_G['forum'][threadtypes][types])}-->
-			<li class="bl_line">
+			<li class=" ">
 					<div class="posted-classification">
 						<select id="typeid" name="typeid" class=" ">
 							<option value="0" selected="selected">{lang select_thread_catgory}</option>
@@ -75,8 +81,13 @@
 			<li class="bl_none area">
 			<textarea class="pt" id="needmessage" tabindex="3" autocomplete="off" id="{$editorid}_textarea" name="$editor[textarea]" cols="80" rows="2"  placeholder="{lang thread_content}" fwin="reply">$postinfo[message]</textarea>
 			</li>
-			<li  >
-			<span class="y"><button id="postsubmit" class="btn_pn <!--{if $_GET[action] == 'edit'}-->btn_pn_blue" disable="false"<!--{else}-->btn_pn_grey" disable="true"<!--{/if}-->><span><!--{if $_GET[action] == 'newthread'}-->{lang send_thread}<!--{elseif $_GET[action] == 'reply'}-->{lang join_thread}<!--{elseif $_GET[action] == 'edit'}-->{lang edit_save}<!--{/if}--></span></button></span>
+			<li  > 
+				<button id="postsubmit" class="reply-btn  ">
+				<span><!--{if $_GET[action] == 'newthread'}-->{lang send_thread}<!--{elseif $_GET[action] == 'reply'}-->{lang join_thread}
+					<!--{elseif $_GET[action] == 'edit'}-->{lang edit_save}<!--{/if}-->
+				</span>
+				</button>
+				 
 		    </li>
 		</ul>
 	 

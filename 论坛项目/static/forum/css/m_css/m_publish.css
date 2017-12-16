@@ -47,8 +47,7 @@
     .reply-btn {
         border:1px solid rgb(254, 112, 60);
         color: rgb(254, 112, 60);
-        text-align: center;
-        padding: 6px 20px; 
+        text-align: center; 
         display: block;
         margin: 0 auto;
         font-size: 18px;
