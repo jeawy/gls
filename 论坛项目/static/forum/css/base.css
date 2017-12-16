@@ -1,8 +1,7 @@
 body{
 	background-color:rgb(239,239,239);/*背景色*/
-    font-family: 微软雅黑;
+    font-family: "Microsoft YaHei" ! important;
 }
-
 .menu-reply{
 	border-left: #CCCCCC solid 1px;
 	padding-left: 5px;
@@ -66,34 +65,35 @@ padding-right:0px;
 
 .footer{
 	background-color:rgb(144,145,146);
-	clear:both;
 	text-align:center;
-	height:115px;
+	height:120px;
 	padding-top:30px;
+	color: #fff;
 }
-
-.footer li{
-	display:inline;
+.footer_nav{
+	display: inline-block;
+	overflow: hidden;
 }
-.footer_nav li{
-	font-size:15px;
-	margin:20px 33px;
-	color:#fff;
-
-}
-
 .footer_nav a{
 	color:#fff;
 }
-.footer_bottom a{
-	color:#666;
+.footer_bottom{
 	font-size:12px;
 }
-	.line{
-		border-left:#fff solid 1px;
-		border-right:#fff solid 1px;
-		padding:0px 5px;
-		}
+.footer_nav li{
+	border-right:#fff solid 1px;
+	padding:0px 12px;
+	color:#fff;
+	line-height: 1.2;
+	float: left;
+	}
+.footer_nav li.bd_none{
+		border: none;
+	}
+	.logo_white{
+		width: 16px;
+		height: 16px;
+	}
 .tb_line{
 	border-left:rgb(158,158,159) solid 1px;
 	border-right:rgb(158,158,159) solid 1px;
@@ -259,27 +259,23 @@ letter-spacing:6px;
 }	
 .box_sign{
 width:100%;
-height:55px;
+height:60px;
 margin-top:10px;
-margin-bottom:10px;
+padding: 4px 0;
+background-color:#fff;
 }
 .box_sign_left{
 width:50%;
-background-color:rgb(254,112,60);
 font-size:18px;
-line-height: 55px;
+line-height: 52px;
 text-align:center;
-color:#FFF;
 float:left;
-height:55px;
 }
 .box_sign_right{
 float:right;
 color:rgb(147,148,148);
 width:50%;
-background-color:#fff;
-height:55px;
-border:rgb(254,112,60) solid 2px;
+border-left:#ddd solid 1px;
 }
 .login_holder
 {
@@ -412,7 +408,7 @@ i{
 	width: 16px;
 	font-size: 12px;
 	text-align: center;
-	line-height: 14px;
+	line-height: 12px;
 	color: #aaa;
 }
 .orange_round{
@@ -426,7 +422,7 @@ i{
 	width: 16px;
 	font-size: 12px;
 	text-align: center;
-	line-height: 14px;
+	line-height: 12px;
 }
 .my_fa{
 	margin-left: 15px;
@@ -498,16 +494,18 @@ margin-left:5px;
 	font-weight: 600;
 }
 .microblog{
-padding-left:40px;;
+margin-bottom: 10px;
+display: inline-block;
+padding-right:10px; 
 
 }
 .microblog_logo{
-	width: 68px;
-	height: 68px;
+	width: 66px;
+	height: 66px;
 }
 .qr_code{
-	width: 150px;
-	height: 150px;
+	width: 140px;
+	height: 140px;
 }
 .contact_us_con,.notice_con{
 	padding: 15px;
@@ -543,7 +541,7 @@ padding-left:40px;;
 	color: #999;
 }
 .weibo,.weixin{
-	font-size: 16px;
+	font-size: 15px;
 	color: #888;
 	font-weight: 600;
 }
@@ -553,7 +551,8 @@ padding-left:40px;;
  */
  
 .notice_con img{
-	width: 110px;
+	width: 100px;
+	margin-right: 10px;
 }
 .Reservations{
 	background: rgb(254,112,60);

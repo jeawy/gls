@@ -1,72 +1,63 @@
 <!--{block return}-->
 <style type="text/css">
 .midaben_con {
-	font-family:arial,"Hiragino Sans GB","Microsoft Yahei",sans-serif;
 	background-color:#fff; 
-	height:55px; 
-	position:relative
+	height:60px; 
 }
 .midaben_con .midaben_signpanel {
-	background-color:{$setting['bcolor']};
-	height:59px;
+	color:{$setting['bcolor']};
 	display:block;
-	position:relative; 
-	background-image:url(./source/plugin/k_misign/static/tou.png);
-	background-repeat:no-repeat;
-	background-position:14px 8px;
 	cursor:pointer;
 	width: 100%;
 }
 .midaben_con .midaben_signpanel .font {
-	position:absolute;
-	color:#fff;
-	width:55px;
-	height:30px;
-	font-size:24px;
-	line-height:30px;
-	top:11px;
-	left:55px
+	width:50%;
+	font-size:22px;
+	text-align: center;
+}
+.font{
+	width:50%;
+font-size:18px;
+line-height: 52px;
+text-align:center;
+float:left;
 }
 .midaben_con .midaben_signpanel .nums {
 	display:none
 }
 .midaben_con .midaben_signpanel .fblock {
-	height:55px;
 	width:50%;
 	background-color:#fff;
 	padding-left:5px;
 	padding-right:5px;
-	position:absolute;
-	top:2px;
-	right:2px;
 	font-size:14px;
 	color:#606060
 }
+.fblock{
+float:right;
+color:rgb(147,148,148);
+width:50%;
+border-left:#ddd solid 1px;
+
+}
 .midaben_con .midaben_signpanel .fblock .all {
-	height:28px;
 	line-height:26px;
-	padding-left:30px;
-	border-bottom:1px solid #eee;
-	background-image:url(./source/plugin/k_misign/static/tou2.jpg);
+	padding-left:15px;
 	background-repeat:no-repeat;
 	background-position:5px 0;
 	margin-bottom:0;
-	color:#606060
+	color:{$setting['hcolor']};/* 人 */
 }
 .midaben_con .midaben_signpanel .fblock .line {
-	height:22px;
 	line-height:24px;
-	padding-left:30px; 
-	background-image:url(./source/plugin/k_misign/static/tou2.jpg);
-	background-repeat:no-repeat;
-	background-position:5px -25px;
-	color:#606060
+	padding-left:15px;
+	color:{$setting['hcolor']};/* 排名 */
 }
 .midaben_con a.midaben_signpanel:hover {
-	background-color:{$setting['hcolor']};
+	color:{$setting['hcolor']};
 }
 .midaben_con a.midaben_signpanel:active {
-	background-color:{$setting['hcolor']};
+	color:{$setting['hcolor']};
 }
 .midaben_con .default {
 	cursor:default;
@@ -184,6 +175,7 @@ function cjdsign(){
     <div class="midaben_con mbm box_sign">
         <a class="midaben_signpanel JD_sign<!--{if $qiandaodb['time'] >= $tdtime}--> visted<!--{/if}-->" id="JD_sign"<!--{if $qiandaodb['time'] >= $tdtime || !$_G['uid']}--> href="javascript:;" target="_blank"<!--{else}--> href="plugin.php?id=k_misign:sign&operation=qiandao&formhash={FORMHASH}" onclick="ajaxget(this.href, this.id, '', '', '', 'cjdsign();');return false;"<!--{/if}-->>
             <div class="font">
+					<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
                 <!--{if $qiandaodb['time'] >= $tdtime}-->{lang k_misign:signed}<!--{else}-->{lang k_misign:sign}<!--{/if}-->
             </div>
             <span class="nums">
@@ -191,9 +183,11 @@ function cjdsign(){
             </span>
             <div class="fblock">
                 <div class="all">
-                    {$stats['todayq']}{lang k_misign:people}
+					<i class="fa fa-user-o" aria-hidden="true"></i>
+					{$stats['todayq']}{lang k_misign:people}
                 </div>
                 <div class="line">
+						<i class="fa fa-bar-chart" aria-hidden="true"></i>
                     <!--{if $qiandaodb['time'] >= $tdtime}-->{$qiandaodb['row']}<!--{else}--><span style="font-size:12px;">{lang k_misign:signtoranklist}</span><!--{/if}-->
                 </div>
             </div>
