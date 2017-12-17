@@ -1,10 +1,10 @@
 <!--{if $list}-->
-<ul>
+<ul>123
 <!--{loop $list $value}-->
 	<!--{if $value[uid]}-->
 	<li class="ptn pbn{$value['class']}" style="$value[style]">
 		<a href="home.php?mod=space&uid=$value[uid]" class="lit">$value[username]</a>: $value[message] <span class="xg1">(<!--{date($value['dateline'], 'n-j H:i')}-->)</span>
-		<!--{if $_G[uid] && helper_access::check_module('doing')}-->
+		<!--{if $_G[uid] && helper_access::check_module('doing')}-->2222
 		<a href="javascript:;" onclick="docomment_form($value[doid], $value[id], '$_GET[key]');">{lang reply}</a>
 		<!--{/if}-->
 		<!--{if $value[uid]==$_G[uid] || $dv['uid']==$_G[uid] || checkperm('managedoing')}-->

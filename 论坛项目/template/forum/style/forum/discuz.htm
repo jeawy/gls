@@ -1,0 +1,174 @@
+<!-- sivan主页 -->
+<!--{template common/header}-->
+<style>
+	.container_custom{
+		margin-top: 20px;
+	}
+</style>
+<!-- 主体内容左侧**开始 -->
+<div class="col-xs-9 left">
+	　
+
+	<!--{if empty($gid)}-->
+		<!--{ad/text/wp a_t}-->
+	<!--{/if}-->
+
+	<!--{if empty($gid)}-->
+		<div class="wp">
+			<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+		</div>
+	<!--{/if}--> 
+	<!--{loop $grids['newthread'] $thread}-->
+	<div class="hot row">
+			<div class="hot_img col-xs-1">
+				<a href="#">
+					<img src="uc_server/avatar.php?uid=$thread[authorid]&size=middle"/>
+				</a>
+			</div> 
+			<div class="col-xs-11 hot_con_wrap">
+				<div class="hot_con">
+					<div class="title">
+						<a class="title_1 h4" href="forum.php?mod=viewthread&tid=$thread[tid]&extra=$extra">$thread[subject]</a>
+						
+						<!--{if $thread['digest']}-->
+						<span class="label label-warning">精华</span>
+						<!--{/if}-->  
+					</div>
+					<div class="pull-left">
+						<ul class="user">
+							<li>$thread[dateline]</li>
+							<li class="vip">
+								<i class="fa fa-vimeo" aria-hidden="true"></i>
+							</li>
+							<li>$thread['highlight']</li>
+							<li>$thread[author]</li>
+						</ul>
+					</div>
+					<div class="pull-right user_nub">
+						<i class="fa fa-eye" aria-hidden="true"></i>$thread[views]
+						<i class="fa fa-commenting my_fa" aria-hidden="true"></i>$thread[replies]
+					</div>
+				</div>
+			</div>
+	</div>
+	<!--{/loop}-->
+ 
+	<!--{if $_G['group']['radminid'] == 1}-->
+		<!--{eval helper_manyou::checkupdate();}-->
+	<!--{/if}-->
+	<!--{if empty($_G['setting']['disfixednv_forumindex']) }--><script>fixed_top_nv();</script><!--{/if}-->
+</div><!--   主体内容左侧**结束 -->  
+ 
+<!-- 主体内容右侧**开始 -->
+<div class="col-xs-3 right">
+		<!-- 搜索框**开始 -->
+		<form id="scbar_form" method="{if $_G[fid] && !empty($searchparams[url])}get{else}post{/if}" 
+		autocomplete="off" onsubmit="searchFocus($('scbartxt'))" 
+		action="{if $_G[fid] && !empty($searchparams[url])}$searchparams[url]{else}search.php?searchsubmit=yes{/if}" target="_blank">
+			<input type="text" name="srchtxt" id="scbartxt"  class="search" placeholder="搜索" aria-describedby="basic-addon1">
+		</form>
+		<!-- 搜索框**结束 -->
+
+		<!-- 主体右侧签到按钮**开始 -->
+		<!--{if $_G['setting']['forumallowside']}-->
+		<div id="sd" class="sd">
+				<!--{hook/index_side_top}-->
+				<div class="drag">
+					<!--[diy=diy2]--><div id="diy2" class="area"></div><!--[/diy]-->
+				</div>
+				<!--{hook/index_side_bottom}-->
+			</div>
+		<!--{/if}-->
+ 
+		<!-- 主体右侧签到按钮**结束 -->
+
+		<!-- 主体右侧推荐板块**开始 -->
+		<div class="recommend">
+			<div class="recommend_head">
+				<h3 class="panel-title">今日推荐
+					<a class="pull-right" style="margin-right:5px" href="#">更多 ></a>
+				</h3>
+			</div>
+			<div class="recommend_body">
+				<ul>
+					<li class="font_color">
+						<a href="javascript:;">
+							<span class="orange_round">1</span>推荐主题</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span class="orange_round">2</span>推荐主题</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span class="orange_round">3</span>推荐主题</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span class="black_round">4</span>推荐主题</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span class="black_round">5</span>推荐主题</a>
+					</li>
+					<ul>
+			</div>
+		</div>
+		<!-- 主体右侧推荐板块**结束 -->
+
+		<!-- 主体右侧发帖按钮**开始 -->
+		<a href="javascript:;" id="newspecial" 
+		onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})"
+		{if !$_G['forum']['allowspecialonly'] && empty($_G['forum']['picstyle']) && !$_G['forum']['threadsorts']['required']} 
+		onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=37')"
+		{else} onclick="location.href='forum.php?mod=post&action=newthread&fid=37';return false;"
+		{/if} title="{lang send_posts}"> 
+			<div class="text_posted text-center"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>发帖</div>
+		</a>
+		<!-- 主体右侧发帖按钮**结束 -->
+		
+		<!-- 右侧公告板块**开始 -->
+		<div class="ntc">
+			<div class="notice_title">公告</div>
+			<div class="notice_con clearfix">
+				<div class="pull-left"><img src="{$_G['own_static_path']}/img/watch.png" alt="watch"></div>
+				<div class="pull-left notice_text">
+					<div>2018.01.15</div>
+					<div>ASU Watch震撼来袭</div>
+					<a class="Reservations" href="#" target="_blank">
+						预约购买<i class="fa fa-cart-plus" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 右侧公告板块**结束 -->
+
+		<!-- 主体右侧关注我们板块**开始 -->
+		<div class="contact_us">
+			<div class="contact_us_title">关注我们</div>
+			<div class="contact_us_con text-center">
+				<div class="clearfix microblog">
+					<div class="pull-left">
+						<img class="microblog_logo" src="{$_G['own_static_path']}/img/microblog.png">
+					</div>
+					<div class="pull-left contact_microblog">
+						<div class="weibo">官方微博</div>
+						<a id="microblog" href="https://weibo.com/asu001" target="_blank">加关注</a>
+					</div>
+				</div>
+				
+					<div class="contact_weixin text-center">
+						<img class="qr_code" src="{$_G['own_static_path']}/img/qrcode.png">
+						<div class="weixin">官方微信<span>扫一扫</span></div>
+						
+					</div>
+				
+			</div>
+		</div>
+		<!-- 主体右侧关注我们板块**结束 -->
+	</div>
+	<!-- 主体内容右侧**结束 -->
+
+	
+<!--{template common/footer}-->
+
