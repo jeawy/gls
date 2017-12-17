@@ -28,6 +28,7 @@
     }
     .dropdown-menu{
         min-width:min-content;
+        width:100%;
     }
     .dropdown-menu>li>a{
         padding:0 0 0 10px;
