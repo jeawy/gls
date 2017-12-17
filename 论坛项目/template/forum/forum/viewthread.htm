@@ -509,6 +509,18 @@
 			<! --start 头像、积分、主题-->
 			<!--{if $post['authorid'] && $post['username'] && !$post['anonymous']}-->
 				<div>
+						<div class="font_color right_div">积分等级</div>
+                     <div class="progress my_progress">
+                         <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                             style="width: $post['upgradeprogress']%">
+ 
+                        </div>
+ 
+                     </div>
+                     <div>积分
+                         <span class="pull-right">$post['credits']</span>
+                    </div>
+ 				 
 				<!--{if !$postshowavatars}-->
 					<div class="avatar">{lang member_avatar_banned}</div>
 				<!--{elseif $post['avatar'] && $showavatars}-->

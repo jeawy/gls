@@ -68,7 +68,7 @@ function profile_node_upgradeprogress($post, $s, $e, $upgrademenu = 1) {
 -->
 <!--{/eval}-->
 <!--{block return}-->
-	$s<span class="pbg2" {if $upgrademenu} id="upgradeprogress_$post[pid]" onmouseover="showMenu({'ctrlid':this.id, 'pos':'12!', 'menuid':'g_up$post[pid]_menu'});"{/if}><span class="pbr2" style="width:$post['upgradeprogress']%;"></span></span>$e
+	$s$e
 	<!--{if $upgrademenu}-->$menu<!--{/if}-->
 <!--{/block}-->
 <!--{eval}-->
