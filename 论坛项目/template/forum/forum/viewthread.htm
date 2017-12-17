@@ -14,7 +14,7 @@
 
 	<!--{ad/text/wp a_t}-->
 
-	<style id="diy_style" type="text/css">
+	<style   type="text/css">
 	.container{ 
 		display: block; 
 		position: static;
@@ -73,9 +73,7 @@
 		margin-top: 13px;
 	}
 	</style>
-	<div class="wp">
-		<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
-	</div>
+	 
 	
 	<div class="left_nav">  
 			<!-- {if $_G[fid] == 37} -->
@@ -571,6 +569,14 @@
 				</div>
 			<!--{/if}-->
         </div>
+		<!-- 主体右侧发帖按钮**开始 -->
+		<a id="newspecial" {if !$_G['forum']['allowspecialonly'] && empty($_G['forum']['picstyle']) && !$_G['forum']['threadsorts']['required']} onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=$_G[fid]')"{else} onclick="location.href='forum.php?mod=post&action=newthread&fid=$_G[fid]';return false;"{/if} href="javascript:;" 
+		title="{lang send_posts}">
+			<div class="text_posted text-center"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>发帖</div>
+		</a>
+		<!-- 主体右侧发帖按钮**结束 -->
+		 
+		<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
                　
 </div> <!-- right -->
 
