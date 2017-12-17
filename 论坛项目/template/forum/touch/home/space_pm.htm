@@ -1,22 +1,27 @@
 <!--{eval $_G['home_tpl_titles'] = array('{lang pm}');}-->
 <!--{template common/header}-->
+<style>
+	.nav, .icon_edit{
+		text-align: center;
+	}
+	.nav .icon_edit a{
+
+		margin-left: 46%;
+	}
+	.dialog_t{
+		width: auto !important;
+	}
+</style>
 <!--{if in_array($filter, array('privatepm')) || in_array($_GET[subop], array('view'))}-->
 
 	<!--{if in_array($filter, array('privatepm'))}-->
 
-	<!-- header start -->
-	<header class="header">
-	    <div class="nav">
-			<div class="icon_edit y"><a href="home.php?mod=spacecp&ac=pm">llllllllll<span class="none">{lang send_pm}</span></a></div>
-	        <a href="home.php?mod=space&uid=$_G[uid]&do=profile&mycenter=1" class="z">
-				<img src="{STATICURL}image/mobile/images/icon_back.png" /></a>
-			<span class="category"><span class="name">{lang pm_center}</span>
-	        </span>
-	    </div>
-	</header>
-	<!-- header end -->
+ 
 	<!-- main pmlist start -->
-	<div class="pmbox">
+	<div class="nav">
+	    <div class="icon_edit"> <a href="home.php?mod=spacecp&ac=pm"> <span >{lang send_pm}</span></a> </div>
+    </div>
+	<div class="pmbox content">
 		<ul>
 			<!--{loop $list $key $value}-->
 			<li>
@@ -47,14 +52,7 @@
 
 	<!--{elseif in_array($_GET[subop], array('view'))}-->
 
-	<!-- header start -->
-	<header class="header">
-	    <div class="nav">
-	        <a href="home.php?mod=space&do=pm" class="z"><img src="{STATICURL}image/mobile/images/icon_back.png" /></a>
-			<span>{lang viewmypm}</span>
-	    </div>
-	</header>
-	<!-- header end -->
+	 
 	<!-- main viewmsg_box start -->
 	<div class="wp">
 		<div class="msgbox b_m">
@@ -76,7 +74,7 @@
 			<input type="hidden" name="touid" value="$touid" />
 			<!--{/if}-->
 			<div class="reply b_m"><input type="text" value="" class="px" autocomplete="off" id="replymessage" name="message"></div>
-			<div class="reply b_m"><input type="button" name="pmsubmit" id="pmsubmit" class="formdialog button2" value="{lang reply}" /></div>
+			<div class="reply b_m"><input type="button" name="pmsubmit" id="pmsubmit" class="formdialog my_btn" value="{lang reply}" /></div>
             </form>
 
 		<!--{/if}-->

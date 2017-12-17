@@ -40,6 +40,7 @@ header{
 }
 header .logo{
     height: 56px;
+    padding:6px 6px 6px 15px;
 }
 header .fa-search{
     line-height: 56px;
@@ -165,4 +166,33 @@ nav a:active,nav a:hover,nav a:focus,nav a:visited{
 }
 #needmessage{
     border: 1px solid #ccc;
+}
+
+.thread-tr { 
+    height: 60px;
+}
+
+.thread-td{
+    border-bottom: 1px solid #ccc;
+    padding-left: 10px;
+}
+.list-user-img-thread{
+    width: 50px;
+    border-radius: 50%;
+}
+.myinfo_list li{
+    margin: 0px;
+}
+.my_btn{
+	background-color: rgb(254,112,60); 
+	border-color:  rgb(253, 99, 42);
+	border: 0px;
+	color: #fff;
+    text-align: center;
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+}
+.avatar_img img, .avat img{
+    border-radius: 50%;
 }

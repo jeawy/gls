@@ -1,15 +1,15 @@
 <!--{template common/header}-->
-
-<!-- header start -->
-<header class="header">
-    <div class="nav">
-       <a href="home.php?mod=space&uid=1&do=profile&mycenter=1" class="z"><img src="{STATICURL}image/mobile/images/icon_back.png" /></a>
-	   <span>{lang mythread}</span>
-   </div>
-</header>
-<!-- header end -->
+ <style>
+	 .threadlist li{
+		 height: 60px;
+		 overflow: hidden;
+	 }
+	 .threadlist li a{
+		 width: 90%;
+	 }
+ </style>
 <!-- main threadlist start -->
-<div class="threadlist"> 
+<div class="threadlist content"> 
 	<ul>
 	<!--{if $list}-->
 		<!--{loop $list $thread}-->

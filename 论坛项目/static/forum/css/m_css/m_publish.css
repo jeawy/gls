@@ -44,14 +44,22 @@
         margin-right: 15px;
     }
     /* 编辑内容 */
-    .reply-btn {
-        border:1px solid rgb(254, 112, 60);
-        color: rgb(254, 112, 60);
+    .reply-btn, .reply-btn-grey{
+        
         text-align: center; 
         display: block;
         margin: 0 auto;
         font-size: 18px;
         background-color: #fff;
         width: 150px;
+        margin-top: 10px;
+    }
+    .reply-btn{
+        border:1px solid rgb(254, 112, 60); 
+        color: rgb(254, 112, 60);
+    }
+    .reply-btn-grey{
+        border:1px solid grey; 
+        color:grey;
     }
     
