@@ -20,12 +20,12 @@
 	<!--{/if}--> 
 	<!--{loop $grids['newthread'] $thread}-->
 	<div class="hot row">
-			<div class="hot_img col-sm-2 col-md-2 col-lg-1">
+			<div class="hot_img col-xs-1">
 				<a href="#">
 					<img src="uc_server/avatar.php?uid=$thread[authorid]&size=middle"/>
 				</a>
 			</div> 
-			<div class="col-sm-10 col-md-10 col-lg-11 hot_con_wrap">
+			<div class="col-xs-11 hot_con_wrap">
 				<div class="hot_con">
 					<div class="title">
 						<a class="title_1 h4" href="forum.php?mod=viewthread&tid=$thread[tid]&extra=$extra">$thread[subject]</a>
@@ -34,7 +34,7 @@
 						<span class="label label-warning">精华</span>
 						<!--{/if}-->  
 					</div>
-					<div class="navbar-left">
+					<div class="pull-left">
 						<ul class="user">
 							<li>$thread[dateline]</li>
 							<li class="vip">
@@ -44,7 +44,7 @@
 							<li>$thread[author]</li>
 						</ul>
 					</div>
-					<div class="navbar-right user_nub">
+					<div class="pull-right user_nub">
 						<i class="fa fa-eye" aria-hidden="true"></i>$thread[views]
 						<i class="fa fa-commenting my_fa" aria-hidden="true"></i>$thread[replies]
 					</div>
@@ -86,7 +86,7 @@
 		<div class="recommend">
 			<div class="recommend_head">
 				<h3 class="panel-title">今日推荐
-					<a class="navbar-right" style="margin-right:5px" href="#">更多 ></a>
+					<a class="pull-right" style="margin-right:5px" href="#">更多 ></a>
 				</h3>
 			</div>
 			<div class="recommend_body">

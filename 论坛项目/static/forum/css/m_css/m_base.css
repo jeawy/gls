@@ -175,6 +175,7 @@ nav a:active,nav a:hover,nav a:focus,nav a:visited{
 .thread-td{
     border-bottom: 1px solid #ccc;
     padding-left: 10px;
+    width: 100%;
 }
 .list-user-img-thread{
     width: 50px;

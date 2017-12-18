@@ -35,7 +35,7 @@
 	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation" >
 		<div class="header">
 			<div class="navbar-header"> <a href="#"> <img class="logo" alt="Brand" src="{$_G['own_static_path']}/img/logo.png"> </a> </div>
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav pull-right">
 				<li {if !$_G['fid'] } class="active" {/if}><a href="/bbs/forum.php?">论坛首页<span class="sr-only">(current)</span></a></li>
 				<li {if $_G['fid'] == 37 } class="active" {/if}><a href="/bbs/forum.php?mod=forumdisplay&fid=37">Cast II 社区<span class="sr-only">(current)</span></a></li>
 				<li {if $_G['fid'] == 38 } class="active" {/if}><a href="/bbs/forum.php?mod=forumdisplay&fid=38">活动<span class="sr-only">(current)</span></a></li>

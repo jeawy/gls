@@ -25,7 +25,7 @@ section.container{
 }
 .leftsidebar_list{
     background-color: #fff;
-    padding: 10px 25px;
+    padding: 10px 15px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0,.2)
 }
 .leftsidebar_list>div{
