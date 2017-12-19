@@ -1,0 +1,83 @@
+body{
+    background-color: #fff;
+    font-family: arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif!important;
+}
+
+ul{
+    list-style: none;
+    padding: 0px
+}
+.manager_memu{
+    margin-left: -10px;
+}
+ul.manager_memu,.user_info{
+    padding-top: 50px;
+    color: #fff;
+    line-height: 1.2;
+}
+ul.manager_memu li{
+    float: left;
+    padding: 0 10px;
+    border-right: 1px solid #fefefe;
+}
+.user_info{
+margin-right: 30px;
+}
+.to_home{
+    background-color: #fff;
+    border-radius: 4px;
+    color: #333;
+    padding: 2px 8px;
+    margin-left: 8px;
+}
+nav{
+    background-color: rgb(80, 80, 80);
+    height: 80px;
+}
+.manager_logo{
+    width: 240px;
+    padding: 20px 60px 0;
+    height: 80px;
+}
+.manager_logo img{
+    vertical-align:bottom;
+    width: 100%;
+    height: auto;
+}
+ul li.bd_none{
+    border-right: 0px;
+}
+
+/* 左侧 */
+.manager-left{
+    background-color: rgb(239, 239, 239);
+    width: 240px;
+}
+.left_subnav{
+    color: #999;
+    padding-top: 15px; 
+    min-height: 300px;
+}
+.left_subnav li{
+    padding: 6px 30px;
+}
+
+ul a{
+    color: inherit;
+}
+ul a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.act_o{
+    color: rgb(254, 112, 60);
+}
+.act_o_bg{
+    color: rgb(254, 112, 60);
+    font-weight: 600;
+    background-color: rgb(216, 216, 216);
+}
+.content{
+    padding: 15px 0 15px 15px;
+}
