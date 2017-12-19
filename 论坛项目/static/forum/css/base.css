@@ -1,6 +1,6 @@
 body{
-	background-color:rgb(239,239,239);/*背景色*/
-    font-family: "Microsoft YaHei" ! important;
+	background-color:rgb(239,239,239);
+	font-family: arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
 }
 .menu-reply{
 	border-left: #CCCCCC solid 1px;
@@ -9,6 +9,20 @@ body{
 /* 内容包裹层自定义 */
 .container_custom{
 	margin-bottom:  15px;	
+}
+.body, .navbar-fixed-top, .navbar-fixed-bottom{
+	min-width: 970px;
+}
+.container .navbar-header, .container .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+}
+nav .container{
+	margin-top: 0px;
+	padding: 0px 15px;
+}
+.container{
+	width: 1170px;
 }
 ul{
 	list-style:none;
@@ -120,8 +134,14 @@ ul.cl{
 .panel-default{
 	margin:5px auto;
 }
-
-
+.navbar-nav>li{
+	float: left;
+	
+}
+.navbar-nav{
+	margin: 0;
+	
+}
 
 .p2_title{
 	width:100%;
@@ -220,6 +240,7 @@ ul.cl{
 	position: fixed;
 	bottom: 140px;
 	left: 50%;
+	display: none;
 }
 
 .left_subnav{
@@ -296,9 +317,7 @@ border-left:#ddd solid 1px;
 	color: white;
 	text-decoration: none;
 }
-.navbar-right{
-	margin-right: 0px;
-}
+
 .footer_bottom a
 {
 	color:white;
@@ -306,6 +325,8 @@ border-left:#ddd solid 1px;
 .navbar-inverse .navbar-nav>li>a
  {
 	color: white;
+	padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .orange
@@ -433,14 +454,12 @@ i{
 	color:#ccc;
 	margin: 5px;
 }
-.navbar {
+nav.navbar {
 	border-top: 5px solid rgb(254,112,60);
 	border-bottom: none;
 }
 
-.code_img{
-	display: none;
-}
+
 
 .user_photo{
 	width: 60px;
@@ -602,4 +621,7 @@ padding-right:10px;
 	position: absolute;
 	right: 25px;
 	bottom: 10px;
+}
+.nav-tabs>li>a {
+    border-radius: 0px;
 }
